@@ -1,0 +1,26 @@
+Solder workshop kit:
+* PCB
+    $1.7 (oshpark)
+* clutch pin & tie tack
+    $10 for 100 pack (amazon)
+    - a.k.a.: tie tack pad and sqeeze clutch)
+    - a.k.a.: (badge pin and clip)
+* 3V coin battery
+    $0.3-0.6 (digikey)
+    - CR1220 (make solder kit)
+    - CR2032
+* battery holder
+    $0.3-0.6 (digikey)
+* LED(s)
+    $3.10 for 50 pack (amazon)
+
+
+TODO:
+* clutch pin mounting hole
+* add open HW logo and vision fiducials
+* check supplies for short run
+* consider how to convert leaded LED packages into j-lead SMD
+* check on updated graphics and stuff
+* check ATMega driving LED(s) directly
+* add SMD LED footprints (w/ current limiting resistors)
+* add many LEDs for decoration
