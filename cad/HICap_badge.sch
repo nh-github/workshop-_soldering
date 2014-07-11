@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 10 Jul 2014 02:16:58 AM HST
+EESchema Schematic File Version 2  date Fri 11 Jul 2014 02:32:55 AM HST
 LIBS:HICap_badge
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "10 jul 2014"
+Date "11 jul 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,13 +46,23 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
+L Tie_Tack U2
+U 1 1 53BFD900
+P 5500 2600
+F 0 "U2" H 5500 2500 60  0000 C CNN
+F 1 "Tie_Tack" H 5500 2850 60  0000 C CNN
+F 2 "tie_tack" H 5500 2600 60  0000 C CNN
+	1    5500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
 L LOGO U1
 U 1 1 53BE7441
-P 5500 2700
-F 0 "U1" H 5500 2600 60  0000 C CNN
-F 1 "LOGO" H 5500 2800 60  0000 C CNN
-F 2 "logo_hicap_2" H 5500 2700 60  0001 C CNN
-	1    5500 2700
+P 5500 3100
+F 0 "U1" H 5500 3000 60  0000 C CNN
+F 1 "LOGO" H 5500 3200 60  0000 C CNN
+F 2 "logo_hicap_2" H 5500 3100 60  0001 C CNN
+	1    5500 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line

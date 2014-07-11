@@ -1,7 +1,8 @@
-PCBNEW-LibModule-V1  Thu 10 Jul 2014 02:28:18 AM HST
+PCBNEW-LibModule-V1  Fri 11 Jul 2014 02:32:26 AM HST
 # encoding utf-8
 $INDEX
 BK-913
+tie_tack
 $EndINDEX
 $MODULE BK-913
 Po 0 0 0 15 53BE86DF 00000000 ~~
@@ -35,4 +36,20 @@ Ne 0 ""
 Po -4252 0
 $EndPAD
 $EndMODULE  BK-913
+$MODULE tie_tack
+Po 0 0 0 15 53BFD954 00000000 ~~
+Li tie_tack
+Sc 00000000
+AR 
+Op 0 0 0
+T0 0 -1575 600 600 0 120 N V 21 N "tie_tack"
+T1 0 1575 600 600 0 120 N V 21 N "VAL**"
+$PAD
+Sh "1" C 1575 1575 0 0 0
+Dr 827 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE  tie_tack
 $EndLIBRARY

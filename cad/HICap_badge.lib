@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: Tue 04 Mar 2014 07:16:27 PM HST
+EESchema-LIBRARY Version 2.3  Date: Fri 11 Jul 2014 02:30:48 AM HST
 #encoding utf-8
 #
 # BATTERY
@@ -40,6 +40,18 @@ P 3 0 1 0  65 -40  110 -80  105 -55 N
 P 3 0 1 0  80 -25  125 -65  120 -40 N
 X A 1 -200 0 150 R 40 40 1 1 P
 X K 2 200 0 150 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Tie_Tack
+#
+DEF Tie_Tack U 0 40 Y Y 1 F N
+F0 "U" 0 -100 60 H V C CNN
+F1 "Tie_Tack" 0 250 60 H V C CNN
+DRAW
+C 0 0 200 0 1 0 N
+C 200 400 50 0 1 0 N
+P 2 0 1 0  0 0  200 400 N
 ENDDRAW
 ENDDEF
 #
