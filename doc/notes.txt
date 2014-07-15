@@ -16,11 +16,12 @@ Solder workshop kit:
 
 
 TODO:
-* clutch pin mounting hole
-* add open HW logo and vision fiducials
+DONE * clutch pin mounting hole
+DONE * add open HW logo and vision fiducials
+    CERN Open Hardware License?
 * check supplies for short run
-* consider how to convert leaded LED packages into j-lead SMD
+SKIP * consider how to convert leaded LED packages into j-lead SMD
 * check on updated graphics and stuff
-* check ATMega driving LED(s) directly
+DONE: cannot * check ATMega driving LED(s) directly
 * add SMD LED footprints (w/ current limiting resistors)
 * add many LEDs for decoration
