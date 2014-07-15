@@ -1,7 +1,9 @@
-PCBNEW-LibModule-V1  Fri 11 Jul 2014 02:32:26 AM HST
+PCBNEW-LibModule-V1  Sun 13 Jul 2014 09:11:18 PM HST
 # encoding utf-8
 $INDEX
 BK-913
+fiducial
+holder
 tie_tack
 $EndINDEX
 $MODULE BK-913
@@ -40,7 +42,7 @@ $MODULE tie_tack
 Po 0 0 0 15 53BFD954 00000000 ~~
 Li tie_tack
 Sc 00000000
-AR 
+AR
 Op 0 0 0
 T0 0 -1575 600 600 0 120 N V 21 N "tie_tack"
 T1 0 1575 600 600 0 120 N V 21 N "VAL**"
@@ -52,4 +54,36 @@ Ne 0 ""
 Po 0 0
 $EndPAD
 $EndMODULE  tie_tack
+$MODULE fiducial
+Po 0 0 0 15 53C009AC 00000000 ~~
+Li fiducial
+Kw fid, fiducial, vision
+Sc 00000000
+AR
+Op 0 0 0
+T0 0 0 600 600 0 120 N V 21 N "fiducial"
+T1 0 0 600 600 0 120 N V 21 N "VAL**"
+$PAD
+Sh "1" C 394 394 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+.SolderMask 98
+$EndPAD
+$EndMODULE  fiducial
+$MODULE holder
+Po 0 0 0 15 53C3826E 00000000 ~~
+Li holder
+Kw mount, mechanical, badge strap
+Sc 00000000
+AR holder
+Op 0 0 0
+T0 0 -1500 600 600 0 120 N V 21 N "holder"
+T1 0 1250 600 600 0 120 N V 21 N "VAL**"
+DS -2500 -750 2500 -750 150 28
+DS 2500 -750 2500 750 150 28
+DS 2500 750 -2500 750 150 28
+DS -2500 750 -2500 -750 150 28
+$EndMODULE  holder
 $EndLIBRARY

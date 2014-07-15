@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 11 Jul 2014 02:32:55 AM HST
+EESchema Schematic File Version 2  date Sun 13 Jul 2014 09:13:04 PM HST
 LIBS:HICap_badge
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "11 jul 2014"
+Date "14 jul 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,20 +46,70 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Tie_Tack U2
+L LOGO mech2
+U 1 1 53C382C0
+P 6000 2600
+F 0 "mech2" H 6000 2500 60  0000 C CNN
+F 1 "badge" H 6000 2700 60  0000 C CNN
+F 2 "holder" H 6000 2600 60  0001 C CNN
+	1    6000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO fid3
+U 1 1 53C009E7
+P 6500 3600
+F 0 "fid3" H 6500 3500 60  0000 C CNN
+F 1 "LOGO" H 6500 3700 60  0000 C CNN
+F 2 "fiducial" H 6500 3600 60  0001 C CNN
+	1    6500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO fid2
+U 1 1 53C009E4
+P 6000 3600
+F 0 "fid2" H 6000 3500 60  0000 C CNN
+F 1 "LOGO" H 6000 3700 60  0000 C CNN
+F 2 "fiducial" H 6000 3600 60  0001 C CNN
+	1    6000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO fid1
+U 1 1 53C009DA
+P 5500 3600
+F 0 "fid1" H 5500 3500 60  0000 C CNN
+F 1 "LOGO" H 5500 3700 60  0000 C CNN
+F 2 "fiducial" H 5500 3600 60  0001 C CNN
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO logo2
+U 1 1 53C00382
+P 6000 3100
+F 0 "logo2" H 6000 3000 60  0000 C CNN
+F 1 "LOGO" H 6000 3200 60  0000 C CNN
+F 2 "OSHW_LOGO_3mm" H 6000 3100 60  0001 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tie_Tack mech1
 U 1 1 53BFD900
 P 5500 2600
-F 0 "U2" H 5500 2500 60  0000 C CNN
+F 0 "mech1" H 5500 2500 60  0000 C CNN
 F 1 "Tie_Tack" H 5500 2850 60  0000 C CNN
 F 2 "tie_tack" H 5500 2600 60  0000 C CNN
 	1    5500 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LOGO U1
+L LOGO logo1
 U 1 1 53BE7441
 P 5500 3100
-F 0 "U1" H 5500 3000 60  0000 C CNN
+F 0 "logo1" H 5500 3000 60  0000 C CNN
 F 1 "LOGO" H 5500 3200 60  0000 C CNN
 F 2 "logo_hicap_2" H 5500 3100 60  0001 C CNN
 	1    5500 3100
