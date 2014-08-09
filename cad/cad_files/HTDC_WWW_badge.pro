@@ -1,4 +1,4 @@
-update=Thu 07 Aug 2014 11:17:31 PM HST
+update=Fri 08 Aug 2014 10:03:20 PM HST
 last_client=pcbnew
 [general]
 version=1
@@ -21,14 +21,15 @@ MSegLar=150
 LastNetListRead=
 [pcbnew/libraries]
 LibDir=../cad_libs
-LibName1=sockets
-LibName2=connect
-LibName3=discret
-LibName4=pin_array
-LibName5=divers
-LibName6=libcms
-LibName7=display
-LibName8=led
-LibName9=dip_sockets
-LibName10=pga_sockets
-LibName11=valves
+LibName1=local_parts
+LibName2=sockets
+LibName3=connect
+LibName4=discret
+LibName5=pin_array
+LibName6=divers
+LibName7=libcms
+LibName8=display
+LibName9=led
+LibName10=dip_sockets
+LibName11=pga_sockets
+LibName12=valves
