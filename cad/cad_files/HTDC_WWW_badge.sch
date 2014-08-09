@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 08 Aug 2014 09:31:37 PM HST
+EESchema Schematic File Version 2  date Sat 09 Aug 2014 02:00:17 AM HST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:HTDC_WWW_badge-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
@@ -131,7 +132,7 @@ U 1 1 5316B25B
 P 4550 3300
 F 0 "BT1" H 4550 3500 50  0000 C CNN
 F 1 "BATTERY" H 4550 3110 50  0000 C CNN
-F 2 "BK-913" H 4550 3300 60  0000 C CNN
+F 2 "BK-912" H 4550 3300 60  0000 C CNN
 	1    4550 3300
 	1    0    0    -1  
 $EndComp
@@ -141,7 +142,7 @@ U 1 1 5316B253
 P 4550 2500
 F 0 "D1" H 4550 2600 50  0000 C CNN
 F 1 "LED" H 4550 2400 50  0000 C CNN
-F 2 "LED-5MM" H 4550 2500 60  0000 C CNN
+F 2 "LED" H 4550 2500 60  0000 C CNN
 	1    4550 2500
 	1    0    0    -1  
 $EndComp
