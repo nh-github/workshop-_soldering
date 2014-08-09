@@ -12,6 +12,12 @@ TODO (2014-08-05):
   - slot for badge clip
   - 2 LEDs
   - graphics from WWW logo (square or shaped)
+    + layers: 
+      = 28 -> edge
+      = 23 -> [top] soldermask
+      = 21 -> [top] silkscreen
+    + Gold: soldermask apertures
+    + White: top silkscreen (legend)
   - battery totally behind board
   - rounded edges?
 * graphics
