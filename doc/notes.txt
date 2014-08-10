@@ -26,9 +26,10 @@ TODO (2014-08-05):
     + [DONE] HI flag w/ ``designed in HI'' text
         note: reversed on top layers, then 
         flipped to other side of board
-    + HTDC
-    + HICap
-* graphics
+    + [DONE] HTDC
+    + [DONE] HICap
+    + OSHW
+* [DONE] graphics
   - layer planning
     + white -> silk
     + red -> top not covered by soldermask
@@ -42,9 +43,11 @@ TODO (2014-08-05):
 * machine vision targets:
   - on front AND back
   - 1mm ring bare of soldermask around metal?
-* text size (on back)
-  - hicap url is good size
-  - cern is okay
+* [DONE] text size (on back)
+  - hicap url is good size 0.04w x 0.06h
+  - cern is okay 0.021w x 0.033h (0.005 thick)
+  Licensed under CERN OHL v.1.2
+  - version: [v: ___]
 * Contact fab
   - oshpark
   - others, for other colors? 
