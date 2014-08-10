@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Sun 10 Aug 2014 10:47:48 AM HST
+PCBNEW-BOARD Version 1 date Sun 10 Aug 2014 11:10:19 AM HST
 
 # Created by Pcbnew(2012-apr-16-27)-stable
 
@@ -98,7 +98,7 @@ AddNet "/GND"
 AddNet "/Vdd"
 $EndNCLASS
 $MODULE logo-hicap-rev
-Po 12500 41000 900 0 00000000 53E74AB7 ~~
+Po 12000 41250 900 0 00000000 53E74AB7 ~~
 Li logo-hicap-rev
 Sc 53E74AB7
 AR logo-hicap-rev
@@ -18203,12 +18203,12 @@ $EndTEXTPCB
 $TEXTPCB
 Te "www.htdc.org"
 Po 21750 42000 600 800 80 900
-De 22 0 0 Normal R
+De 20 0 0 Normal R
 $EndTEXTPCB
 $TEXTPCB
 Te "www.hicapacity.org"
-Po 10750 42000 550 800 80 900
-De 22 0 0 Normal R
+Po 10500 42000 550 750 80 900
+De 20 0 0 Normal R
 $EndTEXTPCB
 $COTATION
 Ge 0 25 0
