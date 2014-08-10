@@ -1,12 +1,12 @@
-update=Fri 08 Aug 2014 10:03:20 PM HST
+update=Sat 09 Aug 2014 02:39:25 PM HST
 last_client=pcbnew
 [general]
 version=1
 [pcbnew]
 version=1
-PadDrlX=320
-PadDimH=600
-PadDimV=600
+PadDrlX=0
+PadDimH=1100
+PadDimV=2000
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
@@ -22,14 +22,15 @@ LastNetListRead=
 [pcbnew/libraries]
 LibDir=../cad_libs
 LibName1=local_parts
-LibName2=sockets
-LibName3=connect
-LibName4=discret
-LibName5=pin_array
-LibName6=divers
-LibName7=libcms
-LibName8=display
-LibName9=led
-LibName10=dip_sockets
-LibName11=pga_sockets
-LibName12=valves
+LibName2=logos__decals
+LibName3=sockets
+LibName4=connect
+LibName5=discret
+LibName6=pin_array
+LibName7=divers
+LibName8=libcms
+LibName9=display
+LibName10=led
+LibName11=dip_sockets
+LibName12=pga_sockets
+LibName13=valves

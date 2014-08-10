@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 09 Aug 2014 02:00:17 AM HST
+EESchema Schematic File Version 2  date Sat 09 Aug 2014 08:56:00 PM HST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "9 aug 2014"
+Date "10 aug 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -44,6 +44,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L LOGO logo?
+U 1 1 53E7176B
+P 6500 3100
+F 0 "logo?" H 6500 3000 60  0000 C CNN
+F 1 "LOGO" H 6500 3200 60  0000 C CNN
+F 2 "OSHW_LOGO_3mm" H 6500 3100 60  0001 C CNN
+	1    6500 3100
+	1    0    0    -1  
+$EndComp
 Text Notes 6800 2500 0    60   ~ 0
 Badge Clip Slot
 Text Notes 6800 3000 0    60   ~ 0
@@ -96,7 +106,7 @@ U 1 1 53C00382
 P 6000 3100
 F 0 "logo2" H 6000 3000 60  0000 C CNN
 F 1 "LOGO" H 6000 3200 60  0000 C CNN
-F 2 "OSHW_LOGO_3mm" H 6000 3100 60  0001 C CNN
+F 2 "logo-htdc" H 6000 3100 60  0001 C CNN
 	1    6000 3100
 	1    0    0    -1  
 $EndComp
@@ -106,7 +116,7 @@ U 1 1 53BE7441
 P 5500 3100
 F 0 "logo1" H 5500 3000 60  0000 C CNN
 F 1 "LOGO" H 5500 3200 60  0000 C CNN
-F 2 "logo_hicap_2" H 5500 3100 60  0001 C CNN
+F 2 "logo-hicap" H 5500 3100 60  0001 C CNN
 	1    5500 3100
 	1    0    0    -1  
 $EndComp

@@ -1,27 +1,44 @@
 Solder workshop kit for HTDC Wet Ware Wednesday:
 TODO (2014-08-05):
-* copy schematic from HICap solder workshop kit
-* add second LED, consider on/off switch
-* update coin cell holder footprint
+* [DONE] copy schematic from HICap solder workshop kit
+* [DROP] add second LED, consider on/off switch
+* [DONE] update coin cell holder footprint
+  - surface mount
   - label battery type
   - mark polarity
-* create ``nice'' footprint for LED
+* [DONE] create ``nice'' footprint for LED
   - (T1-3/4 / 5mm -or- T1 / 3mm)
   - mark polarity w/ +/- as well
 * create board
-  - slot for badge clip
-  - 2 LEDs
-  - graphics from WWW logo (square or shaped)
+  - [DONE] slot for badge clip
+  - [DONE] 1 LED (was: 2 LEDs)
+  - [DONE] graphics from WWW logo (square or shaped)
     + layers: 
       = 28 -> edge
       = 23 -> [top] soldermask
       = 21 -> [top] silkscreen
+      = 15 -> [top] copper (front/component)
     + Gold: soldermask apertures
     + White: top silkscreen (legend)
-  - battery totally behind board
-  - rounded edges?
+  - [DONE] battery totally behind board
+  - [DONE] rounded corners
+  - logos:
+    + [DONE] HI flag w/ ``designed in HI'' text
+        note: reversed on top layers, then 
+        flipped to other side of board
+    + HTDC
+    + HICap
 * graphics
   - layer planning
+    + white -> silk
+    + red -> top not covered by soldermask
+    + blue -> cover w/ soldermask (w/ or w/out top?)
+    + [DONE] Flag:
+      = boarder of no copper, no soldermask
+      = white is drawn w/ silk (L 21) -> w
+      = red AND blue drawn w/ copper (L 15) -> rb
+      = red drawn w/ soldermask (L 23) -> r
+        (w/ border)
 * machine vision targets:
   - on front AND back
   - 1mm ring bare of soldermask around metal?
