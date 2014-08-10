@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Sun 10 Aug 2014 10:04:32 AM HST
+PCBNEW-BOARD Version 1 date Sun 10 Aug 2014 10:44:40 AM HST
 
 # Created by Pcbnew(2012-apr-16-27)-stable
 
@@ -59,7 +59,7 @@ PadSize 10000 10000
 PadDrill 0
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 0 0
-PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ../fab/))
+PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk true) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory ../fab/))
 $EndSETUP
 
 $EQUIPOT
@@ -17850,15 +17850,15 @@ Po -4300 0
 $EndPAD
 $EndMODULE  BK-912
 $MODULE logo-OSHW_-5mm
-Po 20500 32000 0 15 00000000 53E7CD97 ~~
+Po 20500 32000 0 0 00000000 53E7CD97 ~~
 Li logo-OSHW_-5mm
 Kw OSHW, logo
 Sc 53E7CD97
 AR logo-OSHW_-5mm
 Op 0 0 0
-T0 0 1044 89 89 0 17 N I 21 N "G***"
-T1 0 -1044 89 89 0 17 N I 21 N "LOGO_OSHW"
-DP 0 0 0 0 277 1 23
+T0 0 -1044 89 89 0 17 M I 20 N "G***"
+T1 0 1044 89 89 0 17 M I 20 N "LOGO_OSHW"
+DP 0 0 0 0 277 1 22
 Dl -596 884
 Dl -586 878
 Dl -563 864
@@ -18140,7 +18140,7 @@ $EndMODULE  logo-OSHW_-5mm
 $TEXTPCB
 Te "v: 0x0000"
 Po 22000 30750 300 400 50 900
-De 0 0 0 Normal L
+De 22 0 0 Normal L
 $EndTEXTPCB
 $TEXTPCB
 Te "Licensed under "
