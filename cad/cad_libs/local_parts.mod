@@ -1,9 +1,10 @@
-PCBNEW-LibModule-V1  Sat 09 Aug 2014 07:58:55 PM HST
+PCBNEW-LibModule-V1  Sun 10 Aug 2014 09:41:47 AM HST
 # encoding utf-8
 $INDEX
 BK-912
 BK-913
 LED
+fiducial
 holder
 $EndINDEX
 $MODULE holder
@@ -124,4 +125,23 @@ Ne 0 ""
 Po 500 0
 $EndPAD
 $EndMODULE  LED
+$MODULE fiducial
+Po 0 0 0 15 53C009AC 00000000 ~~
+Li fiducial
+Cd Machine vision alignment mark
+Kw fid, fiducial, vision
+Sc 00000000
+AR fiducial
+Op 0 0 0
+T0 0 0 600 600 0 120 N V 21 N "fiducial"
+T1 0 0 600 600 0 120 N V 21 N "VAL**"
+$PAD
+Sh "1" C 394 394 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 0
+.SolderMask 98
+$EndPAD
+$EndMODULE  fiducial
 $EndLIBRARY

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 09 Aug 2014 08:56:00 PM HST
+EESchema Schematic File Version 2  date Sun 10 Aug 2014 09:51:44 AM HST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -46,78 +46,128 @@ Comment4 ""
 $EndDescr
 $Comp
 L LOGO logo?
-U 1 1 53E7176B
-P 6500 3100
-F 0 "logo?" H 6500 3000 60  0000 C CNN
-F 1 "LOGO" H 6500 3200 60  0000 C CNN
-F 2 "OSHW_LOGO_3mm" H 6500 3100 60  0001 C CNN
-	1    6500 3100
-	1    0    0    -1  
-$EndComp
-Text Notes 6800 2500 0    60   ~ 0
-Badge Clip Slot
-Text Notes 6800 3000 0    60   ~ 0
-Logos:\n* front: WetWare Wednesday (multiple layers)\n* back: HTDC; HICap; Made in Hawaii\n* Made in USA
-Text Notes 6800 3500 0    60   ~ 0
-Machine Vision \nAlignment Marks \n(on back)
-$Comp
-L LOGO mech2
-U 1 1 53C382C0
-P 6000 2600
-F 0 "mech2" H 6000 2500 60  0000 C CNN
-F 1 "badge" H 6000 2700 60  0000 C CNN
-F 2 "holder" H 6000 2600 60  0001 C CNN
-	1    6000 2600
+U 1 1 53E7CB16
+P 6500 4100
+F 0 "logo?" H 6500 4000 60  0000 C CNN
+F 1 "LOGO" H 6500 4200 60  0000 C CNN
+F 2 "logo-FoH-w-rev" H 6500 4100 60  0001 C CNN
+	1    6500 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L LOGO fid3
-U 1 1 53C009E7
-P 6500 3600
-F 0 "fid3" H 6500 3500 60  0000 C CNN
-F 1 "LOGO" H 6500 3700 60  0000 C CNN
-F 2 "fiducial" H 6500 3600 60  0001 C CNN
-	1    6500 3600
+L LOGO logo?
+U 1 1 53E7CB12
+P 6000 4100
+F 0 "logo?" H 6000 4000 60  0000 C CNN
+F 1 "LOGO" H 6000 4200 60  0000 C CNN
+F 2 "logo-FoH-r-rev" H 6000 4100 60  0001 C CNN
+	1    6000 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L LOGO fid2
-U 1 1 53C009E4
-P 6000 3600
-F 0 "fid2" H 6000 3500 60  0000 C CNN
-F 1 "LOGO" H 6000 3700 60  0000 C CNN
-F 2 "fiducial" H 6000 3600 60  0001 C CNN
-	1    6000 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L LOGO fid1
-U 1 1 53C009DA
-P 5500 3600
-F 0 "fid1" H 5500 3500 60  0000 C CNN
-F 1 "LOGO" H 5500 3700 60  0000 C CNN
-F 2 "fiducial" H 5500 3600 60  0001 C CNN
-	1    5500 3600
+L LOGO logo?
+U 1 1 53E7C9F2
+P 5500 4100
+F 0 "logo?" H 5500 4000 60  0000 C CNN
+F 1 "LOGO" H 5500 4200 60  0000 C CNN
+F 2 "logo-FoH-br-rev" H 5500 4100 60  0001 C CNN
+	1    5500 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L LOGO logo2
-U 1 1 53C00382
+U 1 1 53E7C853
 P 6000 3100
 F 0 "logo2" H 6000 3000 60  0000 C CNN
 F 1 "LOGO" H 6000 3200 60  0000 C CNN
-F 2 "logo-htdc" H 6000 3100 60  0001 C CNN
+F 2 "graphic_gold" H 6000 3100 60  0001 C CNN
 	1    6000 3100
 	1    0    0    -1  
 $EndComp
 $Comp
 L LOGO logo1
-U 1 1 53BE7441
+U 1 1 53E7C7FE
 P 5500 3100
 F 0 "logo1" H 5500 3000 60  0000 C CNN
 F 1 "LOGO" H 5500 3200 60  0000 C CNN
-F 2 "logo-hicap" H 5500 3100 60  0001 C CNN
+F 2 "graphic_white" H 5500 3100 60  0001 C CNN
 	1    5500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO logo5
+U 1 1 53E7176B
+P 6500 3600
+F 0 "logo5" H 6500 3500 60  0000 C CNN
+F 1 "LOGO" H 6500 3700 60  0000 C CNN
+F 2 "logo-OSHW_-5mm" H 6500 3600 60  0001 C CNN
+	1    6500 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 6800 2500 0    60   ~ 0
+Badge Clip Slot
+Text Notes 6800 3000 0    60   ~ 0
+Logos:\n* front: WetWare Wednesday (multiple layers)\n\n\n\n\n* back: HTDC; HICap; OSHW;\n      Designed in Hawaii
+Text Notes 6800 4500 0    60   ~ 0
+Machine Vision \nAlignment Marks \n(on back)
+$Comp
+L LOGO mech2
+U 1 1 53C382C0
+P 5500 2600
+F 0 "mech2" H 5500 2500 60  0000 C CNN
+F 1 "badge" H 5500 2700 60  0000 C CNN
+F 2 "holder" H 5500 2600 60  0001 C CNN
+	1    5500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO fid3
+U 1 1 53C009E7
+P 6500 4600
+F 0 "fid3" H 6500 4500 60  0000 C CNN
+F 1 "LOGO" H 6500 4700 60  0000 C CNN
+F 2 "fiducial" H 6500 4600 60  0001 C CNN
+	1    6500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO fid2
+U 1 1 53C009E4
+P 6000 4600
+F 0 "fid2" H 6000 4500 60  0000 C CNN
+F 1 "LOGO" H 6000 4700 60  0000 C CNN
+F 2 "fiducial" H 6000 4600 60  0001 C CNN
+	1    6000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO fid1
+U 1 1 53C009DA
+P 5500 4600
+F 0 "fid1" H 5500 4500 60  0000 C CNN
+F 1 "LOGO" H 5500 4700 60  0000 C CNN
+F 2 "fiducial" H 5500 4600 60  0001 C CNN
+	1    5500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO logo4
+U 1 1 53C00382
+P 6000 3600
+F 0 "logo4" H 6000 3500 60  0000 C CNN
+F 1 "LOGO" H 6000 3700 60  0000 C CNN
+F 2 "logo-HTDC-rev" H 6000 3600 60  0001 C CNN
+	1    6000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO logo3
+U 1 1 53BE7441
+P 5500 3600
+F 0 "logo3" H 5500 3500 60  0000 C CNN
+F 1 "LOGO" H 5500 3700 60  0000 C CNN
+F 2 "logo-HICap-rev" H 5500 3600 60  0001 C CNN
+	1    5500 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
