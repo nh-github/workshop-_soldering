@@ -1,4 +1,5 @@
-EESchema Schematic File Version 2  date Sun 10 Aug 2014 09:51:44 AM HST
+EESchema Schematic File Version 2  date Sun 10 Aug 2014 05:32:27 PM HST
+LIBS:local_parts
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "10 aug 2014"
+Date "11 aug 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -44,31 +45,59 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 5250 4350
+Wire Wire Line
+	5250 2850 5250 4850
+Connection ~ 5750 4850
+Wire Wire Line
+	5250 4850 6250 4850
+Connection ~ 5750 4350
+Wire Wire Line
+	5250 4350 6250 4350
+Wire Wire Line
+	5250 3350 5750 3350
+Wire Wire Line
+	4350 2500 4050 2500
+Wire Wire Line
+	4050 2500 4050 3300
+Wire Wire Line
+	4850 3300 5050 3300
+Wire Wire Line
+	5050 3300 5050 2500
+Wire Wire Line
+	4050 3300 4250 3300
+Wire Wire Line
+	5050 2500 4750 2500
+Connection ~ 5250 3350
+Wire Wire Line
+	5250 3850 6250 3850
+Connection ~ 5750 3850
+Connection ~ 5250 3850
 $Comp
-L LOGO logo?
+L LOGO logo8
 U 1 1 53E7CB16
 P 6500 4100
-F 0 "logo?" H 6500 4000 60  0000 C CNN
+F 0 "logo8" H 6500 4000 60  0000 C CNN
 F 1 "LOGO" H 6500 4200 60  0000 C CNN
 F 2 "logo-FoH-w-rev" H 6500 4100 60  0001 C CNN
 	1    6500 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L LOGO logo?
+L LOGO logo7
 U 1 1 53E7CB12
 P 6000 4100
-F 0 "logo?" H 6000 4000 60  0000 C CNN
+F 0 "logo7" H 6000 4000 60  0000 C CNN
 F 1 "LOGO" H 6000 4200 60  0000 C CNN
 F 2 "logo-FoH-r-rev" H 6000 4100 60  0001 C CNN
 	1    6000 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L LOGO logo?
+L LOGO logo6
 U 1 1 53E7C9F2
 P 5500 4100
-F 0 "logo?" H 5500 4000 60  0000 C CNN
+F 0 "logo6" H 5500 4000 60  0000 C CNN
 F 1 "LOGO" H 5500 4200 60  0000 C CNN
 F 2 "logo-FoH-br-rev" H 5500 4100 60  0001 C CNN
 	1    5500 4100
@@ -170,18 +199,6 @@ F 2 "logo-HICap-rev" H 5500 3600 60  0001 C CNN
 	1    5500 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 2500 4050 2500
-Wire Wire Line
-	4050 2500 4050 3300
-Wire Wire Line
-	4850 3300 5050 3300
-Wire Wire Line
-	5050 3300 5050 2500
-Wire Wire Line
-	4050 3300 4250 3300
-Wire Wire Line
-	5050 2500 4750 2500
 Text Label 5050 3200 1    60   ~ 0
 GND
 Text Label 4050 3200 1    60   ~ 0
