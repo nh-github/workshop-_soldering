@@ -1,4 +1,53 @@
 Solder workshop kit:
+TODO (2014-08-01):
+* remove clutch pin footprint
+* create good TH LED footprint
+  - (T1-3/4 / 5mm, T1 / 3mm)
+  - mark polarity w/ +/- as well
+* add second LED (in place of clutch pin?)
+* LED(s) below badge clip slot?
+* smaller badge clip slot?
+  - same width (long side)
+  - 50mil smaller (short side)
+* try for an edge mount led?
+* consider surface mount
+  - right angle?
+  - board edge?
+  - TH pad on edge?
+* consider non-square board
+  - 2" x 1"
+  - 2 in^2 1"x1" w/ 0.5"x2" (``L'')
+  - rounded edges
+* graphics improvements:
+  - logo in soldermask (show copper)
+  - logo outline w/ silkscreen
+  - fill front of board w/ copper (top)
+  - rotate logo (22.5deg / pi/8) ccw (looking down)
+* remove some test structures
+* machine vision targets:
+  - on back (in addition to front)
+  - 1mm ring bare of soldermask around metal?
+* label battery type
+* larger text
+  - hicap url is good size
+  - cern is okay
+* hicap url
+  - copper for all?
+  - silkscreen for all?
+  - silkscreen for some, copper for ``hicap''?
+* Contact fab
+  - oshpark
+  - others, for other colors? 
+    + batchpcb
+    + 4pcb
+    + ``guy who goes to china''
+  - non-rectangular board outline (what if it fits with itself?)
+  - smooth board edge?
+  - interior routing
+    + with line?
+    + what if there isn't enough space to note ``CUT OUT''?
+
+pricing (2014-07-11):
 * PCB
     $1.7 (oshpark)
 * clutch pin & tie tack
