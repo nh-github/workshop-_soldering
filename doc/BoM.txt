@@ -1,0 +1,5 @@
+PCB, Board
+BK913, Battery clip/holder
+CR2032, Battery
+LED, T1-3/4 / 5mm ``RGB Blinking LED''
+Clip, Badge clip
