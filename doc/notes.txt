@@ -1,4 +1,17 @@
 Solder workshop kit:
+2015-01-04:
+* 
+* fab test run at oshpark
+* consider hackvana
+* consider programmed LED control
+* Logo work:
+  - start with dark fg, light bg (1000 px)
+  - KiCad bitmap converter (save as *.emp)
+  - swap layer to soldermask (23)
+  - scale (2.8 factor)
+  - import, add keywords: logo, HICapacity
+  - save in lib
+
 TODO (2014-08-01):
 * remove clutch pin footprint
 * create good TH LED footprint
