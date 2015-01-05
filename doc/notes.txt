@@ -1,9 +1,6 @@
 Solder workshop kit:
 2015-01-04:
-* 
-* fab test run at oshpark
-* consider hackvana
-* consider programmed LED control
+* update design with some HTDC blinky badge bits
 * Logo work:
   - start with dark fg, light bg (1000 px)
   - KiCad bitmap converter (save as *.emp)
@@ -11,79 +8,11 @@ Solder workshop kit:
   - scale (2.8 factor)
   - import, add keywords: logo, HICapacity
   - save in lib
-
-TODO (2014-08-01):
-* remove clutch pin footprint
-* create good TH LED footprint
-  - (T1-3/4 / 5mm, T1 / 3mm)
-  - mark polarity w/ +/- as well
-* add second LED (in place of clutch pin?)
-* LED(s) below badge clip slot?
-* smaller badge clip slot?
-  - same width (long side)
-  - 50mil smaller (short side)
-* try for an edge mount led?
-* consider surface mount
-  - right angle?
-  - board edge?
-  - TH pad on edge?
-* consider non-square board
-  - 2" x 1"
-  - 2 in^2 1"x1" w/ 0.5"x2" (``L'')
-  - rounded edges
-* graphics improvements:
-  - logo in soldermask (show copper)
-  - logo outline w/ silkscreen
-  - fill front of board w/ copper (top)
-  - rotate logo (22.5deg / pi/8) ccw (looking down)
-* remove some test structures
-* machine vision targets:
-  - on back (in addition to front)
-  - 1mm ring bare of soldermask around metal?
-* label battery type
-* larger text
-  - hicap url is good size
-  - cern is okay
-* hicap url
-  - copper for all?
-  - silkscreen for all?
-  - silkscreen for some, copper for ``hicap''?
-* Contact fab
+* fab test run at oshpark
+  - HICapacity Solder Kit
+  - 396b634 2015-01-04
+* fab options
   - oshpark
-  - others, for other colors? 
-    + batchpcb
-    + 4pcb
-    + ``guy who goes to china''
-  - non-rectangular board outline (what if it fits with itself?)
-  - smooth board edge?
-  - interior routing
-    + with line?
-    + what if there isn't enough space to note ``CUT OUT''?
-
-pricing (2014-07-11):
-* PCB
-    $1.7 (oshpark)
-* clutch pin & tie tack
-    $10 for 100 pack (amazon)
-    - a.k.a.: tie tack pad and sqeeze clutch)
-    - a.k.a.: (badge pin and clip)
-* 3V coin battery
-    $0.3-0.6 (digikey)
-    - CR1220 (make solder kit)
-    - CR2032
-* battery holder
-    $0.3-0.6 (digikey)
-* LED(s)
-    $3.10 for 50 pack (amazon)
-
-
-TODO:
-DONE * clutch pin mounting hole
-DONE * add open HW logo and vision fiducials
-    CERN Open Hardware License?
-DONE * check supplies for short run
-SKIP * consider how to convert leaded LED packages into j-lead SMD
-DONE * check on updated graphics and stuff
-DONE: cannot * check ATMega driving LED(s) directly
-SKIP * add SMD LED footprints (w/ current limiting resistors)
-SKIP * add many LEDs for decoration
+  - pcbunlimited
+  - hackvana
+* consider programmed LED control
