@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Sun 04 Jan 2015 11:14:58 PM HST
+PCBNEW-BOARD Version 1 date Sun 11 Jan 2015 03:11:28 PM HST
 
 # Created by Pcbnew(2012-apr-16-27)-stable
 
@@ -9,9 +9,9 @@ Ly 1FFF8001
 EnabledLayers 1FFF8001
 Links 3
 NoConn 0
-Di 35303 19849 52151 33433
-Ndraw 13
-Ntrack 11
+Di 39674 19849 52151 32287
+Ndraw 11
+Ntrack 10
 Nzone 0
 BoardThickness 630
 Nmodule 8
@@ -21,7 +21,7 @@ $EndGENERAL
 $SHEETDESCR
 Sheet A4 11700 8267
 Title ""
-Date "5 jan 2015"
+Date "12 jan 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -59,7 +59,7 @@ PadSize 6500 6500
 PadDrill 0
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 0 0
-PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin true) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext false) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory fab/))
+PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin true) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference false) (plotvalue false) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory fab/))
 $EndSETUP
 
 $EQUIPOT
@@ -88,38 +88,37 @@ AddNet "/GND"
 AddNet "/Vdd"
 $EndNCLASS
 $MODULE BK-912
-Po 46000 28000 0 0 54AA553B 54AA3926 ~~
+Po 46000 28000 1800 0 54B27BF4 54AA3926 ~~
 Li BK-912
 Kw battery, clip, holder, CR2032, 2032, 20mm, coin, smd, smt
 Sc 54AA3926
 AR /5316B25B
 Op 0 0 0
-T0 0 2500 600 600 0 60 M V 20 N "BT1"
-T1 0 1500 300 300 0 60 M V 20 N "BATTERY"
+T0 -4500 1500 400 300 1800 60 M V 20 N "BT1"
+T1 -4000 2000 400 300 1800 60 M V 20 N "BATTERY"
 DA 0 0 -2500 2500 -900 150 20
 DA 0 0 2500 2500 -900 150 20
 DA 0 0 -2500 -2500 -900 150 20
-T2 0 -3500 300 300 0 60 M V 20 N "\"+\" away from board"
-T2 0 -3000 300 300 0 60 M V 20 N "Insert CR2032 battery"
-T2 0 -1500 600 600 0 120 M V 20 N "-"
-T2 -4250 -1500 600 600 0 120 M V 20 N "+"
-T2 4250 -1500 600 600 0 120 M V 20 N "+"
+T2 0 -3500 300 300 1800 60 M V 20 N "\"+\" away from board"
+T2 0 -3000 300 300 1800 60 M V 20 N "Insert CR2032 battery"
+T2 -4250 -1500 600 600 1800 120 M V 20 N "+"
+T2 4250 -1500 600 600 1800 120 M V 20 N "+"
 $PAD
-Sh "2" C 6500 6500 0 0 0
+Sh "2" C 6500 6500 0 0 1800
 Dr 0 0 0
 At SMD N 00440001
 Ne 1 "/GND"
 Po 0 0
 $EndPAD
 $PAD
-Sh "1" R 1100 2000 0 0 0
+Sh "1" R 1100 2000 0 0 1800
 Dr 0 0 0
 At SMD N 00440001
 Ne 2 "/Vdd"
 Po 4300 0
 $EndPAD
 $PAD
-Sh "1" R 1100 2000 0 0 0
+Sh "1" R 1100 2000 0 0 1800
 Dr 0 0 0
 At SMD N 00440001
 Ne 2 "/Vdd"
@@ -512,13 +511,13 @@ Po 500 0
 $EndPAD
 $EndMODULE  LED
 $MODULE logo_HICapacity
-Po 46000 27250 0 15 00000000 53C129E1 ~~
+Po 46000 27250 0 15 54B31DB8 53C129E1 ~~
 Li logo_HICapacity
 Kw logo, HICapacity
 Sc 53C129E1
 AR /53BE7441
 Op 0 0 0
-T0 0 5973 600 600 0 120 N I 21 N "logo1"
+T0 -4500 4250 600 600 0 120 N I 21 N "logo1"
 T1 0 -5973 600 600 0 120 N I 21 N "LOGO"
 DP 0 0 0 0 769 1 23
 Dl 5164 1600
@@ -2479,32 +2478,20 @@ Po 46000 21500 600 800 120 0
 De 28 1 0 Normal C
 $EndTEXTPCB
 $TEXTPCB
-Te "Licensed under CERN OHL v.1.2"
-Po 42000 20500 210 330 50 900
-De 20 0 0 Normal L
-$EndTEXTPCB
-$TEXTPCB
 Te " Instructions:"
-nl "  1. Bump battery pad"
-nl "  2. Attach battery clip"
-nl "  3. Solder LED"
-Po 52000 23000 240 300 50 0
+nl "  1. Solder Battery Clip"
+nl "  2. Solder LED"
+nl "  3. Attach Badge Clip"
+Po 48500 22500 240 300 50 0
 De 20 0 0 Normal L
-$EndTEXTPCB
-$TEXTPCB
-Te "www.hicapacity.org"
-Po 41000 20500 400 600 80 900
-De 22 0 0 Normal L
 $EndTEXTPCB
 $TRACK
-Po 0 46000 28000 49750 24250 80 -1
+Po 0 50500 21000 49500 22000 80 -1
 De 0 0 1 0 400000
-Po 0 50000 21000 50500 21000 80 -1
-De 0 0 1 0 800000
-Po 0 49750 21250 50000 21000 80 -1
+Po 0 49500 22000 49500 24500 80 -1
 De 0 0 1 0 0
-Po 0 49750 24250 49750 21250 80 -1
-De 0 0 1 0 0
+Po 0 46000 28000 49500 24500 80 -1
+De 0 0 1 0 400000
 Po 0 41700 28000 41700 29200 80 -1
 De 0 0 2 0 400000
 Po 0 50300 29200 50300 28000 80 -1
