@@ -1,0 +1,27 @@
+* plan development for surface mount solder workshop
+  capture thought process ``for posterity''
+* kit to assemble during workshop 
+  -* fun/cool when built 
+  -* not too hard 
+  --* tech level
+  --* part count
+  --* graceful failure
+      (easier to debug assembly problems)
+* board concept 
+** initial
+  -* small (100mm square)
+  -* led(s)
+  -* uC controlled
+  -* coin cell power (CR2032)
+** expansion
+  -* smaller (50mm square)
+  -* RGB pixels (4[?])
+  -* interactive
+  -* tile-able (edge connectors)
+  -* 2-3.6V arm (STM32F0)
+  -* 3V LED/driver (NO!)
+  --* will need to handle 3V logic and >3V power rail
+* operation
+** flashing/pulsing/animated LEDs
+** tiling
+** interaction between boards (free space optical, visual, IR)
