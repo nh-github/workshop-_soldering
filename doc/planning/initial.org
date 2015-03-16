@@ -13,15 +13,21 @@
   -* led(s)
   -* uC controlled
   -* coin cell power (CR2032)
-** expansion
-  -* smaller (50mm square)
-  -* RGB pixels (4[?])
+** expanded
+  -* RGB pixels (4 per board)
   -* interactive
   -* tile-able (edge connectors)
   -* 2-3.6V arm (STM32F0)
   -* 3V LED/driver (NO!)
   --* will need to handle 3V logic and >3V power rail
+* implimentation
 * operation
 ** flashing/pulsing/animated LEDs
 ** tiling
 ** interaction between boards (free space optical, visual, IR)
+* TODO:
+** edge connectors
+   0.1" pin header?
+   flat flex?
+   SATA
+   other?
