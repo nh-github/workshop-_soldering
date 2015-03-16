@@ -15,12 +15,28 @@
   -* coin cell power (CR2032)
 ** expanded
   -* RGB pixels (4 per board)
-  -* interactive
+  -* interactive (sense hand / motion)
   -* tile-able (edge connectors)
-  -* 2-3.6V arm (STM32F0)
-  -* 3V LED/driver (NO!)
-  --* will need to handle 3V logic and >3V power rail
+  -* interact when facing (optical data)
 * implimentation
+  -* 2-3.6V arm (STM32F0)
+  -* 5V LED/driver (NO!)
+  --* will need to handle 3V logic and >3V power rail
+** basic power
+   -* use LEDs sparsely (<=50% power, <=8 at a time, average <=25% power)
+   -* two coin cells in series (cr2032?)
+      LDO from 6V -> 5V, 2nd LDO from there to 3V (uC)
+   -* provide USB to 5V rail
+   -* high power (>=6V) to first LDO input (manual switch off battery?)
+      diode ORing?
+** nicer power
+   -* use RGB LEDs with external driver
+   -* 3.5V system (maybe 3.3 okay)
+   -* SMPS to adjust 2xAA/AAA, Li-Poly, USB, HV to Vsys
+   -* addl notation: LT1619ES8, LT3477
+** lights
+   -* Adafruit Neopixel (integrated driver)
+   -* PCA9622, TLC59711, TLC59108 (x2?)
 * operation
 ** flashing/pulsing/animated LEDs
 ** tiling
