@@ -1,13 +1,13 @@
 * plan development for surface mount solder workshop
   capture thought process ``for posterity''
-* kit to assemble during workshop 
-  -* fun/cool when built 
-  -* not too hard 
+* kit to assemble during workshop
+  -* fun/cool when built
+  -* not too hard
   --* tech level
   --* part count
   --* graceful failure
       (easier to debug assembly problems)
-* board concept 
+* board concept
 ** initial
   -* small (100mm square)
   -* led(s)
@@ -21,7 +21,7 @@
 * implimentation
   -* 2-3.6V arm (STM32F0)
   -* 5V LED/driver (NO!)
-  --* will need to handle 3V logic and >3V power rail
+  --* will need to handle 3.3V logic and >3.5V power rail
 ** basic power
    -* use LEDs sparsely (<=50% power, <=8 at a time, average <=25% power)
    -* two coin cells in series (cr2032?)
@@ -34,9 +34,27 @@
    -* 3.5V system (maybe 3.3 okay)
    -* SMPS to adjust 2xAA/AAA, Li-Poly, USB, HV to Vsys
    -* addl notation: LT1619ES8, LT3477
+      LTspice sim for 1619?
+      max draw for cr2032
+   -* power input selection (switch, diodes, other)
+** Newer idea
+   -* TLC59711 has 3.3V LDO, use it for uC power (25mA limit)
+   -* [ALT] external 3.3V LDO
+   -* run V_LED at 4-6 V (or maybe up to 12V)
 ** lights
-   -* Adafruit Neopixel (integrated driver)
+   -* [SKIP] Adafruit Neopixel (integrated driver)
    -* PCA9622, TLC59711, TLC59108 (x2?)
+   -* RGB LEDs (4-PLCC)
+      CLV1A-FKB-CJ1M1F1BB7R4S3CT-ND
+      TODO: provide testpoints nearby for polarity
+** sensors / comms
+   -* edge connectors
+        $1.2  670-2753-1-ND  SM3ZS067B120AB2R1500 (PCIe M.2 / NGFF)
+   -* ir (IRDA and/or IR emitter + IR detector)
+   -* temperature
+   -* ambient light
+   -* IMU (accel, gyro, mag)
+   -* gesture sensor
 * operation
 ** flashing/pulsing/animated LEDs
 ** tiling
@@ -47,3 +65,14 @@
    flat flex?
    SATA
    other?
+   PCIe (M.2/NGFF)
+** Schematic
+   -* STM32F0..
+   -* TLC59711
+   -* RGB LEDs (common anode)
+   -*
+** Layout
+   -* STM32F0..
+   -* TLC59711
+   -* RGB LEDs (4-PLCC)
+   -* edge connectors
