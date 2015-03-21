@@ -1,0 +1,336 @@
+EESchema Schematic File Version 2  date Sat 21 Mar 2015 12:11:40 AM HST
+LIBS:local_parts
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:workshop_kit-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 2 4
+Title ""
+Date "21 mar 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 2900 4300
+Wire Wire Line
+	2900 4200 2900 4300
+Wire Wire Line
+	3200 4400 2800 4400
+Connection ~ 4000 5000
+Wire Wire Line
+	4000 5000 3700 5000
+Wire Wire Line
+	3700 5600 4000 5600
+Wire Wire Line
+	4000 5600 4000 3600
+Wire Wire Line
+	2800 5600 3000 5600
+Wire Wire Line
+	2800 5400 3000 5400
+Wire Wire Line
+	2800 5200 3000 5200
+Wire Wire Line
+	2800 5000 3000 5000
+Wire Wire Line
+	2800 4800 3000 4800
+Wire Wire Line
+	2800 4600 3000 4600
+Wire Wire Line
+	1100 6000 1100 5900
+Wire Wire Line
+	800  5300 800  5200
+Wire Wire Line
+	1100 4400 1200 4400
+Wire Wire Line
+	3200 4300 2800 4300
+Wire Wire Line
+	2000 6400 2000 6200
+Wire Wire Line
+	2000 3600 2000 3800
+Wire Wire Line
+	1100 4300 1200 4300
+Wire Wire Line
+	1200 4500 800  4500
+Wire Wire Line
+	800  4500 800  4700
+Wire Wire Line
+	1100 5500 1100 5400
+Wire Wire Line
+	1100 5400 1200 5400
+Wire Wire Line
+	3000 4700 2800 4700
+Wire Wire Line
+	3000 4900 2800 4900
+Wire Wire Line
+	3000 5100 2800 5100
+Wire Wire Line
+	3000 5300 2800 5300
+Wire Wire Line
+	3000 5500 2800 5500
+Wire Wire Line
+	2800 5700 3000 5700
+Wire Wire Line
+	4000 5300 3700 5300
+Connection ~ 4000 5300
+Wire Wire Line
+	3700 4700 4000 4700
+Connection ~ 4000 4700
+Wire Wire Line
+	3000 4200 3000 4400
+Connection ~ 3000 4400
+Wire Wire Line
+	1900 6200 1900 6300
+Connection ~ 2000 6300
+Wire Wire Line
+	1900 6300 2000 6300
+Text Label 3200 4400 0    60   ~ 0
+LED_SPI_CLK2
+Text Label 2850 5200 0    60   ~ 0
+B1
+Text Label 2850 5300 0    60   ~ 0
+G1
+Text Label 2850 5400 0    60   ~ 0
+R1
+Text Label 2850 5700 0    60   ~ 0
+R0
+Text Label 2850 5600 0    60   ~ 0
+G0
+Text Label 2850 5500 0    60   ~ 0
+B0
+Text Label 2850 4900 0    60   ~ 0
+B2
+Text Label 2850 5000 0    60   ~ 0
+G2
+Text Label 2850 5100 0    60   ~ 0
+R2
+Text Label 2850 4800 0    60   ~ 0
+R3
+Text Label 2850 4700 0    60   ~ 0
+G3
+Text Label 2850 4600 0    60   ~ 0
+B3
+$Comp
+L VPP #PWR103
+U 1 1 550ACA12
+P 4000 3600
+F 0 "#PWR103" H 4000 3800 40  0001 C CNN
+F 1 "VPP" H 4000 3750 40  0000 C CNN
+	1    4000 3600
+	1    0    0    -1  
+$EndComp
+Text Label 3200 4300 0    60   ~ 0
+LED_SPI_RET
+$Comp
+L GND #PWR03
+U 1 1 550AB772
+P 1100 6000
+F 0 "#PWR03" H 1100 6000 30  0001 C CNN
+F 1 "GND" H 1100 5930 30  0001 C CNN
+	1    1100 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 550AB756
+P 800 5300
+F 0 "#PWR04" H 800 5300 30  0001 C CNN
+F 1 "GND" H 800 5230 30  0001 C CNN
+	1    800  5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLC59711 Up201
+U 1 1 550AB6D7
+P 2000 5000
+F 0 "Up201" H 2000 4900 50  0000 C CNN
+F 1 "TLC59711" H 2000 5100 50  0000 C CNN
+F 2 "TSSOP-20" H 2000 5000 50  0001 C CNN
+F 3 "DOCUMENTATION" H 1850 4800 50  0001 C CNN
+	1    2000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R Rp201
+U 1 1 550AB672
+P 800 4950
+F 0 "Rp201" V 880 4950 50  0000 C CNN
+F 1 "R" V 800 4950 50  0000 C CNN
+F 2 "SM0805" V 950 4950 60  0000 C CNN
+	1    800  4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C Cp201
+U 1 1 550AB66D
+P 1100 5700
+F 0 "Cp201" H 1150 5800 50  0000 L CNN
+F 1 "C" H 1150 5600 50  0000 L CNN
+F 2 "SM0805" H 1300 5500 60  0000 C CNN
+	1    1100 5700
+	1    0    0    -1  
+$EndComp
+Text Label 1100 4300 2    60   ~ 0
+LED_SPI_DAT
+Text Label 1100 4400 2    60   ~ 0
+LED_SPI_CLK
+$Comp
+L CONN_1 Pp202
+U 1 1 550AB58F
+P 3000 4050
+F 0 "Pp202" H 3080 4050 40  0000 L CNN
+F 1 "CONN_1" H 3000 4105 30  0001 C CNN
+	1    3000 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_1 Pp201
+U 1 1 550AB581
+P 2900 4050
+F 0 "Pp201" H 2980 4050 40  0000 L CNN
+F 1 "CONN_1" H 2900 4105 30  0001 C CNN
+	1    2900 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VPP #PWR102
+U 1 1 550AB40F
+P 2000 3600
+F 0 "#PWR102" H 2000 3800 40  0001 C CNN
+F 1 "VPP" H 2000 3750 40  0000 C CNN
+	1    2000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 550AB3EC
+P 2000 6400
+F 0 "#PWR05" H 2000 6400 30  0001 C CNN
+F 1 "GND" H 2000 6330 30  0001 C CNN
+	1    2000 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L RGB_LED Dp203
+U 1 1 550AB3B9
+P 3350 4700
+F 0 "Dp203" H 3250 4800 50  0000 C CNN
+F 1 "RGB_LED" H 3300 4600 50  0000 C CNN
+F 2 "PLCC-4" H 2900 4800 60  0000 C CNN
+	1    3350 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L RGB_LED Dp202
+U 1 1 550AB3B5
+P 3350 5000
+F 0 "Dp202" H 3250 5100 50  0000 C CNN
+F 1 "RGB_LED" H 3300 4900 50  0000 C CNN
+F 2 "PLCC-4" H 2900 5100 60  0000 C CNN
+	1    3350 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L RGB_LED Dp201
+U 1 1 550AB3AF
+P 3350 5300
+F 0 "Dp201" H 3250 5400 50  0000 C CNN
+F 1 "RGB_LED" H 3300 5200 50  0000 C CNN
+F 2 "PLCC-4" H 2900 5400 60  0000 C CNN
+	1    3350 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L RGB_LED Dp200
+U 1 1 550AB399
+P 3350 5600
+F 0 "Dp200" H 3250 5700 50  0000 C CNN
+F 1 "RGB_LED" H 3300 5500 50  0000 C CNN
+F 2 "PLCC-4" H 2900 5700 60  0000 C CNN
+	1    3350 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L LOGO fid3
+U 1 1 53C009E7
+P 2200 7200
+F 0 "fid3" H 2200 7100 60  0000 C CNN
+F 1 "LOGO" H 2200 7300 60  0000 C CNN
+F 2 "fiducial" H 2200 7200 60  0001 C CNN
+	1    2200 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO fid2
+U 1 1 53C009E4
+P 1700 7200
+F 0 "fid2" H 1700 7100 60  0000 C CNN
+F 1 "LOGO" H 1700 7300 60  0000 C CNN
+F 2 "fiducial" H 1700 7200 60  0001 C CNN
+	1    1700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO fid1
+U 1 1 53C009DA
+P 1200 7200
+F 0 "fid1" H 1200 7100 60  0000 C CNN
+F 1 "LOGO" H 1200 7300 60  0000 C CNN
+F 2 "fiducial" H 1200 7200 60  0001 C CNN
+	1    1200 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO logo2
+U 1 1 53C00382
+P 1700 6700
+F 0 "logo2" H 1700 6600 60  0000 C CNN
+F 1 "LOGO" H 1700 6800 60  0000 C CNN
+F 2 "OSHW_LOGO_3mm" H 1700 6700 60  0001 C CNN
+	1    1700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO logo1
+U 1 1 53BE7441
+P 1200 6700
+F 0 "logo1" H 1200 6600 60  0000 C CNN
+F 1 "LOGO" H 1200 6800 60  0000 C CNN
+F 2 "logo_HICapacity" H 1200 6700 60  0001 C CNN
+	1    1200 6700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
