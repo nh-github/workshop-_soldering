@@ -95,3 +95,29 @@
 ** Layout
    -* RGB LEDs (4-PLCC) TODO: larger pads?
    -* edge connectors
+* misc / old
+** parts of interest
+   $      dscr
+   3.25   ATMEGA328-AU-ND (TQFP)
+   8.68   ATMEGA644-20AURCT-ND (TQFP)
+   14.85  ATMEGA1280-16AU-ND (TQFP)
+   3.53   497-12891-ND (STM32F051R8T6; STM32F0DISCOVERY)
+   1.45   497-14044-5-ND (STM32F030F4P6, 20TSSOP, 16KB rom, 4KB ram, NOeval)
+   1.77   497-14042-ND (STM32F030C6T6, 48LQFP, 32KB rom, 4KB ram, NOeval)
+
+   4.50   1655 (10x NeoPixel)
+   7.50   1455 (TLC59711 16-bit LED driver)
+   3.37   TLC59711PWPR (TSSOP)
+   35     1487 (8x8 NeoPixel)
+
+   1.71   497-10613-1-ND (LIS3DHTR, accel)
+   1.31   MMA8453QT-ND (MMA8453QT, accel)
+
+** STM32 discovery programming
+   http://hertaville.com/2013/09/02/stm32f0discovery-part-1-linux/
+   http://hertaville.com/2013/09/03/stm32f0discovery-command-line-ide/
+   https://github.com/halherta/iotogglem0
+   https://github.com/texane/stlink
+   http://www.triplespark.net/elec/pdev/arm/stm32.html
+   http://marcelojoeng.blogspot.com/2012/09/stm32f0-discovery-gcc-eclipse-openocd.html
+   http://marcelojoeng.blogspot.com/2012/09/stm32f0-discovery-gcc-eclipse-openocd.html
