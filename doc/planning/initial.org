@@ -22,14 +22,15 @@
   -* 2-3.6V arm (STM32F0)
   -* 5V LED/driver (NO!)
   --* will need to handle 3.3V logic and >3.5V power rail
-** basic power
+** brainstorming
+*** basic power
    -* use LEDs sparsely (<=50% power, <=8 at a time, average <=25% power)
    -* two coin cells in series (cr2032?)
       LDO from 6V -> 5V, 2nd LDO from there to 3V (uC)
    -* provide USB to 5V rail
    -* high power (>=6V) to first LDO input (manual switch off battery?)
       diode ORing?
-** nicer power
+*** nicer power
    -* use RGB LEDs with external driver
    -* 3.5V system (maybe 3.3 okay)
    -* SMPS to adjust 2xAA/AAA, Li-Poly, USB, HV to Vsys
@@ -37,10 +38,25 @@
       LTspice sim for 1619?
       max draw for cr2032
    -* power input selection (switch, diodes, other)
-** Newer idea
+*** Newer idea
    -* TLC59711 has 3.3V LDO, use it for uC power (25mA limit)
    -* [ALT] external 3.3V LDO
    -* run V_LED at 4-6 V (or maybe up to 12V)
+** Design 
+*** capabilities/target
+    -* 5V in (USB or pin header/phoenix terminal block)
+    -* reverse voltage (5.1V zener + PTC)
+    -* overvoltage (5.1V zener + PTC)
+    -* overcurrent (PTC 1A [?])
+    -* float Vin to GND (use 100K resistor [?]) (why: help sense power)
+    -* 4.something volts for LEDs
+    -* 3.3V for logic + sensors
+    -* 
+*** how
+    -* micro usb for power
+    -* pin header for high power connector (combicon, ...?) 
+    -* filter power bus to handle slew rate/inrush
+    -*
 ** lights
    -* [SKIP] Adafruit Neopixel (integrated driver)
    -* PCA9622, TLC59711, TLC59108 (x2?)
@@ -66,13 +82,16 @@
    SATA
    other?
    PCIe (M.2/NGFF)
+   pico ezmate
+   picoblade
+   Flexi-Mate
+** power (portable)
+   BCAAAPC-ND (AAA holder, single)
 ** Schematic
    -* STM32F0..
    -* TLC59711
    -* RGB LEDs (common anode)
    -*
 ** Layout
-   -* STM32F0..
-   -* TLC59711
-   -* RGB LEDs (4-PLCC)
+   -* RGB LEDs (4-PLCC) TODO: larger pads?
    -* edge connectors
