@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 22 Mar 2015 06:32:21 PM HST
+EESchema Schematic File Version 2  date Tue 24 Mar 2015 11:05:15 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 4
 Title ""
-Date "23 mar 2015"
+Date "24 mar 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 7000 6500 0    60   ~ 0
+Refdes pattern:\n<part type><subcircuit type><subcircuit number><2 digit number>\nexamples:\n* Uc101 <- IC, control/logic, subckt#1, part #2\n* Rp101 <- Resistor, power, subckt#1, part#1
 $Sheet
 S 4000 3500 1000 1000
 U 550D4361

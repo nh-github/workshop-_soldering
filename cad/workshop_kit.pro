@@ -1,4 +1,4 @@
-update=Thu 19 Mar 2015 03:22:43 AM HST
+update=Tue 24 Mar 2015 11:04:12 AM HST
 last_client=pcbnew
 [general]
 version=1
@@ -67,9 +67,9 @@ LibName30=contrib
 LibName31=valves
 [pcbnew]
 version=1
-PadDrlX=0
-PadDimH=6500
-PadDimV=6500
+PadDrlX=118
+PadDimH=236
+PadDimV=236
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
@@ -89,3 +89,5 @@ LibName2=local_parts
 LibName3=connect
 LibName4=pin_array
 LibName5=led
+LibName6=discret
+LibName7=libcms
