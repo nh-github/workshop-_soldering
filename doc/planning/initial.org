@@ -71,6 +71,14 @@
    -* ambient light
    -* IMU (accel, gyro, mag)
    -* gesture sensor
+*** COMMS
+    -* protocol TIA-485-A (RS-485)
+       modbus
+       DMX512
+       DCC
+       need auto-mdx?
+    -* RS232
+       x.25?
 * operation
 ** flashing/pulsing/animated LEDs
 ** tiling
