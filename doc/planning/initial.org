@@ -64,8 +64,14 @@
       CLV1A-FKB-CJ1M1F1BB7R4S3CT-ND
       TODO: provide testpoints nearby for polarity
 ** sensors / comms
+   -* TODO: UART rs232 over tiling connectors
    -* edge connectors
         $1.2  670-2753-1-ND  SM3ZS067B120AB2R1500 (PCIe M.2 / NGFF)
+        $1.50 277-9962-1-ND  Phoenix 2.5mm 8pole
+        $1.57 277-9976-1-ND  Phoenix 2.5mm 8pole
+        <lighting connectors, 4 or 6 pole>
+        <micro USB>
+        <include a physical switch to sense board?>
    -* ir (IRDA and/or IR emitter + IR detector)
    -* temperature
    -* ambient light
@@ -103,6 +109,11 @@
 ** Layout
    -* RGB LEDs (4-PLCC) TODO: larger pads?
    -* edge connectors
+** goals:
+   lights
+   flashing
+   interaction
+   comms (tiling/facing)
 * misc / old
 ** parts of interest
    $      dscr
