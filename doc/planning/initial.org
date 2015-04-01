@@ -140,3 +140,62 @@
    http://www.triplespark.net/elec/pdev/arm/stm32.html
    http://marcelojoeng.blogspot.com/2012/09/stm32f0-discovery-gcc-eclipse-openocd.html
    http://marcelojoeng.blogspot.com/2012/09/stm32f0-discovery-gcc-eclipse-openocd.html
+* uC / MCU config/notes
+** USB
+*** DFU ?
+    hardware implementation requirements?
+*** HW dependencies
+    USB requires HSE clock (not HSI?)
+    USB OTG HS requires external PHY
+    OTG (FS|HS) needs power switch
+** debug
+   Serial JTAG & Debug
+   JTAG-DP and SW-DP
+
+** I/O ports
+   SPI1
+   30 SCK (89)
+   31 MISO (90)
+   32 MOSI (91)
+   SPI2
+   17 MISO
+   18 MOSI
+   52 SCK
+   53 MISO
+   54 MOSI
+   SPI3
+   78 CLK (89)
+   79 MISO (90)
+   80 MOSI (91)
+
+   USART
+   68 USART1_TX (92)
+   69 USART1_RX (93)
+
+   25 USART2_TX (86)
+   26 USART2_RX (87)
+
+   47 USART3_TX (55)
+   48 USART3_RX (56)
+
+   23 UART4_TX (78)
+   24 UART4_RX (79)
+
+   80 UART5_TX
+   83 UART5_RX
+
+   63 USART6_TX
+   64 USART6_RX
+
+   I2C1
+   92 SCL (95)
+   93 SDA (96)
+
+   I2C2
+   47 SCK (UART3, SPI2)
+   48 SDA (UART3)
+
+   I2C3
+   66 SDA
+   67 SCK
+
