@@ -1,4 +1,4 @@
-update=Thu 10 Jul 2014 02:12:52 AM HST
+update=Tue 31 Mar 2015 11:24:43 PM HST
 last_client=pcbnew
 [general]
 version=1
@@ -67,9 +67,9 @@ LibName30=contrib
 LibName31=valves
 [pcbnew]
 version=1
-PadDrlX=827
-PadDimH=1575
-PadDimV=1575
+PadDrlX=350
+PadDimH=650
+PadDimV=650
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
@@ -81,7 +81,7 @@ DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=150
-LastNetListRead=HICap_badge.net
+LastNetListRead=
 [pcbnew/libraries]
 LibDir=../solder_workshop
 LibName1=logo_lib
