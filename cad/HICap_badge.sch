@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 02 Apr 2015 10:27:54 PM HST
+EESchema Schematic File Version 2  date Thu 02 Apr 2015 11:45:32 PM HST
 LIBS:HICap_badge
 LIBS:power
 LIBS:device
@@ -30,6 +30,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:HICap_badge-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
@@ -45,30 +46,30 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	4000 2100 4000 1900
+	3600 2100 3600 1800
 Wire Wire Line
-	3900 3100 3900 3300
+	3500 3100 3500 3300
+Connection ~ 3500 3300
 Wire Wire Line
-	4700 1900 5000 1900
+	3600 1800 3200 1800
 Wire Wire Line
-	5000 1900 5000 3300
-Wire Wire Line
-	5000 3300 4800 3300
-Wire Wire Line
-	4000 1900 4300 1900
+	3200 3300 3200 1800
 Wire Wire Line
 	4200 3300 3200 3300
 Wire Wire Line
-	3200 3300 3200 1900
+	4300 1900 3400 1900
 Wire Wire Line
-	3200 1900 3800 1900
+	4800 3300 5000 3300
 Wire Wire Line
-	3800 1900 3800 2100
-Connection ~ 3900 3300
-NoConn ~ 3600 2100
-NoConn ~ 3400 2100
-NoConn ~ 3500 3100
-Text Label 4000 1900 1    60   ~ 0
+	5000 3300 5000 1900
+Wire Wire Line
+	5000 1900 4700 1900
+Wire Wire Line
+	3400 1900 3400 2100
+NoConn ~ 4000 2100
+NoConn ~ 3800 2100
+NoConn ~ 3900 3700
+Text Label 4100 1900 1    60   ~ 0
 switched
 $Comp
 L DPDT SW1
@@ -142,7 +143,7 @@ F 2 "LOGO_HICAPACITY" H 5500 3100 60  0001 C CNN
 $EndComp
 Text Label 5000 3300 0    60   ~ 0
 GND
-Text Label 3900 3300 0    60   ~ 0
+Text Label 4100 3300 1    60   ~ 0
 Vdd
 $Comp
 L BATTERY BT1
