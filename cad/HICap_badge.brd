@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Thu 02 Apr 2015 11:24:55 PM HST
+PCBNEW-BOARD Version 1 date Thu 02 Apr 2015 11:27:50 PM HST
 
 # Created by Pcbnew(2012-apr-16-27)-stable
 
@@ -10,7 +10,7 @@ EnabledLayers 1FFF8001
 Links 5
 NoConn 1
 Di 39400 19849 52151 32853
-Ndraw 12
+Ndraw 13
 Ntrack 17
 Nzone 0
 BoardThickness 630
@@ -93,7 +93,7 @@ AddNet "/Vdd"
 AddNet "/switched"
 $EndNCLASS
 $MODULE BK-912
-Po 46000 28000 1800 0 551E5BD8 54AA3926 ~~
+Po 46000 28000 1800 0 551E5CC9 54AA3926 ~~
 Li BK-912
 Kw battery, clip, holder, CR2032, 2032, 20mm, coin, smd, smt
 Sc 54AA3926
@@ -104,8 +104,8 @@ T1 -4000 2000 400 300 1800 60 M V 20 N "BATTERY"
 DA 0 0 -2500 2500 -900 150 20
 DA 0 0 2500 2500 -900 150 20
 DA 0 0 -2500 -2500 -900 150 20
-T2 4500 -3000 300 300 1800 60 M V 20 N "\"+\" away from board"
-T2 4000 -2500 400 500 1800 100 M V 20 N "CR2032"
+T2 0 -3500 300 300 1800 60 M I 20 N "\"+\" away from board"
+T2 0 -3000 400 500 1800 100 M I 20 N "CR2032"
 T2 -4250 -1500 600 600 1800 120 M V 20 N "+"
 T2 4250 -1500 600 600 1800 120 M V 20 N "+"
 $PAD
@@ -2431,6 +2431,11 @@ Dl 4956 -3865
 Dl 4957 -3849
 Dl 4957 -3849
 $EndMODULE  logo_HICapacity
+$TEXTPCB
+Te "CR2032"
+Po 40500 30500 400 300 75 0
+De 20 0 0 Normal R
+$EndTEXTPCB
 $TEXTPCB
 Te "\"+\" away "
 nl "from board"
