@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Thu 02 Apr 2015 10:52:12 PM HST
+PCBNEW-BOARD Version 1 date Thu 02 Apr 2015 10:55:15 PM HST
 
 # Created by Pcbnew(2012-apr-16-27)-stable
 
@@ -9,7 +9,7 @@ Ly 1FFF8001
 EnabledLayers 1FFF8001
 Links 5
 NoConn 2
-Di 39499 19849 52151 32853
+Di 39400 19849 52151 32853
 Ndraw 11
 Ntrack 15
 Nzone 0
