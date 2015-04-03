@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 18 Mar 2015 04:08:51 AM HST
+EESchema Schematic File Version 2  date Thu 02 Apr 2015 10:27:54 PM HST
 LIBS:HICap_badge
 LIBS:power
 LIBS:device
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "18 mar 2015"
+Date "3 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -136,7 +136,7 @@ U 1 1 53BE7441
 P 5500 3100
 F 0 "logo1" H 5500 3000 60  0000 C CNN
 F 1 "LOGO" H 5500 3200 60  0000 C CNN
-F 2 "logo_HICapacity" H 5500 3100 60  0001 C CNN
+F 2 "LOGO_HICAPACITY" H 5500 3100 60  0001 C CNN
 	1    5500 3100
 	1    0    0    -1  
 $EndComp
