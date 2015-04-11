@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 07 Apr 2015 01:59:27 AM HST
+EESchema Schematic File Version 2  date Thu 09 Apr 2015 09:47:10 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 3 4
 Title ""
-Date "7 apr 2015"
+Date "10 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,52 +45,34 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 3800 4400 2    60   ~ 0
-sensors
-Text Notes 3500 2600 2    60   ~ 0
-LED\nctrl
-Text Notes 7800 2700 0    60   ~ 0
-IrDA (or similar)
-Text Notes 7800 3100 0    60   ~ 0
-edge B
-Text Notes 3500 4800 0    60   ~ 0
-edge C
-Text Notes 3500 2300 0    60   ~ 0
-edge A
-Text Notes 3500 3000 0    60   ~ 0
-edge D
+Text Label 8600 6100 0    60   ~ 0
+LED_stat3_mid
+Text Label 9000 6000 0    60   ~ 0
+LED_stat2_mid
+Text Label 9400 6100 0    60   ~ 0
+LED_stat1_mid
+Text Label 9800 6000 0    60   ~ 0
+LED_stat0_mid
+Text Label 1400 6900 0    60   ~ 0
+boot0_sw
+Text Label 1000 6900 2    60   ~ 0
+boot1_sw
+Text Label 9300 1000 0    60   ~ 0
+pwr_ind
+Text Label 1450 1250 0    60   ~ 0
+T_VDD_conn
+Wire Wire Line
+	4300 3200 4500 3200
 Wire Wire Line
 	9150 1000 9300 1000
 Wire Wire Line
 	9300 1000 9300 1100
 Connection ~ 8300 1600
 Wire Wire Line
-	6800 1600 7100 1600
-Wire Wire Line
-	7100 1600 7400 1600
-Wire Wire Line
-	7400 1600 7700 1600
-Wire Wire Line
-	7700 1600 8000 1600
-Wire Wire Line
-	8000 1600 8300 1600
-Wire Wire Line
-	8300 1600 9300 1600
+	6800 1600 9300 1600
 Connection ~ 8300 1000
 Wire Wire Line
-	8650 1000 8300 1000
-Wire Wire Line
-	8300 1000 8000 1000
-Wire Wire Line
-	8000 1000 7700 1000
-Wire Wire Line
-	7700 1000 7400 1000
-Wire Wire Line
-	7400 1000 7100 1000
-Wire Wire Line
-	7100 1000 6800 1000
-Wire Wire Line
-	6800 1000 6600 1000
+	8650 1000 6600 1000
 Wire Wire Line
 	4300 4300 4500 4300
 Wire Wire Line
@@ -107,15 +89,7 @@ Wire Wire Line
 	4300 4800 4500 4800
 Connection ~ 2500 7700
 Wire Wire Line
-	2700 7700 2500 7700
-Wire Wire Line
-	2500 7700 2200 7700
-Wire Wire Line
-	2200 7700 1800 7700
-Wire Wire Line
-	1800 7700 1300 7700
-Wire Wire Line
-	1300 7700 1100 7700
+	2700 7700 1100 7700
 Wire Wire Line
 	1100 7700 1100 7600
 Wire Wire Line
@@ -144,9 +118,7 @@ Connection ~ 1800 6100
 Wire Wire Line
 	1800 6100 2000 6100
 Wire Wire Line
-	2700 6100 2500 6100
-Wire Wire Line
-	2500 6100 2200 6100
+	2700 6100 2200 6100
 Wire Wire Line
 	2700 6100 2700 5600
 Wire Wire Line
@@ -172,13 +144,9 @@ Connection ~ 1400 6100
 Wire Wire Line
 	1400 6100 1600 6100
 Wire Wire Line
-	1400 5950 1400 6100
+	1400 5950 1400 6250
 Wire Wire Line
-	1400 6100 1400 6250
-Wire Wire Line
-	1000 5950 1000 6100
-Wire Wire Line
-	1000 6100 1000 6250
+	1000 5950 1000 6250
 Wire Wire Line
 	7100 5000 9400 5000
 Wire Wire Line
@@ -203,11 +171,7 @@ Connection ~ 4400 1600
 Wire Wire Line
 	4100 1500 4100 1600
 Wire Wire Line
-	4100 1600 4400 1600
-Wire Wire Line
-	4400 1600 4700 1600
-Wire Wire Line
-	4700 1600 5000 1600
+	4100 1600 5000 1600
 Connection ~ 5000 1600
 Wire Wire Line
 	4700 1500 4700 1600
@@ -238,17 +202,7 @@ Wire Wire Line
 	7100 1000 7100 1100
 Connection ~ 6100 1700
 Wire Wire Line
-	6000 1700 6100 1700
-Wire Wire Line
-	6100 1700 6200 1700
-Wire Wire Line
-	6200 1700 6300 1700
-Wire Wire Line
-	6300 1700 6400 1700
-Wire Wire Line
-	6400 1700 6500 1700
-Wire Wire Line
-	6500 1700 6600 1700
+	6000 1700 6600 1700
 Wire Wire Line
 	6000 1700 6000 1800
 Connection ~ 6300 1700
@@ -264,28 +218,24 @@ Wire Wire Line
 Wire Wire Line
 	5400 7400 5400 7200
 Wire Wire Line
-	9800 6500 9400 6500
+	9800 6700 8600 6700
 Wire Wire Line
-	9400 6500 9000 6500
-Wire Wire Line
-	9000 6500 8600 6500
-Wire Wire Line
-	9000 6400 9000 6500
+	9000 6600 9000 6700
 Wire Wire Line
 	8600 5200 8600 5350
 Wire Wire Line
-	8600 5850 8600 6000
+	8600 5850 8600 6200
 Wire Wire Line
 	1350 1850 1500 1850
 Wire Wire Line
 	1500 1950 1350 1950
 Wire Wire Line
-	9000 5850 9000 6000
+	9000 5850 9000 6200
 Wire Wire Line
 	9000 5350 9000 5100
 Wire Wire Line
-	8600 6500 8600 6400
-Connection ~ 9000 6500
+	8600 6700 8600 6600
+Connection ~ 9000 6700
 Wire Wire Line
 	5700 7400 5700 7200
 Connection ~ 5400 7400
@@ -304,16 +254,12 @@ Wire Wire Line
 	7400 1000 7400 1100
 Connection ~ 7100 1000
 Wire Wire Line
-	6800 1500 6800 1600
-Wire Wire Line
-	6800 1600 6800 1800
+	6800 1500 6800 1800
 Wire Wire Line
 	7400 1600 7400 1500
 Connection ~ 7100 1600
 Wire Wire Line
-	6800 900  6800 1000
-Wire Wire Line
-	6800 1000 6800 1100
+	6800 900  6800 1100
 Wire Wire Line
 	8000 1600 8000 1500
 Connection ~ 7700 1600
@@ -326,35 +272,23 @@ Wire Wire Line
 Wire Wire Line
 	4400 1100 4400 1000
 Wire Wire Line
-	5000 1500 5000 1600
-Wire Wire Line
-	5000 1600 5000 1800
+	5000 1500 5000 1800
 Wire Wire Line
 	4400 1600 4400 1500
 Connection ~ 4700 1600
 Wire Wire Line
-	4600 800  4500 800 
+	4600 800  4400 800 
 Wire Wire Line
-	4500 800  4400 800 
+	4100 1000 4500 1000
 Wire Wire Line
-	4100 1000 4400 1000
-Wire Wire Line
-	4400 1000 4500 1000
-Wire Wire Line
-	4700 1000 5000 1000
-Wire Wire Line
-	5000 1000 5200 1000
+	4700 1000 5200 1000
 Wire Wire Line
 	3700 800  3800 800 
 Wire Wire Line
-	5100 800  5200 800 
-Wire Wire Line
-	5200 800  5300 800 
+	5100 800  5300 800 
 Connection ~ 5200 800 
 Wire Wire Line
-	4500 1000 4500 800 
-Wire Wire Line
-	4500 800  4500 600 
+	4500 1000 4500 600 
 Wire Wire Line
 	5300 800  5300 1800
 Wire Wire Line
@@ -362,52 +296,36 @@ Wire Wire Line
 Wire Wire Line
 	4300 6600 4300 6800
 Wire Wire Line
-	6000 7600 6000 7400
-Wire Wire Line
-	6000 7400 6000 7200
+	6000 7600 6000 7200
 Connection ~ 6000 7400
 Wire Wire Line
-	6000 7400 5900 7400
-Wire Wire Line
-	5900 7400 5800 7400
-Wire Wire Line
-	5800 7400 5700 7400
-Wire Wire Line
-	5700 7400 5400 7400
-Wire Wire Line
-	5400 7400 4300 7400
-Wire Wire Line
-	4300 7400 4000 7400
+	6000 7400 4000 7400
 Wire Wire Line
 	4000 7400 4000 7200
 Connection ~ 4300 7400
 Wire Wire Line
 	8300 1500 8300 1600
 Connection ~ 8000 1600
-Connection ~ 9800 6500
+Connection ~ 9800 6700
 Wire Wire Line
-	9400 6500 9400 6400
+	9400 6700 9400 6600
 Wire Wire Line
 	9800 5350 9800 4900
 Wire Wire Line
-	9800 5850 9800 6000
+	9800 5850 9800 6200
 Wire Wire Line
-	9400 5850 9400 6000
+	9400 5850 9400 6200
 Wire Wire Line
 	9400 5000 9400 5350
 Wire Wire Line
-	9800 6400 9800 6500
-Wire Wire Line
-	9800 6500 9800 6700
-Connection ~ 9400 6500
+	9800 6600 9800 6900
+Connection ~ 9400 6700
 Wire Wire Line
 	9000 5100 7100 5100
 Wire Wire Line
 	9800 4900 7100 4900
 Wire Wire Line
-	1000 5200 1000 5300
-Wire Wire Line
-	1000 5300 1000 5450
+	1000 5200 1000 5450
 Wire Wire Line
 	1600 6100 1600 4600
 Wire Wire Line
@@ -420,37 +338,25 @@ Wire Wire Line
 Wire Wire Line
 	1900 4500 1200 4500
 Wire Wire Line
-	1800 6250 1800 6100
-Wire Wire Line
-	1800 6100 1800 6000
+	1800 6250 1800 6000
 Wire Wire Line
 	2200 7700 2200 6700
 Connection ~ 1800 7700
 Wire Wire Line
-	2500 6200 2500 6100
-Wire Wire Line
-	2500 6100 2500 5950
+	2500 6200 2500 5950
 Wire Wire Line
 	1400 5450 1400 5300
 Connection ~ 1000 5300
 Wire Wire Line
-	1000 5300 1400 5300
-Wire Wire Line
-	1400 5300 1800 5300
-Wire Wire Line
-	1800 5300 2500 5300
+	1000 5300 2500 5300
 Wire Wire Line
 	2500 5300 2500 5450
 Connection ~ 1800 5300
 Wire Wire Line
-	4100 5900 4200 5900
-Wire Wire Line
-	4200 5900 4500 5900
+	4100 5900 4500 5900
 Connection ~ 4200 5900
 Wire Wire Line
-	1350 1050 2250 1050
-Wire Wire Line
-	2250 1050 2350 1050
+	1350 1050 2350 1050
 Wire Wire Line
 	2250 1050 2250 1350
 Wire Wire Line
@@ -505,6 +411,26 @@ Wire Wire Line
 	4300 4400 4500 4400
 Wire Wire Line
 	9300 1600 9300 1500
+Wire Wire Line
+	4300 3100 4500 3100
+Text Label 4300 3200 2    60   ~ 0
+can1_TX
+Text Label 4300 3100 2    60   ~ 0
+can1_RX
+Text Notes 3800 4400 2    60   ~ 0
+sensors
+Text Notes 3500 2600 2    60   ~ 0
+LED\nctrl
+Text Notes 7800 2700 0    60   ~ 0
+IrDA (or similar)
+Text Notes 7800 3100 0    60   ~ 0
+edge B
+Text Notes 3500 4800 0    60   ~ 0
+edge C
+Text Notes 3500 2300 0    60   ~ 0
+edge A
+Text Notes 3500 3000 0    60   ~ 0
+edge D
 $Comp
 L R Rc102
 U 1 1 5523C38B
@@ -601,11 +527,12 @@ TCK/SWCLK
 Text Label 2350 1050 0    60   ~ 0
 MCU_GND_local
 $Comp
-L CONN_6 P?
+L CONN_6 Pc101
 U 1 1 55223334
 P 1000 1000
-F 0 "P?" V 950 1000 60  0000 C CNN
+F 0 "Pc101" V 950 1000 60  0000 C CNN
 F 1 "CONN_6" V 1050 1000 60  0000 C CNN
+F 2 "PIN_ARRAY-6X1" H 1000 1350 60  0000 C CNN
 	1    1000 1000
 	-1   0    0    1   
 $EndComp
@@ -728,21 +655,21 @@ LED_stat3
 $Comp
 L LED Dc114
 U 1 1 55219FA3
-P 9800 6200
-F 0 "Dc114" H 9800 6300 50  0000 C CNN
-F 1 "LED" H 9800 6100 50  0000 C CNN
-F 2 "SM0805" V 10000 6400 60  0000 C CNN
-	1    9800 6200
+P 9800 6400
+F 0 "Dc114" H 9800 6500 50  0000 C CNN
+F 1 "LED" H 9800 6300 50  0000 C CNN
+F 2 "SM0805" V 10000 6600 60  0000 C CNN
+	1    9800 6400
 	0    1    1    0   
 $EndComp
 $Comp
 L LED Dc113
 U 1 1 55219FA2
-P 9400 6200
-F 0 "Dc113" H 9400 6300 50  0000 C CNN
-F 1 "LED" H 9400 6100 50  0000 C CNN
-F 2 "SM0805" V 9600 6400 60  0000 C CNN
-	1    9400 6200
+P 9400 6400
+F 0 "Dc113" H 9400 6500 50  0000 C CNN
+F 1 "LED" H 9400 6300 50  0000 C CNN
+F 2 "SM0805" V 9600 6600 60  0000 C CNN
+	1    9400 6400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -765,7 +692,7 @@ F 2 "SM0805" H 10000 5350 60  0000 C CNN
 	1    9800 5600
 	1    0    0    -1  
 $EndComp
-Text Label 9800 6700 2    60   ~ 0
+Text Label 9800 6900 2    60   ~ 0
 MCU_GND_local
 Text Notes 4000 6400 0    60   ~ 0
 8 MHz?
@@ -936,12 +863,12 @@ $EndComp
 Text Label 6000 7600 2    60   ~ 0
 MCU_GND_local
 $Comp
-L STM32F407--QFP100 U?
+L STM32F407--QFP100 U301
 U 1 1 55193888
 P 5800 4500
-F 0 "U?" H 5800 4400 50  0000 C CNN
+F 0 "U301" H 5800 4400 50  0000 C CNN
 F 1 "STM32F407--QFP100" H 5800 4600 50  0000 C CNN
-F 2 "MODULE" H 5800 4500 50  0001 C CNN
+F 2 "TQFP_100" H 5800 4500 50  0000 C CNN
 F 3 "DOCUMENTATION" H 5800 4500 50  0001 C CNN
 	1    5800 4500
 	1    0    0    -1  
@@ -969,21 +896,21 @@ $EndComp
 $Comp
 L LED Dc111
 U 1 1 5510E812
-P 8600 6200
-F 0 "Dc111" H 8600 6300 50  0000 C CNN
-F 1 "LED" H 8600 6100 50  0000 C CNN
-F 2 "SM0805" V 8800 6400 60  0000 C CNN
-	1    8600 6200
+P 8600 6400
+F 0 "Dc111" H 8600 6500 50  0000 C CNN
+F 1 "LED" H 8600 6300 50  0000 C CNN
+F 2 "SM0805" V 8800 6600 60  0000 C CNN
+	1    8600 6400
 	0    1    1    0   
 $EndComp
 $Comp
 L LED Dc112
 U 1 1 5510E80D
-P 9000 6200
-F 0 "Dc112" H 9000 6300 50  0000 C CNN
-F 1 "LED" H 9000 6100 50  0000 C CNN
-F 2 "SM0805" V 9200 6400 60  0000 C CNN
-	1    9000 6200
+P 9000 6400
+F 0 "Dc112" H 9000 6500 50  0000 C CNN
+F 1 "LED" H 9000 6300 50  0000 C CNN
+F 2 "SM0805" V 9200 6600 60  0000 C CNN
+	1    9000 6400
 	0    1    1    0   
 $EndComp
 Text Notes 6850 1000 0    40   ~ 0

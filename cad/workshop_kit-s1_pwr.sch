@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 07 Apr 2015 01:59:27 AM HST
+EESchema Schematic File Version 2  date Thu 09 Apr 2015 09:47:10 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 4 4
 Title ""
-Date "7 apr 2015"
+Date "10 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,28 +45,44 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 3700 1300 0    60   ~ 0
-SELECT:\n* PMEG3030EP\n* SK42BL (DO-214AA)\n 
-Text Notes 7600 2700 0    60   ~ 0
-pwr/gnd on pins 5&6 if existant
-Text Notes 8800 1100 0    60   ~ 0
-pwr/gnd on pins 5&6 if existant
 Wire Wire Line
-	7700 700  8550 700 
+	8550 3500 7250 3500
+Wire Wire Line
+	7250 2700 8550 2700
+Wire Wire Line
+	8250 1900 9550 1900
+Wire Wire Line
+	8250 800  8550 800 
+Connection ~ 7400 3100
+Wire Wire Line
+	7400 3100 7400 3600
+Wire Wire Line
+	7400 3600 8550 3600
+Wire Wire Line
+	8550 3700 8350 3700
+Connection ~ 8400 1500
+Wire Wire Line
+	8400 1500 8400 2000
+Wire Wire Line
+	8400 2000 9550 2000
+Wire Wire Line
+	9350 1300 9550 1300
+Wire Wire Line
+	8550 700  7700 700 
 Wire Wire Line
 	7100 1500 6700 1500
 Wire Wire Line
 	6000 700  6200 700 
 Wire Wire Line
-	5400 700  5600 700 
+	5600 700  5400 700 
 Wire Notes Line
-	9500 3000 9500 2000
+	10000 3500 10000 2500
 Wire Notes Line
-	9500 3000 10500 3000
+	10000 3500 11000 3500
 Wire Notes Line
-	10500 3000 10500 2000
+	11000 3500 11000 2500
 Wire Notes Line
-	10500 2000 9500 2000
+	11000 2500 10000 2500
 Wire Wire Line
 	7400 2200 7550 2200
 Wire Wire Line
@@ -76,9 +92,9 @@ Connection ~ 5400 1500
 Wire Wire Line
 	5400 700  5400 3100
 Wire Wire Line
-	3300 2100 3700 2100
+	3700 2100 3300 2100
 Wire Wire Line
-	3500 2100 3500 1600
+	3500 1600 3500 2100
 Connection ~ 3500 2100
 Connection ~ 3500 1800
 Wire Wire Line
@@ -97,11 +113,11 @@ Wire Wire Line
 	2400 1100 2400 900 
 Connection ~ 1500 900 
 Wire Wire Line
-	1500 1350 1500 900 
+	1500 900  1500 1350
 Wire Wire Line
 	1500 1350 1150 1350
 Wire Wire Line
-	1700 900  1200 900 
+	1200 900  1700 900 
 Wire Wire Line
 	1200 1000 1400 1000
 Wire Wire Line
@@ -130,7 +146,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 3100 7550 3100
 Wire Wire Line
-	2200 900  5400 900 
+	5400 900  2200 900 
 Connection ~ 5400 900 
 Wire Wire Line
 	8400 1400 8550 1400
@@ -143,7 +159,125 @@ Wire Wire Line
 Wire Wire Line
 	6700 700  7100 700 
 Wire Wire Line
-	7700 1500 8550 1500
+	8550 1500 7700 1500
+Wire Wire Line
+	9350 2100 9550 2100
+Wire Wire Line
+	9550 1200 8400 1200
+Wire Wire Line
+	8400 1200 8400 700 
+Connection ~ 8400 700 
+Wire Wire Line
+	8550 2900 8350 2900
+Wire Wire Line
+	8550 2800 7400 2800
+Wire Wire Line
+	7400 2800 7400 2300
+Connection ~ 7400 2300
+Wire Wire Line
+	8250 1100 9550 1100
+Wire Wire Line
+	8250 1600 8550 1600
+Wire Wire Line
+	7250 2400 7550 2400
+Wire Wire Line
+	7250 3200 7550 3200
+Text Label 7250 3200 2    60   ~ 0
+sideD_tx
+Text Label 7250 3500 2    60   ~ 0
+sideD_rx
+Text Label 7250 2700 2    60   ~ 0
+sideC_rx
+Text Label 7250 2400 2    60   ~ 0
+sideC_tx
+Text Label 8250 1600 2    60   ~ 0
+sideB_tx
+Text Label 8250 1900 2    60   ~ 0
+sideB_rx
+Text Label 8250 1100 2    60   ~ 0
+sideA_rx
+Text Label 8250 800  2    60   ~ 0
+sideA_tx
+$Comp
+L GND #PWR?
+U 1 1 552775D2
+P 8350 3700
+F 0 "#PWR?" H 8350 3700 30  0001 C CNN
+F 1 "GND" H 8350 3630 30  0001 C CNN
+	1    8350 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 552775CC
+P 8350 2900
+F 0 "#PWR?" H 8350 2900 30  0001 C CNN
+F 1 "GND" H 8350 2830 30  0001 C CNN
+	1    8350 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_4 Pp119
+U 1 1 552775C2
+P 8900 3550
+F 0 "Pp119" V 8850 3550 50  0000 C CNN
+F 1 "CONN_4" V 8950 3550 50  0000 C CNN
+F 2 "10120045-400LF" V 9050 3550 60  0000 C CNN
+	1    8900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 Pp118
+U 1 1 55277502
+P 8900 2750
+F 0 "Pp118" V 8850 2750 50  0000 C CNN
+F 1 "CONN_4" V 8950 2750 50  0000 C CNN
+F 2 "10120045-400LF" V 9050 2750 60  0000 C CNN
+	1    8900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 552774DB
+P 9350 2100
+F 0 "#PWR?" H 9350 2100 30  0001 C CNN
+F 1 "GND" H 9350 2030 30  0001 C CNN
+	1    9350 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 552774D6
+P 9350 1300
+F 0 "#PWR?" H 9350 1300 30  0001 C CNN
+F 1 "GND" H 9350 1230 30  0001 C CNN
+	1    9350 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_4 Pp117
+U 1 1 552774CA
+P 9900 1950
+F 0 "Pp117" V 9850 1950 50  0000 C CNN
+F 1 "CONN_4" V 9950 1950 50  0000 C CNN
+F 2 "10120045-400LF" V 10050 1950 60  0000 C CNN
+	1    9900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 Pp116
+U 1 1 552774A4
+P 9900 1150
+F 0 "Pp116" V 9850 1150 50  0000 C CNN
+F 1 "CONN_4" V 9950 1150 50  0000 C CNN
+F 2 "10120045-400LF" V 10050 1150 60  0000 C CNN
+	1    9900 1150
+	1    0    0    -1  
+$EndComp
+Text Notes 3700 1300 0    60   ~ 0
+SELECT:\n* PMEG3030EP\n* SK42BL (DO-214AA)\n 
+Text Notes 7550 4100 0    60   ~ 0
+pwr/gnd on pins 5&6 if existant
 $Comp
 L R Rp101
 U 1 1 5510F2C6
@@ -182,17 +316,17 @@ F 1 "JUMPER" H 7400 620 40  0000 C CNN
 $EndComp
 Text Notes 6200 1300 0    60   ~ 0
 Current sense for \npower output?
-Text Notes 10000 1950 0    60   ~ 0
+Text Notes 10500 2450 0    60   ~ 0
 sw
-Text Notes 10600 2500 0    60   ~ 0
+Text Notes 11100 3000 0    60   ~ 0
 sw
-Text Notes 9600 2500 0    120  ~ 0
+Text Notes 10100 3000 0    120  ~ 0
 D
-Text Notes 10000 2900 0    120  ~ 0
+Text Notes 10500 3400 0    120  ~ 0
 C
-Text Notes 10300 2500 0    120  ~ 0
+Text Notes 10800 3000 0    120  ~ 0
 B
-Text Notes 10000 2200 0    120  ~ 0
+Text Notes 10500 2700 0    120  ~ 0
 A
 $Comp
 L GND #PWR04
@@ -213,38 +347,42 @@ F 1 "GND" H 7400 2130 30  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_4 Pp108
+L CONN_4 Pp114
 U 1 1 5510EEC4
 P 7900 3150
-F 0 "Pp108" V 7850 3150 50  0000 C CNN
+F 0 "Pp114" V 7850 3150 50  0000 C CNN
 F 1 "CONN_4" V 7950 3150 50  0000 C CNN
+F 2 "10120045-400LF" V 8050 3150 60  0000 C CNN
 	1    7900 3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_4 Pp107
+L CONN_4 Pp113
 U 1 1 5510EEC2
 P 7900 2350
-F 0 "Pp107" V 7850 2350 50  0000 C CNN
+F 0 "Pp113" V 7850 2350 50  0000 C CNN
 F 1 "CONN_4" V 7950 2350 50  0000 C CNN
+F 2 "10120045-400LF" V 8050 2350 60  0000 C CNN
 	1    7900 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_4 Pp106
+L CONN_4 Pp112
 U 1 1 5510EEB7
 P 8900 1550
-F 0 "Pp106" V 8850 1550 50  0000 C CNN
+F 0 "Pp112" V 8850 1550 50  0000 C CNN
 F 1 "CONN_4" V 8950 1550 50  0000 C CNN
+F 2 "10120045-400LF" V 9050 1550 60  0000 C CNN
 	1    8900 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_4 Pp105
+L CONN_4 Pp111
 U 1 1 5510EE79
 P 8900 750
-F 0 "Pp105" V 8850 750 50  0000 C CNN
+F 0 "Pp111" V 8850 750 50  0000 C CNN
 F 1 "CONN_4" V 8950 750 50  0000 C CNN
+F 2 "10120045-400LF" V 9050 750 60  0000 C CNN
 	1    8900 750 
 	1    0    0    -1  
 $EndComp
