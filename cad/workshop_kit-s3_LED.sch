@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 15 Apr 2015 11:50:20 AM HST
+EESchema Schematic File Version 2  date Wed 15 Apr 2015 02:22:10 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 2 4
 Title ""
-Date "15 apr 2015"
+Date "16 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -65,14 +65,14 @@ Connection ~ 3000 5900
 Wire Wire Line
 	1000 3300 1200 3300
 Wire Wire Line
-	1200 5900 1200 3300
+	1200 3300 1200 5900
 Wire Wire Line
-	7000 5900 1200 5900
+	1200 5900 7000 5900
 Connection ~ 5800 5900
 Wire Wire Line
 	5800 5900 5800 4700
 Wire Wire Line
-	2900 5800 3000 5800
+	3000 5800 2900 5800
 Connection ~ 3000 5800
 Wire Wire Line
 	2900 5800 2900 5700
@@ -142,9 +142,9 @@ Connection ~ 9000 4500
 Wire Wire Line
 	9000 4500 8700 4500
 Wire Wire Line
-	9000 5100 8700 5100
+	8700 5100 9000 5100
 Wire Wire Line
-	9000 2900 9000 5100
+	9000 5100 9000 2900
 Wire Wire Line
 	7800 5100 8000 5100
 Wire Wire Line
@@ -160,7 +160,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 3800 7800 3800
 Wire Wire Line
-	7000 5700 7000 5900
+	7000 5900 7000 5700
 Wire Wire Line
 	6200 4000 5800 4000
 Wire Wire Line
@@ -212,7 +212,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 3000 3000 3300
 Wire Wire Line
-	1000 2900 9000 2900
+	9000 2900 1000 2900
 Connection ~ 5000 2900
 $Comp
 L RGB_LED Dp204
