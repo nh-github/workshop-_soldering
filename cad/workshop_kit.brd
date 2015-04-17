@@ -1,27 +1,27 @@
-PCBNEW-BOARD Version 1 date Wed 15 Apr 2015 12:32:59 PM HST
+PCBNEW-BOARD Version 1 date Thu 16 Apr 2015 02:52:06 AM HST
 
 # Created by Pcbnew(2012-apr-16-27)-stable
 
 $GENERAL
 encoding utf-8
-LayerCount 2
-Ly 1FFF8001
-EnabledLayers 1FFF8001
-Links 176
-NoConn 78
-Di 27120 13620 72880 63830
-Ndraw 14
-Ntrack 335
+LayerCount 4
+Ly 1FFF8007
+EnabledLayers 10BA8007
+Links 200
+NoConn 156
+Di 27120 9569 74032 49230
+Ndraw 10
+Ntrack 203
 Nzone 0
 BoardThickness 630
-Nmodule 71
-Nnets 62
+Nmodule 74
+Nnets 81
 $EndGENERAL
 
 $SHEETDESCR
 Sheet A4 11700 8267
 Title ""
-Date "15 apr 2015"
+Date "16 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -32,10 +32,12 @@ $EndSHEETDESCR
 
 $SETUP
 InternalUnit 0.000100 INCH
-Layers 2
+Layers 4
 Layer[0] Back signal
+Layer[1] power power
+Layer[2] ground power
 Layer[15] Front signal
-TrackWidth 100
+TrackWidth 80
 TrackClearence 80
 ZoneClearence 100
 TrackMinWidth 80
@@ -43,8 +45,8 @@ DrawSegmWidth 150
 EdgeSegmWidth 150
 ViaSize 350
 ViaDrill 200
-ViaMinSize 350
-ViaMinDrill 200
+ViaMinSize 200
+ViaMinDrill 100
 MicroViaSize 200
 MicroViaDrill 50
 MicroViasAllowed 0
@@ -55,7 +57,7 @@ TextPcbSize 600 800
 EdgeModWidth 150
 TextModSize 600 600
 TextModWidth 120
-PadSize 300 200
+PadSize 1023 787
 PadDrill 0
 Pad2MaskClearance 100
 AuxiliaryAxisOrg 0 0
@@ -67,267 +69,353 @@ Na 0 ""
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 1 "/sub1_power/power_rail"
+Na 1 "/sub1_power/A_rx"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 2 "/sub2_control/BOOT0"
+Na 2 "/sub1_power/A_tx"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 3 "/sub2_control/BOOT1"
+Na 3 "/sub1_power/B_rx"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 4 "/sub2_control/DTR"
+Na 4 "/sub1_power/B_tx"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 5 "/sub2_control/FTDI_3.3V"
+Na 5 "/sub1_power/C_rx"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 6 "/sub2_control/FTDI_GND"
+Na 6 "/sub1_power/C_tx"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 7 "/sub2_control/LED_SPI_CLK"
+Na 7 "/sub1_power/D_rx"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 8 "/sub2_control/LED_SPI_MOSI"
+Na 8 "/sub1_power/D_tx"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 9 "/sub2_control/LED_stat0"
+Na 9 "/sub1_power/USB_Vin"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 10 "/sub2_control/LED_stat0_mid"
+Na 10 "/sub1_power/V_led"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 11 "/sub2_control/LED_stat1"
+Na 11 "/sub1_power/power_rail"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 12 "/sub2_control/LED_stat1_mid"
+Na 12 "/sub1_power/sw_pwr_A"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 13 "/sub2_control/LED_stat2"
+Na 13 "/sub1_power/sw_pwr_B"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 14 "/sub2_control/LED_stat2_mid"
+Na 14 "/sub2_control/BOOT0"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 15 "/sub2_control/LED_stat3"
+Na 15 "/sub2_control/BOOT1"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 16 "/sub2_control/LED_stat3_mid"
+Na 16 "/sub2_control/DTR"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 17 "/sub2_control/MCU_GND_local"
+Na 17 "/sub2_control/FTDI_3.3V"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 18 "/sub2_control/MCU_VDD_local"
+Na 18 "/sub2_control/FTDI_GND"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 19 "/sub2_control/NRST"
+Na 19 "/sub2_control/LED_SPI_CLK"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 20 "/sub2_control/PA13"
+Na 20 "/sub2_control/LED_SPI_MOSI"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 21 "/sub2_control/PA14"
+Na 21 "/sub2_control/LED_stat0"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 22 "/sub2_control/PB3"
+Na 22 "/sub2_control/LED_stat0_mid"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 23 "/sub2_control/RX_i"
+Na 23 "/sub2_control/LED_stat1"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 24 "/sub2_control/TX_o"
+Na 24 "/sub2_control/LED_stat1_mid"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 25 "/sub2_control/T_VDD_conn"
+Na 25 "/sub2_control/LED_stat2"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 26 "/sub2_control/Vcap_1"
+Na 26 "/sub2_control/LED_stat2_mid"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 27 "/sub2_control/Vcap_2"
+Na 27 "/sub2_control/LED_stat3"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 28 "/sub2_control/WKUP--user"
+Na 28 "/sub2_control/LED_stat3_mid"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 29 "/sub2_control/boot0_sw"
+Na 29 "/sub2_control/MCU_GND_local"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 30 "/sub2_control/boot1_sw"
+Na 30 "/sub2_control/MCU_VDD_local"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 31 "/sub2_control/pwr_ind"
+Na 31 "/sub2_control/NRST"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 32 "/sub2_control/uart1_RX"
+Na 32 "/sub2_control/PA13"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 33 "/sub2_control/uart1_TX"
+Na 33 "/sub2_control/PA14"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 34 "/sub2_control/~RST"
+Na 34 "/sub2_control/PB3"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 35 "/sub3_LED/B0"
+Na 35 "/sub2_control/RX_i"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 36 "/sub3_LED/B1"
+Na 36 "/sub2_control/TX_o"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 37 "/sub3_LED/B2"
+Na 37 "/sub2_control/T_VDD_conn"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 38 "/sub3_LED/B3"
+Na 38 "/sub2_control/Vcap_1"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 39 "/sub3_LED/G0"
+Na 39 "/sub2_control/Vcap_2"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 40 "/sub3_LED/G1"
+Na 40 "/sub2_control/WKUP--user"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 41 "/sub3_LED/G2"
+Na 41 "/sub2_control/boot0_sw"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 42 "/sub3_LED/G3"
+Na 42 "/sub2_control/boot1_sw"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 43 "/sub3_LED/LED_SPI_CLK_b"
+Na 43 "/sub2_control/pwr_ind"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 44 "/sub3_LED/LED_SPI_CLK_c"
+Na 44 "/sub2_control/~RST"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 45 "/sub3_LED/LED_SPI_DAT_b"
+Na 45 "/sub3_LED/3.3_out_1"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 46 "/sub3_LED/LED_SPI_DAT_c"
+Na 46 "/sub3_LED/3.3_out_2"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 47 "/sub3_LED/R0"
+Na 47 "/sub3_LED/B0"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 48 "/sub3_LED/R1"
+Na 48 "/sub3_LED/B1"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 49 "/sub3_LED/R2"
+Na 49 "/sub3_LED/B2"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 50 "/sub3_LED/R3"
+Na 50 "/sub3_LED/B3"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 51 "/sub3_LED/V_LED"
+Na 51 "/sub3_LED/B4"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 52 "/sub3_LED/gnd"
+Na 52 "/sub3_LED/B5"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 53 "GND"
+Na 53 "/sub3_LED/B6"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 54 "N-000024"
+Na 54 "/sub3_LED/B7"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 55 "N-000038"
+Na 55 "/sub3_LED/G0"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 56 "N-000040"
+Na 56 "/sub3_LED/G1"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 57 "N-000042"
+Na 57 "/sub3_LED/G2"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 58 "N-000144"
+Na 58 "/sub3_LED/G3"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 59 "N-000145"
+Na 59 "/sub3_LED/G4"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 60 "N-000147"
+Na 60 "/sub3_LED/G5"
 St ~
 $EndEQUIPOT
 $EQUIPOT
-Na 61 "N-000160"
+Na 61 "/sub3_LED/G6"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 62 "/sub3_LED/G7"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 63 "/sub3_LED/Iset_1"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 64 "/sub3_LED/Iset_2"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 65 "/sub3_LED/LED_SPI_CLK_b"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 66 "/sub3_LED/LED_SPI_CLK_c"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 67 "/sub3_LED/LED_SPI_DAT_b"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 68 "/sub3_LED/LED_SPI_DAT_c"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 69 "/sub3_LED/R0"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 70 "/sub3_LED/R1"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 71 "/sub3_LED/R2"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 72 "/sub3_LED/R3"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 73 "/sub3_LED/R4"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 74 "/sub3_LED/R5"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 75 "/sub3_LED/R6"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 76 "/sub3_LED/R7"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 77 "/sub3_LED/V_LED"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 78 "GND"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 79 "N-000031"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 80 "N-000037"
 St ~
 $EndEQUIPOT
 $NCLASS
 Name "Default"
 Desc "This is the default net class."
 Clearance 80
-TrackWidth 100
+TrackWidth 80
 ViaDia 350
 ViaDrill 200
 uViaDia 200
 uViaDrill 50
 AddNet ""
+AddNet "/sub1_power/A_rx"
+AddNet "/sub1_power/A_tx"
+AddNet "/sub1_power/B_rx"
+AddNet "/sub1_power/B_tx"
+AddNet "/sub1_power/C_rx"
+AddNet "/sub1_power/C_tx"
+AddNet "/sub1_power/D_rx"
+AddNet "/sub1_power/D_tx"
+AddNet "/sub1_power/USB_Vin"
+AddNet "/sub1_power/V_led"
 AddNet "/sub1_power/power_rail"
+AddNet "/sub1_power/sw_pwr_A"
+AddNet "/sub1_power/sw_pwr_B"
 AddNet "/sub2_control/BOOT0"
 AddNet "/sub2_control/BOOT1"
 AddNet "/sub2_control/DTR"
 AddNet "/sub2_control/FTDI_3.3V"
 AddNet "/sub2_control/FTDI_GND"
-AddNet "/sub2_control/LED_SPI_CLK"
-AddNet "/sub2_control/LED_SPI_MOSI"
 AddNet "/sub2_control/LED_stat0"
 AddNet "/sub2_control/LED_stat0_mid"
 AddNet "/sub2_control/LED_stat1"
@@ -351,17 +439,43 @@ AddNet "/sub2_control/WKUP--user"
 AddNet "/sub2_control/boot0_sw"
 AddNet "/sub2_control/boot1_sw"
 AddNet "/sub2_control/pwr_ind"
-AddNet "/sub2_control/uart1_RX"
-AddNet "/sub2_control/uart1_TX"
 AddNet "/sub2_control/~RST"
+AddNet "/sub3_LED/3.3_out_1"
+AddNet "/sub3_LED/3.3_out_2"
+AddNet "/sub3_LED/V_LED"
+AddNet "GND"
+AddNet "N-000031"
+AddNet "N-000037"
+$EndNCLASS
+$NCLASS
+Name "small_sig"
+Desc ""
+Clearance 80
+TrackWidth 80
+ViaDia 200
+ViaDrill 100
+uViaDia 200
+uViaDrill 50
+AddNet "/sub2_control/LED_SPI_CLK"
+AddNet "/sub2_control/LED_SPI_MOSI"
 AddNet "/sub3_LED/B0"
 AddNet "/sub3_LED/B1"
 AddNet "/sub3_LED/B2"
 AddNet "/sub3_LED/B3"
+AddNet "/sub3_LED/B4"
+AddNet "/sub3_LED/B5"
+AddNet "/sub3_LED/B6"
+AddNet "/sub3_LED/B7"
 AddNet "/sub3_LED/G0"
 AddNet "/sub3_LED/G1"
 AddNet "/sub3_LED/G2"
 AddNet "/sub3_LED/G3"
+AddNet "/sub3_LED/G4"
+AddNet "/sub3_LED/G5"
+AddNet "/sub3_LED/G6"
+AddNet "/sub3_LED/G7"
+AddNet "/sub3_LED/Iset_1"
+AddNet "/sub3_LED/Iset_2"
 AddNet "/sub3_LED/LED_SPI_CLK_b"
 AddNet "/sub3_LED/LED_SPI_CLK_c"
 AddNet "/sub3_LED/LED_SPI_DAT_b"
@@ -370,64 +484,11 @@ AddNet "/sub3_LED/R0"
 AddNet "/sub3_LED/R1"
 AddNet "/sub3_LED/R2"
 AddNet "/sub3_LED/R3"
-AddNet "/sub3_LED/V_LED"
-AddNet "/sub3_LED/gnd"
-AddNet "GND"
-AddNet "N-000024"
-AddNet "N-000038"
-AddNet "N-000040"
-AddNet "N-000042"
-AddNet "N-000144"
-AddNet "N-000145"
-AddNet "N-000147"
-AddNet "N-000160"
+AddNet "/sub3_LED/R4"
+AddNet "/sub3_LED/R5"
+AddNet "/sub3_LED/R6"
+AddNet "/sub3_LED/R7"
 $EndNCLASS
-$MODULE PLCC-4
-Po 39000 55500 0 15 550AC983 550ACDA1 ~~
-Li PLCC-4
-Sc 550ACDA1
-AR /550D4361/550AB3AF
-Op 0 0 0
-T0 0 -1500 400 500 0 100 N V 21 N "Dp201"
-T1 0 1500 400 500 0 100 N V 21 N "RGB_LED"
-DS 629 -551 629 -527 31 21
-DS 629 527 629 551 31 21
-DS 629 551 -629 551 31 21
-DS -629 -551 -629 -527 31 21
-DS -629 527 -629 551 31 21
-DS 629 -551 -629 -551 31 21
-DS -279 -527 -279 -62 31 21
-DS -901 -527 -901 -62 31 21
-DS -279 -527 -901 -527 31 21
-$PAD
-Sh "1" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 48 "/sub3_LED/R1"
-Po -590 -295
-$EndPAD
-$PAD
-Sh "2" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 51 "/sub3_LED/V_LED"
-Po -590 295
-$EndPAD
-$PAD
-Sh "3" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 36 "/sub3_LED/B1"
-Po 590 295
-$EndPAD
-$PAD
-Sh "4" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 40 "/sub3_LED/G1"
-Po 590 -295
-$EndPAD
-$EndMODULE  PLCC-4
 $MODULE TQFP_100
 Po 50000 30000 0 15 552420B9 5523CEC9 ~~
 Li TQFP_100
@@ -453,14 +514,14 @@ $PAD
 Sh "100" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 3050 -2360
 $EndPAD
 $PAD
 Sh "76" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 21 "/sub2_control/PA14"
+Ne 33 "/sub2_control/PA14"
 Po 3050 2360
 $EndPAD
 $PAD
@@ -474,14 +535,14 @@ $PAD
 Sh "78" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 4 "/sub1_power/B_tx"
 Po 3050 1970
 $EndPAD
 $PAD
 Sh "79" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 3 "/sub1_power/B_rx"
 Po 3050 1770
 $EndPAD
 $PAD
@@ -551,14 +612,14 @@ $PAD
 Sh "89" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 22 "/sub2_control/PB3"
+Ne 34 "/sub2_control/PB3"
 Po 3050 -200
 $EndPAD
 $PAD
 Sh "90" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 19 "/sub2_control/NRST"
+Ne 31 "/sub2_control/NRST"
 Po 3050 -400
 $EndPAD
 $PAD
@@ -586,7 +647,7 @@ $PAD
 Sh "94" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 2 "/sub2_control/BOOT0"
+Ne 14 "/sub2_control/BOOT0"
 Po 3050 -1180
 $EndPAD
 $PAD
@@ -621,14 +682,14 @@ $PAD
 Sh "99" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 3050 -2170
 $EndPAD
 $PAD
 Sh "75" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 2360 3050
 $EndPAD
 $PAD
@@ -691,28 +752,28 @@ $PAD
 Sh "59" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 9 "/sub2_control/LED_stat0"
+Ne 21 "/sub2_control/LED_stat0"
 Po -790 3050
 $EndPAD
 $PAD
 Sh "60" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 11 "/sub2_control/LED_stat1"
+Ne 23 "/sub2_control/LED_stat1"
 Po -590 3050
 $EndPAD
 $PAD
 Sh "61" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 13 "/sub2_control/LED_stat2"
+Ne 25 "/sub2_control/LED_stat2"
 Po -390 3050
 $EndPAD
 $PAD
 Sh "62" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 15 "/sub2_control/LED_stat3"
+Ne 27 "/sub2_control/LED_stat3"
 Po -190 3050
 $EndPAD
 $PAD
@@ -754,14 +815,14 @@ $PAD
 Sh "68" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 33 "/sub2_control/uart1_TX"
+Ne 8 "/sub1_power/D_tx"
 Po 990 3050
 $EndPAD
 $PAD
 Sh "69" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 32 "/sub2_control/uart1_RX"
+Ne 7 "/sub1_power/D_rx"
 Po 1180 3050
 $EndPAD
 $PAD
@@ -782,21 +843,21 @@ $PAD
 Sh "72" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 20 "/sub2_control/PA13"
+Ne 32 "/sub2_control/PA13"
 Po 1770 3050
 $EndPAD
 $PAD
 Sh "73" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 27 "/sub2_control/Vcap_2"
+Ne 39 "/sub2_control/Vcap_2"
 Po 1970 3050
 $EndPAD
 $PAD
 Sh "74" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 2170 3050
 $EndPAD
 $PAD
@@ -838,7 +899,7 @@ $PAD
 Sh "6" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 1380 -3050
 $EndPAD
 $PAD
@@ -866,14 +927,14 @@ $PAD
 Sh "10" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 590 -3050
 $EndPAD
 $PAD
 Sh "11" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 390 -3050
 $EndPAD
 $PAD
@@ -894,7 +955,7 @@ $PAD
 Sh "14" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 34 "/sub2_control/~RST"
+Ne 44 "/sub2_control/~RST"
 Po -200 -3050
 $EndPAD
 $PAD
@@ -929,35 +990,35 @@ $PAD
 Sh "19" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -1180 -3050
 $EndPAD
 $PAD
 Sh "20" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -1380 -3050
 $EndPAD
 $PAD
 Sh "21" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -1580 -3050
 $EndPAD
 $PAD
 Sh "22" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -1770 -3050
 $EndPAD
 $PAD
 Sh "23" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 28 "/sub2_control/WKUP--user"
+Ne 40 "/sub2_control/WKUP--user"
 Po -1970 -3050
 $EndPAD
 $PAD
@@ -971,28 +1032,28 @@ $PAD
 Sh "25" R 100 400 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 2 "/sub1_power/A_tx"
 Po -2360 -3050
 $EndPAD
 $PAD
 Sh "26" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 1 "/sub1_power/A_rx"
 Po -3050 -2360
 $EndPAD
 $PAD
 Sh "27" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -3050 -2160
 $EndPAD
 $PAD
 Sh "28" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -3050 -1970
 $EndPAD
 $PAD
@@ -1006,7 +1067,7 @@ $PAD
 Sh "30" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 7 "/sub2_control/LED_SPI_CLK"
+Ne 19 "/sub2_control/LED_SPI_CLK"
 Po -3050 -1570
 $EndPAD
 $PAD
@@ -1020,7 +1081,7 @@ $PAD
 Sh "32" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 8 "/sub2_control/LED_SPI_MOSI"
+Ne 20 "/sub2_control/LED_SPI_MOSI"
 Po -3050 -1180
 $EndPAD
 $PAD
@@ -1055,7 +1116,7 @@ $PAD
 Sh "37" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 3 "/sub2_control/BOOT1"
+Ne 15 "/sub2_control/BOOT1"
 Po -3050 -190
 $EndPAD
 $PAD
@@ -1125,28 +1186,28 @@ $PAD
 Sh "47" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 6 "/sub1_power/C_tx"
 Po -3050 1770
 $EndPAD
 $PAD
 Sh "48" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 5 "/sub1_power/C_rx"
 Po -3050 1970
 $EndPAD
 $PAD
 Sh "49" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 26 "/sub2_control/Vcap_1"
+Ne 38 "/sub2_control/Vcap_1"
 Po -3050 2170
 $EndPAD
 $PAD
 Sh "50" R 400 100 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -3050 2360
 $EndPAD
 $SHAPE3D
@@ -1157,7 +1218,7 @@ Ro 0.000000 0.000000 180.000000
 $EndSHAPE3D
 $EndMODULE  TQFP_100
 $MODULE SM0805
-Po 48500 35000 2700 15 42806E04 5523CECA ~~
+Po 49500 45500 2700 15 42806E04 5523CECA ~~
 Li SM0805
 Sc 5523CECA
 AR /550D42BE/55219FA1
@@ -1176,14 +1237,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 11 "/sub2_control/LED_stat1"
+Ne 23 "/sub2_control/LED_stat1"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 12 "/sub2_control/LED_stat1_mid"
+Ne 24 "/sub2_control/LED_stat1_mid"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1194,7 +1255,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 49500 36500 2700 15 42806E04 5523CECC ~~
+Po 50500 47000 2700 15 42806E04 5523CECC ~~
 Li SM0805
 Sc 5523CECC
 AR /550D42BE/5510E80D
@@ -1213,14 +1274,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 14 "/sub2_control/LED_stat2_mid"
+Ne 26 "/sub2_control/LED_stat2_mid"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1231,7 +1292,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 50500 36500 2700 15 42806E04 5523CECE ~~
+Po 51500 47000 2700 15 42806E04 5523CECE ~~
 Li SM0805
 Sc 5523CECE
 AR /550D42BE/5510E812
@@ -1250,14 +1311,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 16 "/sub2_control/LED_stat3_mid"
+Ne 28 "/sub2_control/LED_stat3_mid"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1268,7 +1329,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 50500 35000 2700 15 42806E04 5523CED0 ~~
+Po 51500 45500 2700 15 42806E04 5523CED0 ~~
 Li SM0805
 Sc 5523CED0
 AR /550D42BE/5510E83A
@@ -1287,14 +1348,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 15 "/sub2_control/LED_stat3"
+Ne 27 "/sub2_control/LED_stat3"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 16 "/sub2_control/LED_stat3_mid"
+Ne 28 "/sub2_control/LED_stat3_mid"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1305,7 +1366,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 49500 35000 2700 15 42806E04 5523CED2 ~~
+Po 50500 45500 2700 15 42806E04 5523CED2 ~~
 Li SM0805
 Sc 5523CED2
 AR /550D42BE/5510E842
@@ -1324,14 +1385,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 13 "/sub2_control/LED_stat2"
+Ne 25 "/sub2_control/LED_stat2"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 14 "/sub2_control/LED_stat2_mid"
+Ne 26 "/sub2_control/LED_stat2_mid"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1342,14 +1403,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 52500 25000 2700 15 55287BB6 5523CED4 ~~
+Po 53000 25500 900 15 55287BB6 5523CED4 ~~
 Li SM0805
 Sc 5523CED4
 AR /550D42BE/5521336F
 Op 0 0 0
 At SMD 
-T0 -1500 0 250 250 2700 50 N V 21 N "Cc111"
-T1 0 -500 250 250 2700 50 N I 21 N "1uF"
+T0 -1500 0 250 250 900 50 N V 21 N "Cc111"
+T1 0 -500 250 250 900 50 N I 21 N "1uF"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -1358,17 +1419,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 2700
+Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 2700
+Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1398,14 +1459,14 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1416,7 +1477,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 47500 24500 0 15 55287AC9 5523CED8 ~~
+Po 49000 18000 0 15 55287AC9 5523CED8 ~~
 Li SM0805
 Sc 5523CED8
 AR /550D42BE/552134FE
@@ -1435,14 +1496,14 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1453,7 +1514,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 47500 23500 0 15 55287AC7 5523CEDA ~~
+Po 49000 17000 0 15 55287AC7 5523CEDA ~~
 Li SM0805
 Sc 5523CEDA
 AR /550D42BE/55213603
@@ -1472,14 +1533,14 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1509,14 +1570,14 @@ $PAD
 Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 27 "/sub2_control/Vcap_2"
+Ne 39 "/sub2_control/Vcap_2"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1527,14 +1588,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 45500 31500 0 15 42806E04 5523CEDE ~~
+Po 44500 33000 900 15 552FA3CE 5523CEDE ~~
 Li SM0805
 Sc 5523CEDE
 AR /550D42BE/55213FB7
 Op 0 0 0
 At SMD 
-T0 0 0 250 250 0 50 N V 21 N "Cc113"
-T1 0 0 250 250 0 50 N I 21 N "2.2uF"
+T0 0 -1000 250 250 900 50 N V 21 N "Cc113"
+T1 1500 0 250 250 900 50 N I 21 N "2.2uF"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -1543,17 +1604,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 0
+Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 0
+Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 26 "/sub2_control/Vcap_1"
+Ne 38 "/sub2_control/Vcap_1"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1583,14 +1644,14 @@ $PAD
 Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1601,7 +1662,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 47500 35000 2700 15 42806E04 5523CEE2 ~~
+Po 48500 45500 2700 15 42806E04 5523CEE2 ~~
 Li SM0805
 Sc 5523CEE2
 AR /550D42BE/55219FA0
@@ -1620,14 +1681,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 9 "/sub2_control/LED_stat0"
+Ne 21 "/sub2_control/LED_stat0"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 10 "/sub2_control/LED_stat0_mid"
+Ne 22 "/sub2_control/LED_stat0_mid"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1638,7 +1699,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 48500 36500 2700 15 42806E04 5523CEE4 ~~
+Po 49500 47000 2700 15 42806E04 5523CEE4 ~~
 Li SM0805
 Sc 5523CEE4
 AR /550D42BE/55219FA2
@@ -1657,14 +1718,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 12 "/sub2_control/LED_stat1_mid"
+Ne 24 "/sub2_control/LED_stat1_mid"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1675,7 +1736,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 47500 36500 2700 15 42806E04 5523CEE6 ~~
+Po 48500 47000 2700 15 42806E04 5523CEE6 ~~
 Li SM0805
 Sc 5523CEE6
 AR /550D42BE/55219FA3
@@ -1694,14 +1755,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 10 "/sub2_control/LED_stat0_mid"
+Ne 22 "/sub2_control/LED_stat0_mid"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1731,14 +1792,14 @@ $PAD
 Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 2 "/sub2_control/BOOT0"
+Ne 14 "/sub2_control/BOOT0"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 29 "/sub2_control/boot0_sw"
+Ne 41 "/sub2_control/boot0_sw"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1768,14 +1829,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 2 "/sub2_control/BOOT0"
+Ne 14 "/sub2_control/BOOT0"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1786,7 +1847,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 43000 25500 900 15 5528C646 5523CEEC ~~
+Po 40500 27000 900 15 5528C646 5523CEEC ~~
 Li SM0805
 Sc 5523CEEC
 AR /550D42BE/5521FF9E
@@ -1805,14 +1866,14 @@ $PAD
 Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 28 "/sub2_control/WKUP--user"
+Ne 40 "/sub2_control/WKUP--user"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1823,14 +1884,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 43000 27000 900 15 5528C63A 5523CEEE ~~
+Po 42500 27000 2700 15 5528C63A 5523CEEE ~~
 Li SM0805
 Sc 5523CEEE
 AR /550D42BE/5521FFB5
 Op 0 0 0
 At SMD 
-T0 0 -500 250 250 900 50 N V 21 N "Rc108"
-T1 0 500 250 250 900 50 N I 21 N "10k"
+T0 0 -500 250 250 2700 50 N V 21 N "Rc108"
+T1 0 500 250 250 2700 50 N I 21 N "10k"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -1839,17 +1900,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 900
+Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 900
+Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 34 "/sub2_control/~RST"
+Ne 44 "/sub2_control/~RST"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1860,14 +1921,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 44000 27000 900 15 5528C640 5523CEF0 ~~
+Po 41500 27000 2700 15 5528C640 5523CEF0 ~~
 Li SM0805
 Sc 5523CEF0
 AR /550D42BE/5521FFD2
 Op 0 0 0
 At SMD 
-T0 -500 -500 250 250 900 50 N V 21 N "Cc112"
-T1 500 500 250 250 900 50 N I 21 N "100nF"
+T0 -500 -500 250 250 2700 50 N V 21 N "Cc112"
+T1 500 500 250 250 2700 50 N I 21 N "100nF"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -1876,17 +1937,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 900
+Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 34 "/sub2_control/~RST"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 900
+Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 34 "/sub2_control/~RST"
+Ne 44 "/sub2_control/~RST"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1897,14 +1958,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 50500 25000 2700 15 55287BBC 5523D3F4 ~~
+Po 49000 25500 0 15 552F9D52 5523D3F4 ~~
 Li SM0805
 Sc 5523D3F4
 AR /550D42BE/552131B1
 Op 0 0 0
 At SMD 
-T0 -1500 0 250 250 2700 50 N V 21 N "Cc106"
-T1 0 -500 250 250 2700 50 N I 21 N "100nF"
+T0 0 -1000 250 250 0 50 N V 21 N "Cc106"
+T1 0 -500 250 250 0 50 N I 21 N "100nF"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -1913,17 +1974,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 2700
+Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 2700
+Sh "2" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1934,14 +1995,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 51500 25000 2700 15 55287BBA 5523D3F6 ~~
+Po 50500 25500 1800 15 552F9DAF 5523D3F6 ~~
 Li SM0805
 Sc 5523D3F6
 AR /550D42BE/55213190
 Op 0 0 0
 At SMD 
-T0 -1500 0 250 250 2700 50 N V 21 N "Cc105"
-T1 0 -500 250 250 2700 50 N I 21 N "100nF"
+T0 0 1000 250 250 1800 50 N V 21 N "Cc105"
+T1 0 500 250 250 1800 50 N I 21 N "100nF"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -1950,17 +2011,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 2700
+Sh "1" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 2700
+Sh "2" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -1971,7 +2032,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 53000 35500 0 15 55247321 55125403 ~~
+Po 37500 47500 0 15 55247321 55125403 ~~
 Li SM0805
 Sc 55125403
 AR /550D42BE/5523C38B
@@ -1990,14 +2051,14 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 31 "/sub2_control/pwr_ind"
+Ne 43 "/sub2_control/pwr_ind"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2008,7 +2069,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 53000 36500 0 15 552473AE 55125415 ~~
+Po 37500 48500 0 15 552473AE 55125415 ~~
 Li SM0805
 Sc 55125415
 AR /550D42BE/5523C353
@@ -2027,14 +2088,14 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 31 "/sub2_control/pwr_ind"
+Ne 43 "/sub2_control/pwr_ind"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2064,14 +2125,14 @@ $PAD
 Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 3 "/sub2_control/BOOT1"
+Ne 15 "/sub2_control/BOOT1"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 30 "/sub2_control/boot1_sw"
+Ne 42 "/sub2_control/boot1_sw"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2101,14 +2162,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 3 "/sub2_control/BOOT1"
+Ne 15 "/sub2_control/BOOT1"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2119,7 +2180,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 49000 23500 1800 15 5528C501 55125417 ~~
+Po 50500 17000 1800 15 5528C501 55125417 ~~
 Li SM0805
 Sc 55125417
 AR /550D42BE/552135FF
@@ -2138,14 +2199,14 @@ $PAD
 Sh "1" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2156,14 +2217,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 47500 25500 0 15 55287AD0 55125409 ~~
+Po 45500 26500 900 15 55287AD0 55125409 ~~
 Li SM0805
 Sc 55125409
 AR /550D42BE/552134FD
 Op 0 0 0
 At SMD 
-T0 -500 -2500 250 250 0 50 N V 21 N "Cc102"
-T1 0 500 250 250 0 50 N I 21 N "100nF"
+T0 -500 -2500 250 250 900 50 N V 21 N "Cc102"
+T1 0 500 250 250 900 50 N I 21 N "100nF"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -2172,17 +2233,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 0
+Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 0
+Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2193,13 +2254,13 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 49000 25500 1800 15 5528C4FC 55125413 ~~
+Po 47500 25500 1800 15 552F9DCE 55125413 ~~
 Li SM0805
 Sc 55125413
 AR /550D42BE/55213461
 Op 0 0 0
 At SMD 
-T0 -500 2500 250 250 1800 50 N V 21 N "Cc104"
+T0 -500 1600 250 250 1800 50 N V 21 N "Cc104"
 T1 0 -500 250 250 1800 50 N I 21 N "100nF"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
@@ -2212,14 +2273,14 @@ $PAD
 Sh "1" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2230,13 +2291,13 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 49000 24500 1800 15 5528C506 55125407 ~~
+Po 47500 24500 1800 15 552F9DC1 55125407 ~~
 Li SM0805
 Sc 55125407
 AR /550D42BE/5521345E
 Op 0 0 0
 At SMD 
-T0 -500 2000 250 250 1800 50 N V 21 N "Cc103"
+T0 -500 1000 250 250 1800 50 N V 21 N "Cc103"
 T1 0 -500 250 250 1800 50 N I 21 N "1uF"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
@@ -2249,14 +2310,14 @@ $PAD
 Sh "1" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2267,14 +2328,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 45500 33000 1800 15 5523D521 55125411 ~~
+Po 45500 33000 900 15 552FA410 55125411 ~~
 Li SM0805
 Sc 55125411
 AR /550D42BE/552131BB
 Op 0 0 0
 At SMD 
-T0 0 500 250 250 1800 50 N V 21 N "Cc108"
-T1 0 -500 250 250 1800 50 N I 21 N "100nF"
+T0 0 1500 250 250 900 50 N V 21 N "Cc108"
+T1 -1500 0 250 250 900 50 N I 21 N "100nF"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -2283,17 +2344,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 1800
+Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 1800
+Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2323,14 +2384,14 @@ $PAD
 Sh "1" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2341,7 +2402,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE PIN_ARRAY-6X1
-Po 58000 34000 2700 15 41402119 552475D1 ~~
+Po 61500 15500 2700 15 41402119 552475D1 ~~
 Li PIN_ARRAY-6X1
 Cd Connecteur 6 pins
 Kw CONN DEV
@@ -2359,42 +2420,42 @@ $PAD
 Sh "1" R 600 600 0 0 2700
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 25 "/sub2_control/T_VDD_conn"
+Ne 37 "/sub2_control/T_VDD_conn"
 Po -2500 0
 $EndPAD
 $PAD
 Sh "2" C 600 600 0 0 2700
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 21 "/sub2_control/PA14"
+Ne 33 "/sub2_control/PA14"
 Po -1500 0
 $EndPAD
 $PAD
 Sh "3" C 600 600 0 0 2700
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -500 0
 $EndPAD
 $PAD
 Sh "4" C 600 600 0 0 2700
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 20 "/sub2_control/PA13"
+Ne 32 "/sub2_control/PA13"
 Po 500 0
 $EndPAD
 $PAD
 Sh "5" C 600 600 0 0 2700
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 19 "/sub2_control/NRST"
+Ne 31 "/sub2_control/NRST"
 Po 1500 0
 $EndPAD
 $PAD
 Sh "6" C 600 600 0 0 2700
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 22 "/sub2_control/PB3"
+Ne 34 "/sub2_control/PB3"
 Po 2500 0
 $EndPAD
 $SHAPE3D
@@ -2405,7 +2466,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  PIN_ARRAY-6X1
 $MODULE PIN_ARRAY_1
-Po 54500 39500 0 15 5528F8A9 5528F853 ~~
+Po 65500 45000 0 15 5528F8A9 5528F853 ~~
 Li PIN_ARRAY_1
 Cd 1 pin
 Kw CONN DEV
@@ -2422,7 +2483,7 @@ $PAD
 Sh "1" R 600 600 0 0 0
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 0 0
 $EndPAD
 $SHAPE3D
@@ -2433,7 +2494,7 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  PIN_ARRAY_1
 $MODULE PIN_ARRAY_1
-Po 55500 39500 0 15 5528F8A5 5528F855 ~~
+Po 66500 44000 0 15 5528F8A5 5528F855 ~~
 Li PIN_ARRAY_1
 Cd 1 pin
 Kw CONN DEV
@@ -2450,7 +2511,7 @@ $PAD
 Sh "1" R 600 600 0 0 0
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 0 0
 $EndPAD
 $SHAPE3D
@@ -2461,60 +2522,60 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  PIN_ARRAY_1
 $MODULE PIN_ARRAY-6X1
-Po 40500 36500 900 15 41402119 5529184C ~~
+Po 35000 39500 1800 15 41402119 5529184C ~~
 Li PIN_ARRAY-6X1
 Cd Connecteur 6 pins
 Kw CONN DEV
 Sc 5529184C
 AR /550D42BE/552911CF
 Op 0 0 0
-T0 0 -850 400 400 900 80 N V 21 N "Pc102"
-T1 0 850 400 350 900 80 N I 21 N "CONN_6"
+T0 0 -850 400 400 1800 80 N V 21 N "Pc102"
+T1 0 850 400 350 1800 80 N I 21 N "CONN_6"
 DS -3000 500 -3000 -500 120 21
 DS -3000 -500 3000 -500 120 21
 DS 3000 -500 3000 500 120 21
 DS 3000 500 -3000 500 120 21
 DS -2000 500 -2000 -500 120 21
 $PAD
-Sh "1" R 600 600 0 0 900
+Sh "1" R 600 600 0 0 1800
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 6 "/sub2_control/FTDI_GND"
+Ne 18 "/sub2_control/FTDI_GND"
 Po -2500 0
 $EndPAD
 $PAD
-Sh "2" C 600 600 0 0 900
+Sh "2" C 600 600 0 0 1800
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 6 "/sub2_control/FTDI_GND"
+Ne 18 "/sub2_control/FTDI_GND"
 Po -1500 0
 $EndPAD
 $PAD
-Sh "3" C 600 600 0 0 900
+Sh "3" C 600 600 0 0 1800
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 5 "/sub2_control/FTDI_3.3V"
+Ne 17 "/sub2_control/FTDI_3.3V"
 Po -500 0
 $EndPAD
 $PAD
-Sh "4" C 600 600 0 0 900
+Sh "4" C 600 600 0 0 1800
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 23 "/sub2_control/RX_i"
+Ne 35 "/sub2_control/RX_i"
 Po 500 0
 $EndPAD
 $PAD
-Sh "5" C 600 600 0 0 900
+Sh "5" C 600 600 0 0 1800
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 24 "/sub2_control/TX_o"
+Ne 36 "/sub2_control/TX_o"
 Po 1500 0
 $EndPAD
 $PAD
-Sh "6" C 600 600 0 0 900
+Sh "6" C 600 600 0 0 1800
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 4 "/sub2_control/DTR"
+Ne 16 "/sub2_control/DTR"
 Po 2500 0
 $EndPAD
 $SHAPE3D
@@ -2525,128 +2586,128 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  PIN_ARRAY-6X1
 $MODULE solder_bridge
-Po 42500 34000 0 15 5529DFC8 5529183A ~~
+Po 32500 38000 900 0 552F3727 5529183A ~~
 Li solder_bridge
 Sc 5529183A
 AR /550D42BE/5529179D
 Op 0 0 0
-T0 1500 -500 400 300 0 75 N V 21 N "JPc105"
-T1 -4000 0 400 300 0 75 N V 21 N "JUMPER"
+T0 -3000 0 400 300 900 75 M V 20 N "JPc105"
+T1 -5000 0 400 300 900 75 M V 20 N "JUMPER"
 $PAD
-Sh "2" R 300 200 0 0 1800
+Sh "2" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 34 "/sub2_control/~RST"
+At SMD N 00440001
+Ne 44 "/sub2_control/~RST"
 Po 200 0
 $EndPAD
 $PAD
-Sh "1" R 300 200 0 0 1800
+Sh "1" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 4 "/sub2_control/DTR"
+At SMD N 00440001
+Ne 16 "/sub2_control/DTR"
 Po -200 0
 $EndPAD
 $EndMODULE  solder_bridge
 $MODULE solder_bridge
-Po 42500 35000 0 15 5529DFC8 55291838 ~~
+Po 33500 38000 900 0 552F3748 55291838 ~~
 Li solder_bridge
 Sc 55291838
 AR /550D42BE/5529179A
 Op 0 0 0
-T0 1500 -500 400 300 0 75 N V 21 N "JPc104"
-T1 -4000 0 400 300 0 75 N V 21 N "JUMPER"
+T0 -3000 0 400 300 900 75 M V 20 N "JPc104"
+T1 -5000 0 400 300 900 75 M V 20 N "JUMPER"
 $PAD
-Sh "2" R 300 200 0 0 1800
+Sh "2" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 33 "/sub2_control/uart1_TX"
+At SMD N 00440001
+Ne 8 "/sub1_power/D_tx"
 Po 200 0
 $EndPAD
 $PAD
-Sh "1" R 300 200 0 0 1800
+Sh "1" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 24 "/sub2_control/TX_o"
+At SMD N 00440001
+Ne 36 "/sub2_control/TX_o"
 Po -200 0
 $EndPAD
 $EndMODULE  solder_bridge
 $MODULE solder_bridge
-Po 42500 37000 0 15 5529DFC8 55291836 ~~
+Po 35500 38000 900 0 552F3758 55291836 ~~
 Li solder_bridge
 Sc 55291836
 AR /550D42BE/55291793
 Op 0 0 0
-T0 1500 -500 400 300 0 75 N V 21 N "JPc102"
-T1 -4000 0 400 300 0 75 N V 21 N "JUMPER"
+T0 -3000 0 400 300 900 75 M V 20 N "JPc102"
+T1 -5000 0 400 300 900 75 M V 20 N "JUMPER"
 $PAD
-Sh "2" R 300 200 0 0 1800
+Sh "2" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+At SMD N 00440001
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 200 0
 $EndPAD
 $PAD
-Sh "1" R 300 200 0 0 1800
+Sh "1" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 5 "/sub2_control/FTDI_3.3V"
+At SMD N 00440001
+Ne 17 "/sub2_control/FTDI_3.3V"
 Po -200 0
 $EndPAD
 $EndMODULE  solder_bridge
 $MODULE solder_bridge
-Po 42500 36000 0 15 5529DFC8 55291832 ~~
+Po 34500 38000 900 0 552F375A 55291832 ~~
 Li solder_bridge
 Sc 55291832
 AR /550D42BE/55291796
 Op 0 0 0
-T0 1500 -500 400 300 0 75 N V 21 N "JPc103"
-T1 -4000 0 400 300 0 75 N V 21 N "JUMPER"
+T0 -3000 0 400 300 900 75 M V 20 N "JPc103"
+T1 -5000 0 400 300 900 75 M V 20 N "JUMPER"
 $PAD
-Sh "2" R 300 200 0 0 1800
+Sh "2" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 32 "/sub2_control/uart1_RX"
+At SMD N 00440001
+Ne 7 "/sub1_power/D_rx"
 Po 200 0
 $EndPAD
 $PAD
-Sh "1" R 300 200 0 0 1800
+Sh "1" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 23 "/sub2_control/RX_i"
+At SMD N 00440001
+Ne 35 "/sub2_control/RX_i"
 Po -200 0
 $EndPAD
 $EndMODULE  solder_bridge
 $MODULE solder_bridge
-Po 42500 39000 0 15 5529DFC8 55291834 ~~
+Po 36500 38000 900 0 552F3756 55291834 ~~
 Li solder_bridge
 Sc 55291834
 AR /550D42BE/55291550
 Op 0 0 0
-T0 1500 -500 400 300 0 75 N V 21 N "JPc101"
-T1 -4000 0 400 300 0 75 N V 21 N "JUMPER"
+T0 -3000 0 400 300 900 75 M V 20 N "JPc101"
+T1 -5000 0 400 300 900 75 M V 20 N "JUMPER"
 $PAD
-Sh "2" R 300 200 0 0 1800
+Sh "2" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+At SMD N 00440001
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 200 0
 $EndPAD
 $PAD
-Sh "1" R 300 200 0 0 1800
+Sh "1" R 300 200 0 0 2700
 Dr 0 0 0
-At SMD N 00888000
-Ne 6 "/sub2_control/FTDI_GND"
+At SMD N 00440001
+Ne 18 "/sub2_control/FTDI_GND"
 Po -200 0
 $EndPAD
 $EndMODULE  solder_bridge
 $MODULE TSSOP-20
-Po 35500 54000 0 15 550B99A3 5529E4E7 ~~
+Po 38500 24000 2700 15 550B99A3 5529E4E7 ~~
 Li TSSOP-20
 Sc 5529E4E7
 AR /550D4361/550AB6D7
 Op 0 0 0
-T0 0 -2000 400 500 0 100 N V 21 N "Up201"
-T1 0 2000 400 500 0 100 N V 21 N "TLC59711"
+T0 0 -2000 400 500 2700 100 N V 21 N "Up201"
+T1 0 2000 400 500 2700 100 N V 21 N "TLC59711"
 DS 866 -1279 866 -1230 39 21
 DS 866 1230 866 1279 39 21
 DS 866 1279 688 1279 39 21
@@ -2659,155 +2720,155 @@ DS -767 -1230 -767 -1072 39 21
 DS -1437 -1230 -1437 -1072 39 21
 DS -767 -1230 -1437 -1230 39 21
 $PAD
-Sh "1" R 629 118 0 0 1800
+Sh "1" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 58 "N-000144"
+Ne 63 "/sub3_LED/Iset_1"
 Po -1102 -1151
 $EndPAD
 $PAD
-Sh "2" R 629 118 0 0 1800
+Sh "2" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 52 "/sub3_LED/gnd"
+Ne 78 "GND"
 Po -1102 -895
 $EndPAD
 $PAD
-Sh "3" R 629 118 0 0 1800
+Sh "3" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 47 "/sub3_LED/R0"
+Ne 69 "/sub3_LED/R0"
 Po -1102 -639
 $EndPAD
 $PAD
-Sh "4" R 629 118 0 0 1800
+Sh "4" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 39 "/sub3_LED/G0"
+Ne 55 "/sub3_LED/G0"
 Po -1102 -383
 $EndPAD
 $PAD
-Sh "5" R 629 118 0 0 1800
+Sh "5" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 35 "/sub3_LED/B0"
+Ne 47 "/sub3_LED/B0"
 Po -1102 -127
 $EndPAD
 $PAD
-Sh "6" R 629 118 0 0 1800
+Sh "6" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 48 "/sub3_LED/R1"
+Ne 70 "/sub3_LED/R1"
 Po -1102 127
 $EndPAD
 $PAD
-Sh "7" R 629 118 0 0 1800
+Sh "7" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 40 "/sub3_LED/G1"
+Ne 56 "/sub3_LED/G1"
 Po -1102 383
 $EndPAD
 $PAD
-Sh "8" R 629 118 0 0 1800
+Sh "8" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 36 "/sub3_LED/B1"
+Ne 48 "/sub3_LED/B1"
 Po -1102 639
 $EndPAD
 $PAD
-Sh "9" R 629 118 0 0 1800
+Sh "9" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 7 "/sub2_control/LED_SPI_CLK"
+Ne 19 "/sub2_control/LED_SPI_CLK"
 Po -1102 895
 $EndPAD
 $PAD
-Sh "10" R 629 118 0 0 1800
+Sh "10" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 8 "/sub2_control/LED_SPI_MOSI"
+Ne 20 "/sub2_control/LED_SPI_MOSI"
 Po -1102 1151
 $EndPAD
 $PAD
-Sh "11" R 629 118 0 0 0
+Sh "11" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 43 "/sub3_LED/LED_SPI_CLK_b"
+Ne 65 "/sub3_LED/LED_SPI_CLK_b"
 Po 1102 1151
 $EndPAD
 $PAD
-Sh "12" R 629 118 0 0 0
+Sh "12" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 45 "/sub3_LED/LED_SPI_DAT_b"
+Ne 67 "/sub3_LED/LED_SPI_DAT_b"
 Po 1102 895
 $EndPAD
 $PAD
-Sh "13" R 629 118 0 0 0
+Sh "13" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 49 "/sub3_LED/R2"
+Ne 71 "/sub3_LED/R2"
 Po 1102 639
 $EndPAD
 $PAD
-Sh "14" R 629 118 0 0 0
+Sh "14" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 41 "/sub3_LED/G2"
+Ne 57 "/sub3_LED/G2"
 Po 1102 383
 $EndPAD
 $PAD
-Sh "15" R 629 118 0 0 0
+Sh "15" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 37 "/sub3_LED/B2"
+Ne 49 "/sub3_LED/B2"
 Po 1102 127
 $EndPAD
 $PAD
-Sh "16" R 629 118 0 0 0
+Sh "16" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 50 "/sub3_LED/R3"
+Ne 72 "/sub3_LED/R3"
 Po 1102 -127
 $EndPAD
 $PAD
-Sh "17" R 629 118 0 0 0
+Sh "17" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 42 "/sub3_LED/G3"
+Ne 58 "/sub3_LED/G3"
 Po 1102 -383
 $EndPAD
 $PAD
-Sh "18" R 629 118 0 0 0
+Sh "18" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 38 "/sub3_LED/B3"
+Ne 50 "/sub3_LED/B3"
 Po 1102 -639
 $EndPAD
 $PAD
-Sh "19" R 629 118 0 0 0
+Sh "19" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 10 "/sub1_power/V_led"
 Po 1102 -895
 $EndPAD
 $PAD
-Sh "20" R 629 118 0 0 0
+Sh "20" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 60 "N-000147"
+Ne 45 "/sub3_LED/3.3_out_1"
 Po 1102 -1151
 $EndPAD
 $PAD
-Sh "EP" R 1338 2559 0 0 0
+Sh "EP" R 1338 2559 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 52 "/sub3_LED/gnd"
+Ne 78 "GND"
 Po 0 0
 $EndPAD
 $EndMODULE  TSSOP-20
 $MODULE SOT23
-Po 70500 50500 0 15 4ECF7895 5529E4E8 ~~
+Po 73000 46000 0 15 4ECF7895 5529E4E8 ~~
 Li SOT23
 Kw SOT23
 Sc 5529E4E8
@@ -2824,7 +2885,7 @@ $PAD
 Sh "3" R 276 394 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 57 "N-000042"
+Ne 80 "N-000037"
 Po 0 -500
 $EndPAD
 $PAD
@@ -2838,7 +2899,7 @@ $PAD
 Sh "1" R 276 394 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 56 "N-000040"
+Ne 79 "N-000031"
 Po -375 500
 $EndPAD
 $SHAPE3D
@@ -2849,37 +2910,37 @@ Ro 0.000000 0.000000 -180.000000
 $EndSHAPE3D
 $EndMODULE  SOT23
 $MODULE solder_bridge
-Po 58000 30000 900 0 5529DFC8 5529E4E9 ~~
+Po 62500 11000 0 0 5529DFC8 5529E4E9 ~~
 Li solder_bridge
 Sc 5529E4E9
 AR /550D42BE/55291808
 Op 0 0 0
-T0 1500 500 400 300 900 75 M V 20 N "JPc106"
-T1 -4000 0 400 300 900 75 M V 20 N "JUMPER"
+T0 1500 500 400 300 0 75 M V 20 N "JPc106"
+T1 -4000 0 400 300 0 75 M V 20 N "JUMPER"
 $PAD
-Sh "2" R 300 200 0 0 2700
+Sh "2" R 300 200 0 0 1800
 Dr 0 0 0
 At SMD N 00440001
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 200 0
 $EndPAD
 $PAD
-Sh "1" R 300 200 0 0 2700
+Sh "1" R 300 200 0 0 1800
 Dr 0 0 0
 At SMD N 00440001
-Ne 25 "/sub2_control/T_VDD_conn"
+Ne 37 "/sub2_control/T_VDD_conn"
 Po -200 0
 $EndPAD
 $EndMODULE  solder_bridge
 $MODULE SM0805
-Po 31000 54500 0 15 42806E04 5529E4EA ~~
+Po 40000 22000 1800 15 42806E04 5529E4EA ~~
 Li SM0805
 Sc 5529E4EA
 AR /550D4361/550AB672
 Op 0 0 0
 At SMD 
-T0 0 0 250 250 0 50 N V 21 N "Rp201"
-T1 0 0 250 250 0 50 N I 21 N "R"
+T0 0 0 250 250 1800 50 N V 21 N "Rp201"
+T1 0 0 250 250 1800 50 N I 21 N "R"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -2888,17 +2949,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 0
+Sh "1" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 58 "N-000144"
+Ne 63 "/sub3_LED/Iset_1"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 0
+Sh "2" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 52 "/sub3_LED/gnd"
+Ne 78 "GND"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2909,51 +2970,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 31000 56500 0 15 42806E04 5529E4EC ~~
+Po 40500 24000 900 15 42806E04 5529E4EC ~~
 Li SM0805
 Sc 5529E4EC
 AR /550D4361/550AB66D
 Op 0 0 0
 At SMD 
-T0 0 0 250 250 0 50 N V 21 N "Cp201"
-T1 0 0 250 250 0 50 N I 21 N "C"
-DC -650 300 -650 250 50 21
-DS -200 300 -600 300 50 21
-DS -600 300 -600 -300 50 21
-DS -600 -300 -200 -300 50 21
-DS 200 -300 600 -300 50 21
-DS 600 -300 600 300 50 21
-DS 600 300 200 300 50 21
-$PAD
-Sh "1" R 350 550 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 60 "N-000147"
-Po -375 0
-$EndPAD
-$PAD
-Sh "2" R 350 550 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 52 "/sub3_LED/gnd"
-Po 375 0
-$EndPAD
-$SHAPE3D
-Na "smd/chip_cms.wrl"
-Sc 0.100000 0.100000 0.100000
-Of 0.000000 0.000000 0.000000
-Ro 0.000000 0.000000 0.000000
-$EndSHAPE3D
-$EndMODULE  SM0805
-$MODULE SM0805
-Po 58000 30000 900 15 42806E04 5529E4EE ~~
-Li SM0805
-Sc 5529E4EE
-AR /550D42BE/552233D3
-Op 0 0 0
-At SMD 
-T0 0 0 250 250 900 50 N V 21 N "Rc100"
-T1 0 0 250 250 900 50 N I 21 N "10k"
+T0 0 0 250 250 900 50 N V 21 N "Cp201"
+T1 0 0 250 250 900 50 N I 21 N "C"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -2965,14 +2989,14 @@ $PAD
 Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 25 "/sub2_control/T_VDD_conn"
+Ne 45 "/sub3_LED/3.3_out_1"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 78 "GND"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -2983,14 +3007,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 71500 48500 0 15 42806E04 5529E4F0 ~~
+Po 63000 10000 0 15 42806E04 5529E4EE ~~
 Li SM0805
-Sc 5529E4F0
-AR /550D4239/550CC6C2
+Sc 5529E4EE
+AR /550D42BE/552233D3
 Op 0 0 0
 At SMD 
-T0 0 0 250 250 0 50 N V 21 N "Rp100"
-T1 0 0 250 250 0 50 N I 21 N "R"
+T0 0 0 250 250 0 50 N V 21 N "Rc100"
+T1 0 0 250 250 0 50 N I 21 N "10k"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -3002,14 +3026,14 @@ $PAD
 Sh "1" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 1 "/sub1_power/power_rail"
+Ne 37 "/sub2_control/T_VDD_conn"
 Po -375 0
 $EndPAD
 $PAD
 Sh "2" R 350 550 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 53 "GND"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -3019,144 +3043,43 @@ Of 0.000000 0.000000 0.000000
 Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
-$MODULE PLCC-4
-Po 39000 61500 0 15 550AC983 5529E4F1 ~~
-Li PLCC-4
-Sc 5529E4F1
-AR /550D4361/550AB3B9
+$MODULE SM0805
+Po 69000 42500 1800 15 42806E04 5529E4F0 ~~
+Li SM0805
+Sc 5529E4F0
+AR /550D4239/550CC6C2
 Op 0 0 0
-T0 0 -1500 400 500 0 100 N V 21 N "Dp203"
-T1 0 1500 400 500 0 100 N V 21 N "RGB_LED"
-DS 629 -551 629 -527 31 21
-DS 629 527 629 551 31 21
-DS 629 551 -629 551 31 21
-DS -629 -551 -629 -527 31 21
-DS -629 527 -629 551 31 21
-DS 629 -551 -629 -551 31 21
-DS -279 -527 -279 -62 31 21
-DS -901 -527 -901 -62 31 21
-DS -279 -527 -901 -527 31 21
+At SMD 
+T0 0 0 250 250 1800 50 N V 21 N "Rp100"
+T1 0 0 250 250 1800 50 N I 21 N "R"
+DC -650 300 -650 250 50 21
+DS -200 300 -600 300 50 21
+DS -600 300 -600 -300 50 21
+DS -600 -300 -200 -300 50 21
+DS 200 -300 600 -300 50 21
+DS 600 -300 600 300 50 21
+DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 590 433 0 0 1800
+Sh "1" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 50 "/sub3_LED/R3"
-Po -590 -295
+Ne 11 "/sub1_power/power_rail"
+Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 590 433 0 0 1800
+Sh "2" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 51 "/sub3_LED/V_LED"
-Po -590 295
+Ne 78 "GND"
+Po 375 0
 $EndPAD
-$PAD
-Sh "3" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 38 "/sub3_LED/B3"
-Po 590 295
-$EndPAD
-$PAD
-Sh "4" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 42 "/sub3_LED/G3"
-Po 590 -295
-$EndPAD
-$EndMODULE  PLCC-4
-$MODULE PLCC-4
-Po 39000 58000 0 15 550AC983 5529E4F3 ~~
-Li PLCC-4
-Sc 5529E4F3
-AR /550D4361/550AB3B5
-Op 0 0 0
-T0 0 -1500 400 500 0 100 N V 21 N "Dp202"
-T1 0 1500 400 500 0 100 N V 21 N "RGB_LED"
-DS 629 -551 629 -527 31 21
-DS 629 527 629 551 31 21
-DS 629 551 -629 551 31 21
-DS -629 -551 -629 -527 31 21
-DS -629 527 -629 551 31 21
-DS 629 -551 -629 -551 31 21
-DS -279 -527 -279 -62 31 21
-DS -901 -527 -901 -62 31 21
-DS -279 -527 -901 -527 31 21
-$PAD
-Sh "1" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 49 "/sub3_LED/R2"
-Po -590 -295
-$EndPAD
-$PAD
-Sh "2" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 51 "/sub3_LED/V_LED"
-Po -590 295
-$EndPAD
-$PAD
-Sh "3" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 37 "/sub3_LED/B2"
-Po 590 295
-$EndPAD
-$PAD
-Sh "4" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 41 "/sub3_LED/G2"
-Po 590 -295
-$EndPAD
-$EndMODULE  PLCC-4
-$MODULE PLCC-4
-Po 39000 52500 0 15 550AC983 5529E4F5 ~~
-Li PLCC-4
-Sc 5529E4F5
-AR /550D4361/550AB399
-Op 0 0 0
-T0 0 -1500 400 500 0 100 N V 21 N "Dp200"
-T1 0 1500 400 500 0 100 N V 21 N "RGB_LED"
-DS 629 -551 629 -527 31 21
-DS 629 527 629 551 31 21
-DS 629 551 -629 551 31 21
-DS -629 -551 -629 -527 31 21
-DS -629 527 -629 551 31 21
-DS 629 -551 -629 -551 31 21
-DS -279 -527 -279 -62 31 21
-DS -901 -527 -901 -62 31 21
-DS -279 -527 -901 -527 31 21
-$PAD
-Sh "1" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 47 "/sub3_LED/R0"
-Po -590 -295
-$EndPAD
-$PAD
-Sh "2" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 51 "/sub3_LED/V_LED"
-Po -590 295
-$EndPAD
-$PAD
-Sh "3" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 35 "/sub3_LED/B0"
-Po 590 295
-$EndPAD
-$PAD
-Sh "4" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 39 "/sub3_LED/G0"
-Po 590 -295
-$EndPAD
-$EndMODULE  PLCC-4
+$SHAPE3D
+Na "smd/chip_cms.wrl"
+Sc 0.100000 0.100000 0.100000
+Of 0.000000 0.000000 0.000000
+Ro 0.000000 0.000000 0.000000
+$EndSHAPE3D
+$EndMODULE  SM0805
 $MODULE PIN_ARRAY_2X1
 Po 69000 44000 0 15 4565C520 5529E4F6 ~~
 Li PIN_ARRAY_2X1
@@ -3175,14 +3098,14 @@ $PAD
 Sh "1" R 600 600 0 0 0
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 53 "GND"
+Ne 78 "GND"
 Po -500 0
 $EndPAD
 $PAD
 Sh "2" C 600 600 0 0 0
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 1 "/sub1_power/power_rail"
+Ne 9 "/sub1_power/USB_Vin"
 Po 500 0
 $EndPAD
 $SHAPE3D
@@ -3210,14 +3133,14 @@ $PAD
 Sh "1" R 600 600 0 0 0
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 53 "GND"
+Ne 78 "GND"
 Po -500 0
 $EndPAD
 $PAD
 Sh "2" C 600 600 0 0 0
 Dr 400 0 0
 At STD N 00E0FFFF
-Ne 56 "N-000040"
+Ne 79 "N-000031"
 Po 500 0
 $EndPAD
 $SHAPE3D
@@ -3227,527 +3150,15 @@ Of 0.000000 0.000000 0.000000
 Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  PIN_ARRAY_2X1
-$MODULE 10120045-400LF
-Po 30000 25000 2700 15 55290A5F 5529E4F9 ~~
-Li 10120045-400LF
-Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
-Sc 5529E4F9
-AR /550D4239/5510EEC4
-Op 0 0 0
-T0 0 -1000 500 400 2700 100 N V 21 N "Pp114"
-T1 0 2500 500 400 2700 100 N V 21 N "CONN_4"
-DS 1083 -1870 1280 -1870 150 21
-DS -98 -1870 98 -1870 150 21
-DS -1280 -1870 -1083 -1870 150 21
-DS 2165 -1870 2953 -1870 150 21
-DS -2953 -1870 -2165 -1870 150 21
-DS -2953 -1870 -2953 -1476 150 21
-DS 2953 -1870 2953 -1476 150 21
-DS 2953 -197 2953 0 150 21
-DS 2953 0 -2953 0 150 21
-DS -2953 0 -2953 -197 150 21
-T2 0 500 500 400 2700 100 N I 21 N "place outline on board edge"
-T2 0 1500 500 400 2700 100 N I 21 N "RCPT & BLADE 4POS"
-$PAD
-Sh "1" R 629 1574 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 53 "GND"
-Po 1771 -2559
-$EndPAD
-$PAD
-Sh "2" R 629 1574 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 1 "/sub1_power/power_rail"
-Po 590 -2559
-$EndPAD
-$PAD
-Sh "3" R 629 1574 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -590 -2559
-$EndPAD
-$PAD
-Sh "4" R 629 1574 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -1771 -2559
-$EndPAD
-$PAD
-Sh "5" R 1023 787 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3346 -846
-$EndPAD
-$PAD
-Sh "12" R 1023 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3346 -846
-$EndPAD
-$EndMODULE  10120045-400LF
-$MODULE 10120045-400LF
-Po 55000 43500 0 15 55290A5F 5529E4FB ~~
-Li 10120045-400LF
-Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
-Sc 5529E4FB
-AR /550D4239/5510EEC2
-Op 0 0 0
-T0 0 -1000 500 400 0 100 N V 21 N "Pp113"
-T1 0 2500 500 400 0 100 N V 21 N "CONN_4"
-DS 1083 -1870 1280 -1870 150 21
-DS -98 -1870 98 -1870 150 21
-DS -1280 -1870 -1083 -1870 150 21
-DS 2165 -1870 2953 -1870 150 21
-DS -2953 -1870 -2165 -1870 150 21
-DS -2953 -1870 -2953 -1476 150 21
-DS 2953 -1870 2953 -1476 150 21
-DS 2953 -197 2953 0 150 21
-DS 2953 0 -2953 0 150 21
-DS -2953 0 -2953 -197 150 21
-T2 0 500 500 400 0 100 N I 21 N "place outline on board edge"
-T2 0 1500 500 400 0 100 N I 21 N "RCPT & BLADE 4POS"
-$PAD
-Sh "1" R 629 1574 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 53 "GND"
-Po 1771 -2559
-$EndPAD
-$PAD
-Sh "2" R 629 1574 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 1 "/sub1_power/power_rail"
-Po 590 -2559
-$EndPAD
-$PAD
-Sh "3" R 629 1574 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -590 -2559
-$EndPAD
-$PAD
-Sh "4" R 629 1574 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -1771 -2559
-$EndPAD
-$PAD
-Sh "5" R 1023 787 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3346 -846
-$EndPAD
-$PAD
-Sh "12" R 1023 787 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3346 -846
-$EndPAD
-$EndMODULE  10120045-400LF
-$MODULE 10120045-400LF
-Po 70000 25000 900 15 55290A5F 5529E4FD ~~
-Li 10120045-400LF
-Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
-Sc 5529E4FD
-AR /550D4239/5510EEB7
-Op 0 0 0
-T0 0 -1000 500 400 900 100 N V 21 N "Pp112"
-T1 0 2500 500 400 900 100 N V 21 N "CONN_4"
-DS 1083 -1870 1280 -1870 150 21
-DS -98 -1870 98 -1870 150 21
-DS -1280 -1870 -1083 -1870 150 21
-DS 2165 -1870 2953 -1870 150 21
-DS -2953 -1870 -2165 -1870 150 21
-DS -2953 -1870 -2953 -1476 150 21
-DS 2953 -1870 2953 -1476 150 21
-DS 2953 -197 2953 0 150 21
-DS 2953 0 -2953 0 150 21
-DS -2953 0 -2953 -197 150 21
-T2 0 500 500 400 900 100 N I 21 N "place outline on board edge"
-T2 0 1500 500 400 900 100 N I 21 N "RCPT & BLADE 4POS"
-$PAD
-Sh "1" R 629 1574 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 53 "GND"
-Po 1771 -2559
-$EndPAD
-$PAD
-Sh "2" R 629 1574 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 54 "N-000024"
-Po 590 -2559
-$EndPAD
-$PAD
-Sh "3" R 629 1574 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -590 -2559
-$EndPAD
-$PAD
-Sh "4" R 629 1574 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -1771 -2559
-$EndPAD
-$PAD
-Sh "5" R 1023 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3346 -846
-$EndPAD
-$PAD
-Sh "12" R 1023 787 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3346 -846
-$EndPAD
-$EndMODULE  10120045-400LF
-$MODULE 10120045-400LF
-Po 45000 16500 1800 15 55290A5F 5529E4FF ~~
-Li 10120045-400LF
-Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
-Sc 5529E4FF
-AR /550D4239/5510EE79
-Op 0 0 0
-T0 0 -1000 500 400 1800 100 N V 21 N "Pp111"
-T1 0 2500 500 400 1800 100 N V 21 N "CONN_4"
-DS 1083 -1870 1280 -1870 150 21
-DS -98 -1870 98 -1870 150 21
-DS -1280 -1870 -1083 -1870 150 21
-DS 2165 -1870 2953 -1870 150 21
-DS -2953 -1870 -2165 -1870 150 21
-DS -2953 -1870 -2953 -1476 150 21
-DS 2953 -1870 2953 -1476 150 21
-DS 2953 -197 2953 0 150 21
-DS 2953 0 -2953 0 150 21
-DS -2953 0 -2953 -197 150 21
-T2 0 500 500 400 1800 100 N I 21 N "place outline on board edge"
-T2 0 1500 500 400 1800 100 N I 21 N "RCPT & BLADE 4POS"
-$PAD
-Sh "1" R 629 1574 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 53 "GND"
-Po 1771 -2559
-$EndPAD
-$PAD
-Sh "2" R 629 1574 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 55 "N-000038"
-Po 590 -2559
-$EndPAD
-$PAD
-Sh "3" R 629 1574 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -590 -2559
-$EndPAD
-$PAD
-Sh "4" R 629 1574 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -1771 -2559
-$EndPAD
-$PAD
-Sh "5" R 1023 787 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3346 -846
-$EndPAD
-$PAD
-Sh "12" R 1023 787 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3346 -846
-$EndPAD
-$EndMODULE  10120045-400LF
-$MODULE 10120045-400LF
-Po 45000 43500 0 15 55290A5F 5529E501 ~~
-Li 10120045-400LF
-Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
-Sc 5529E501
-AR /550D4239/55277502
-Op 0 0 0
-T0 0 -1000 500 400 0 100 N V 21 N "Pp118"
-T1 0 2500 500 400 0 100 N V 21 N "CONN_4"
-DS 1083 -1870 1280 -1870 150 21
-DS -98 -1870 98 -1870 150 21
-DS -1280 -1870 -1083 -1870 150 21
-DS 2165 -1870 2953 -1870 150 21
-DS -2953 -1870 -2165 -1870 150 21
-DS -2953 -1870 -2953 -1476 150 21
-DS 2953 -1870 2953 -1476 150 21
-DS 2953 -197 2953 0 150 21
-DS 2953 0 -2953 0 150 21
-DS -2953 0 -2953 -197 150 21
-T2 0 500 500 400 0 100 N I 21 N "place outline on board edge"
-T2 0 1500 500 400 0 100 N I 21 N "RCPT & BLADE 4POS"
-$PAD
-Sh "1" R 629 1574 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 1771 -2559
-$EndPAD
-$PAD
-Sh "2" R 629 1574 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 590 -2559
-$EndPAD
-$PAD
-Sh "3" R 629 1574 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 1 "/sub1_power/power_rail"
-Po -590 -2559
-$EndPAD
-$PAD
-Sh "4" R 629 1574 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 53 "GND"
-Po -1771 -2559
-$EndPAD
-$PAD
-Sh "5" R 1023 787 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3346 -846
-$EndPAD
-$PAD
-Sh "12" R 1023 787 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3346 -846
-$EndPAD
-$EndMODULE  10120045-400LF
-$MODULE 10120045-400LF
-Po 55000 16500 1800 15 55290A5F 5529E503 ~~
-Li 10120045-400LF
-Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
-Sc 5529E503
-AR /550D4239/552774A4
-Op 0 0 0
-T0 0 -1000 500 400 1800 100 N V 21 N "Pp116"
-T1 0 2500 500 400 1800 100 N V 21 N "CONN_4"
-DS 1083 -1870 1280 -1870 150 21
-DS -98 -1870 98 -1870 150 21
-DS -1280 -1870 -1083 -1870 150 21
-DS 2165 -1870 2953 -1870 150 21
-DS -2953 -1870 -2165 -1870 150 21
-DS -2953 -1870 -2953 -1476 150 21
-DS 2953 -1870 2953 -1476 150 21
-DS 2953 -197 2953 0 150 21
-DS 2953 0 -2953 0 150 21
-DS -2953 0 -2953 -197 150 21
-T2 0 500 500 400 1800 100 N I 21 N "place outline on board edge"
-T2 0 1500 500 400 1800 100 N I 21 N "RCPT & BLADE 4POS"
-$PAD
-Sh "1" R 629 1574 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 1771 -2559
-$EndPAD
-$PAD
-Sh "2" R 629 1574 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 590 -2559
-$EndPAD
-$PAD
-Sh "3" R 629 1574 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 55 "N-000038"
-Po -590 -2559
-$EndPAD
-$PAD
-Sh "4" R 629 1574 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 53 "GND"
-Po -1771 -2559
-$EndPAD
-$PAD
-Sh "5" R 1023 787 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3346 -846
-$EndPAD
-$PAD
-Sh "12" R 1023 787 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3346 -846
-$EndPAD
-$EndMODULE  10120045-400LF
-$MODULE 10120045-400LF
-Po 70000 35000 900 15 55290A5F 5529E505 ~~
-Li 10120045-400LF
-Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
-Sc 5529E505
-AR /550D4239/552774CA
-Op 0 0 0
-T0 0 -1000 500 400 900 100 N V 21 N "Pp117"
-T1 0 2500 500 400 900 100 N V 21 N "CONN_4"
-DS 1083 -1870 1280 -1870 150 21
-DS -98 -1870 98 -1870 150 21
-DS -1280 -1870 -1083 -1870 150 21
-DS 2165 -1870 2953 -1870 150 21
-DS -2953 -1870 -2165 -1870 150 21
-DS -2953 -1870 -2953 -1476 150 21
-DS 2953 -1870 2953 -1476 150 21
-DS 2953 -197 2953 0 150 21
-DS 2953 0 -2953 0 150 21
-DS -2953 0 -2953 -197 150 21
-T2 0 500 500 400 900 100 N I 21 N "place outline on board edge"
-T2 0 1500 500 400 900 100 N I 21 N "RCPT & BLADE 4POS"
-$PAD
-Sh "1" R 629 1574 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 1771 -2559
-$EndPAD
-$PAD
-Sh "2" R 629 1574 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 590 -2559
-$EndPAD
-$PAD
-Sh "3" R 629 1574 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 54 "N-000024"
-Po -590 -2559
-$EndPAD
-$PAD
-Sh "4" R 629 1574 0 0 2700
-Dr 0 0 0
-At SMD N 00888000
-Ne 53 "GND"
-Po -1771 -2559
-$EndPAD
-$PAD
-Sh "5" R 1023 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3346 -846
-$EndPAD
-$PAD
-Sh "12" R 1023 787 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3346 -846
-$EndPAD
-$EndMODULE  10120045-400LF
-$MODULE 10120045-400LF
-Po 30000 35000 2700 15 55290A5F 5529E507 ~~
-Li 10120045-400LF
-Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
-Sc 5529E507
-AR /550D4239/552775C2
-Op 0 0 0
-T0 0 -1000 500 400 2700 100 N V 21 N "Pp119"
-T1 0 2500 500 400 2700 100 N V 21 N "CONN_4"
-DS 1083 -1870 1280 -1870 150 21
-DS -98 -1870 98 -1870 150 21
-DS -1280 -1870 -1083 -1870 150 21
-DS 2165 -1870 2953 -1870 150 21
-DS -2953 -1870 -2165 -1870 150 21
-DS -2953 -1870 -2953 -1476 150 21
-DS 2953 -1870 2953 -1476 150 21
-DS 2953 -197 2953 0 150 21
-DS 2953 0 -2953 0 150 21
-DS -2953 0 -2953 -197 150 21
-T2 0 500 500 400 2700 100 N I 21 N "place outline on board edge"
-T2 0 1500 500 400 2700 100 N I 21 N "RCPT & BLADE 4POS"
-$PAD
-Sh "1" R 629 1574 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 1771 -2559
-$EndPAD
-$PAD
-Sh "2" R 629 1574 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 590 -2559
-$EndPAD
-$PAD
-Sh "3" R 629 1574 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 1 "/sub1_power/power_rail"
-Po -590 -2559
-$EndPAD
-$PAD
-Sh "4" R 629 1574 0 0 900
-Dr 0 0 0
-At SMD N 00888000
-Ne 53 "GND"
-Po -1771 -2559
-$EndPAD
-$PAD
-Sh "5" R 1023 787 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -3346 -846
-$EndPAD
-$PAD
-Sh "12" R 1023 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 3346 -846
-$EndPAD
-$EndMODULE  10120045-400LF
 $MODULE 219-4MST
-Po 57000 23500 900 15 552A6938 5528D0CF ~~
+Po 40000 30500 0 15 552A6938 5528D0CF ~~
 Li 219-4MST
 Kw dip switch, switch, CTS 219 series, gull, (4pos)
 Sc 5528D0CF
 AR /550D42BE/552A76CB
 Op 0 0 0
-T0 0 -500 400 300 900 75 N V 21 N "SWc101"
-T1 0 500 400 300 900 75 N V 21 N "DIP_SWITCH_4"
+T0 0 -500 400 300 0 75 N V 21 N "SWc101"
+T1 0 500 400 300 0 75 N V 21 N "DIP_SWITCH_4"
 DS -2289 -1318 -1761 -1318 78 21
 DS 1761 -1318 2289 -1318 78 21
 DS 2289 -1318 2289 1318 78 21
@@ -3756,70 +3167,70 @@ DS 1761 1318 2289 1318 78 21
 DS -2289 -1318 -2289 1318 78 21
 DS -2289 1082 -2053 1318 78 21
 $PAD
-Sh "1" R 444 960 0 0 2700
+Sh "1" R 444 960 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -1499 1692
 $EndPAD
 $PAD
-Sh "2" R 444 960 0 0 2700
+Sh "2" R 444 960 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po -499 1692
 $EndPAD
 $PAD
-Sh "3" R 444 960 0 0 2700
+Sh "3" R 444 960 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 18 "/sub2_control/MCU_VDD_local"
+Ne 30 "/sub2_control/MCU_VDD_local"
 Po 499 1692
 $EndPAD
 $PAD
-Sh "4" R 444 960 0 0 2700
+Sh "4" R 444 960 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 17 "/sub2_control/MCU_GND_local"
+Ne 29 "/sub2_control/MCU_GND_local"
 Po 1499 1692
 $EndPAD
 $PAD
-Sh "5" R 444 960 0 0 900
+Sh "5" R 444 960 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 34 "/sub2_control/~RST"
+Ne 44 "/sub2_control/~RST"
 Po 1499 -1692
 $EndPAD
 $PAD
-Sh "6" R 444 960 0 0 900
+Sh "6" R 444 960 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 28 "/sub2_control/WKUP--user"
+Ne 40 "/sub2_control/WKUP--user"
 Po 499 -1692
 $EndPAD
 $PAD
-Sh "7" R 444 960 0 0 900
+Sh "7" R 444 960 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 30 "/sub2_control/boot1_sw"
+Ne 42 "/sub2_control/boot1_sw"
 Po -499 -1692
 $EndPAD
 $PAD
-Sh "8" R 444 960 0 0 900
+Sh "8" R 444 960 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 29 "/sub2_control/boot0_sw"
+Ne 41 "/sub2_control/boot0_sw"
 Po -1499 -1692
 $EndPAD
 $EndMODULE  219-4MST
 $MODULE TSSOP-20
-Po 50500 54000 0 15 550B99A3 552EE440 ~~
+Po 60000 25000 2700 15 552F23F6 552EE440 ~~
 Li TSSOP-20
 Sc 552EE440
 AR /550D4361/552EDB50
 Op 0 0 0
-T0 0 -2000 400 500 0 100 N V 21 N "Up202"
-T1 0 2000 400 500 0 100 N V 21 N "TLC59711"
+T0 -2000 0 400 400 3600 80 N V 21 N "Up202"
+T1 -2500 0 400 300 3600 60 N V 21 N "TLC59711"
 DS 866 -1279 866 -1230 39 21
 DS 866 1230 866 1279 39 21
 DS 866 1279 688 1279 39 21
@@ -3832,162 +3243,162 @@ DS -767 -1230 -767 -1072 39 21
 DS -1437 -1230 -1437 -1072 39 21
 DS -767 -1230 -1437 -1230 39 21
 $PAD
-Sh "1" R 629 118 0 0 1800
+Sh "1" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 59 "N-000145"
+Ne 64 "/sub3_LED/Iset_2"
 Po -1102 -1151
 $EndPAD
 $PAD
-Sh "2" R 629 118 0 0 1800
+Sh "2" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 52 "/sub3_LED/gnd"
+Ne 78 "GND"
 Po -1102 -895
 $EndPAD
 $PAD
-Sh "3" R 629 118 0 0 1800
+Sh "3" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 47 "/sub3_LED/R0"
+Ne 73 "/sub3_LED/R4"
 Po -1102 -639
 $EndPAD
 $PAD
-Sh "4" R 629 118 0 0 1800
+Sh "4" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 39 "/sub3_LED/G0"
+Ne 59 "/sub3_LED/G4"
 Po -1102 -383
 $EndPAD
 $PAD
-Sh "5" R 629 118 0 0 1800
+Sh "5" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 35 "/sub3_LED/B0"
+Ne 51 "/sub3_LED/B4"
 Po -1102 -127
 $EndPAD
 $PAD
-Sh "6" R 629 118 0 0 1800
+Sh "6" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 48 "/sub3_LED/R1"
+Ne 74 "/sub3_LED/R5"
 Po -1102 127
 $EndPAD
 $PAD
-Sh "7" R 629 118 0 0 1800
+Sh "7" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 40 "/sub3_LED/G1"
+Ne 60 "/sub3_LED/G5"
 Po -1102 383
 $EndPAD
 $PAD
-Sh "8" R 629 118 0 0 1800
+Sh "8" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 36 "/sub3_LED/B1"
+Ne 52 "/sub3_LED/B5"
 Po -1102 639
 $EndPAD
 $PAD
-Sh "9" R 629 118 0 0 1800
+Sh "9" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 45 "/sub3_LED/LED_SPI_DAT_b"
+Ne 67 "/sub3_LED/LED_SPI_DAT_b"
 Po -1102 895
 $EndPAD
 $PAD
-Sh "10" R 629 118 0 0 1800
+Sh "10" R 629 118 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 43 "/sub3_LED/LED_SPI_CLK_b"
+Ne 65 "/sub3_LED/LED_SPI_CLK_b"
 Po -1102 1151
 $EndPAD
 $PAD
-Sh "11" R 629 118 0 0 0
+Sh "11" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 44 "/sub3_LED/LED_SPI_CLK_c"
+Ne 66 "/sub3_LED/LED_SPI_CLK_c"
 Po 1102 1151
 $EndPAD
 $PAD
-Sh "12" R 629 118 0 0 0
+Sh "12" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 46 "/sub3_LED/LED_SPI_DAT_c"
+Ne 68 "/sub3_LED/LED_SPI_DAT_c"
 Po 1102 895
 $EndPAD
 $PAD
-Sh "13" R 629 118 0 0 0
+Sh "13" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 49 "/sub3_LED/R2"
+Ne 75 "/sub3_LED/R6"
 Po 1102 639
 $EndPAD
 $PAD
-Sh "14" R 629 118 0 0 0
+Sh "14" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 41 "/sub3_LED/G2"
+Ne 61 "/sub3_LED/G6"
 Po 1102 383
 $EndPAD
 $PAD
-Sh "15" R 629 118 0 0 0
+Sh "15" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 37 "/sub3_LED/B2"
+Ne 53 "/sub3_LED/B6"
 Po 1102 127
 $EndPAD
 $PAD
-Sh "16" R 629 118 0 0 0
+Sh "16" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 50 "/sub3_LED/R3"
+Ne 76 "/sub3_LED/R7"
 Po 1102 -127
 $EndPAD
 $PAD
-Sh "17" R 629 118 0 0 0
+Sh "17" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 42 "/sub3_LED/G3"
+Ne 62 "/sub3_LED/G7"
 Po 1102 -383
 $EndPAD
 $PAD
-Sh "18" R 629 118 0 0 0
+Sh "18" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 38 "/sub3_LED/B3"
+Ne 54 "/sub3_LED/B7"
 Po 1102 -639
 $EndPAD
 $PAD
-Sh "19" R 629 118 0 0 0
+Sh "19" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 51 "/sub3_LED/V_LED"
+Ne 77 "/sub3_LED/V_LED"
 Po 1102 -895
 $EndPAD
 $PAD
-Sh "20" R 629 118 0 0 0
+Sh "20" R 629 118 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 61 "N-000160"
+Ne 46 "/sub3_LED/3.3_out_2"
 Po 1102 -1151
 $EndPAD
 $PAD
-Sh "EP" R 1338 2559 0 0 0
+Sh "EP" R 1338 2559 0 0 2700
 Dr 0 0 0
 At SMD N 00888000
-Ne 52 "/sub3_LED/gnd"
+Ne 78 "GND"
 Po 0 0
 $EndPAD
 $EndMODULE  TSSOP-20
 $MODULE SM0805
-Po 47500 54500 0 15 42806E04 552EE441 ~~
+Po 62000 25000 900 15 42806E04 552EE441 ~~
 Li SM0805
 Sc 552EE441
 AR /550D4361/552EDB52
 Op 0 0 0
 At SMD 
-T0 0 0 250 250 0 50 N V 21 N "Cp202"
-T1 0 0 250 250 0 50 N I 21 N "C"
+T0 0 0 250 250 900 50 N V 21 N "Cp202"
+T1 0 0 250 250 900 50 N I 21 N "C"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -3996,17 +3407,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 0
+Sh "1" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 61 "N-000160"
+Ne 46 "/sub3_LED/3.3_out_2"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 0
+Sh "2" R 350 550 0 0 900
 Dr 0 0 0
 At SMD N 00888000
-Ne 52 "/sub3_LED/gnd"
+Ne 78 "GND"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -4017,14 +3428,14 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE SM0805
-Po 48000 52500 0 15 42806E04 552EE443 ~~
+Po 61500 23000 1800 15 42806E04 552EE443 ~~
 Li SM0805
 Sc 552EE443
 AR /550D4361/552EDB51
 Op 0 0 0
 At SMD 
-T0 0 0 250 250 0 50 N V 21 N "Rp202"
-T1 0 0 250 250 0 50 N I 21 N "R"
+T0 0 0 250 250 1800 50 N V 21 N "Rp202"
+T1 0 0 250 250 1800 50 N I 21 N "R"
 DC -650 300 -650 250 50 21
 DS -200 300 -600 300 50 21
 DS -600 300 -600 -300 50 21
@@ -4033,17 +3444,17 @@ DS 200 -300 600 -300 50 21
 DS 600 -300 600 300 50 21
 DS 600 300 200 300 50 21
 $PAD
-Sh "1" R 350 550 0 0 0
+Sh "1" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 59 "N-000145"
+Ne 64 "/sub3_LED/Iset_2"
 Po -375 0
 $EndPAD
 $PAD
-Sh "2" R 350 550 0 0 0
+Sh "2" R 350 550 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 52 "/sub3_LED/gnd"
+Ne 78 "GND"
 Po 375 0
 $EndPAD
 $SHAPE3D
@@ -4054,151 +3465,13 @@ Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
 $EndMODULE  SM0805
 $MODULE PLCC-4
-Po 55000 52500 0 15 550AC983 552EE444 ~~
-Li PLCC-4
-Sc 552EE444
-AR /550D4361/552EDB5A
-Op 0 0 0
-T0 0 -1500 400 500 0 100 N V 21 N "Dp204"
-T1 0 1500 400 500 0 100 N V 21 N "RGB_LED"
-DS 629 -551 629 -527 31 21
-DS 629 527 629 551 31 21
-DS 629 551 -629 551 31 21
-DS -629 -551 -629 -527 31 21
-DS -629 527 -629 551 31 21
-DS 629 -551 -629 -551 31 21
-DS -279 -527 -279 -62 31 21
-DS -901 -527 -901 -62 31 21
-DS -279 -527 -901 -527 31 21
-$PAD
-Sh "1" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 47 "/sub3_LED/R0"
-Po -590 -295
-$EndPAD
-$PAD
-Sh "2" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 51 "/sub3_LED/V_LED"
-Po -590 295
-$EndPAD
-$PAD
-Sh "3" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 35 "/sub3_LED/B0"
-Po 590 295
-$EndPAD
-$PAD
-Sh "4" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 39 "/sub3_LED/G0"
-Po 590 -295
-$EndPAD
-$EndMODULE  PLCC-4
-$MODULE PLCC-4
-Po 55000 55500 0 15 550AC983 552EE446 ~~
-Li PLCC-4
-Sc 552EE446
-AR /550D4361/552EDB59
-Op 0 0 0
-T0 0 -1500 400 500 0 100 N V 21 N "Dp205"
-T1 0 1500 400 500 0 100 N V 21 N "RGB_LED"
-DS 629 -551 629 -527 31 21
-DS 629 527 629 551 31 21
-DS 629 551 -629 551 31 21
-DS -629 -551 -629 -527 31 21
-DS -629 527 -629 551 31 21
-DS 629 -551 -629 -551 31 21
-DS -279 -527 -279 -62 31 21
-DS -901 -527 -901 -62 31 21
-DS -279 -527 -901 -527 31 21
-$PAD
-Sh "1" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 48 "/sub3_LED/R1"
-Po -590 -295
-$EndPAD
-$PAD
-Sh "2" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 51 "/sub3_LED/V_LED"
-Po -590 295
-$EndPAD
-$PAD
-Sh "3" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 36 "/sub3_LED/B1"
-Po 590 295
-$EndPAD
-$PAD
-Sh "4" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 40 "/sub3_LED/G1"
-Po 590 -295
-$EndPAD
-$EndMODULE  PLCC-4
-$MODULE PLCC-4
-Po 55500 58500 0 15 550AC983 552EE448 ~~
-Li PLCC-4
-Sc 552EE448
-AR /550D4361/552EDB58
-Op 0 0 0
-T0 0 -1500 400 500 0 100 N V 21 N "Dp206"
-T1 0 1500 400 500 0 100 N V 21 N "RGB_LED"
-DS 629 -551 629 -527 31 21
-DS 629 527 629 551 31 21
-DS 629 551 -629 551 31 21
-DS -629 -551 -629 -527 31 21
-DS -629 527 -629 551 31 21
-DS 629 -551 -629 -551 31 21
-DS -279 -527 -279 -62 31 21
-DS -901 -527 -901 -62 31 21
-DS -279 -527 -901 -527 31 21
-$PAD
-Sh "1" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 49 "/sub3_LED/R2"
-Po -590 -295
-$EndPAD
-$PAD
-Sh "2" R 590 433 0 0 1800
-Dr 0 0 0
-At SMD N 00888000
-Ne 51 "/sub3_LED/V_LED"
-Po -590 295
-$EndPAD
-$PAD
-Sh "3" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 37 "/sub3_LED/B2"
-Po 590 295
-$EndPAD
-$PAD
-Sh "4" R 590 433 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 41 "/sub3_LED/G2"
-Po 590 -295
-$EndPAD
-$EndMODULE  PLCC-4
-$MODULE PLCC-4
-Po 55500 62000 0 15 550AC983 552EE44A ~~
+Po 65000 35000 0 15 552F2293 552EE44A ~~
 Li PLCC-4
 Sc 552EE44A
 AR /550D4361/552EDB57
 Op 0 0 0
-T0 0 -1500 400 500 0 100 N V 21 N "Dp207"
-T1 0 1500 400 500 0 100 N V 21 N "RGB_LED"
+T0 0 -1000 400 300 0 60 N V 21 N "Dp207"
+T1 0 1000 400 500 0 100 N I 21 N "RGB_LED"
 DS 629 -551 629 -527 31 21
 DS 629 527 629 551 31 21
 DS 629 551 -629 551 31 21
@@ -4212,85 +3485,1062 @@ $PAD
 Sh "1" R 590 433 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 50 "/sub3_LED/R3"
+Ne 76 "/sub3_LED/R7"
 Po -590 -295
 $EndPAD
 $PAD
 Sh "2" R 590 433 0 0 1800
 Dr 0 0 0
 At SMD N 00888000
-Ne 51 "/sub3_LED/V_LED"
+Ne 77 "/sub3_LED/V_LED"
 Po -590 295
 $EndPAD
 $PAD
 Sh "3" R 590 433 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 38 "/sub3_LED/B3"
+Ne 54 "/sub3_LED/B7"
 Po 590 295
 $EndPAD
 $PAD
 Sh "4" R 590 433 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 42 "/sub3_LED/G3"
+Ne 62 "/sub3_LED/G7"
 Po 590 -295
 $EndPAD
 $EndMODULE  PLCC-4
-$DRAWSEGMENT
-Po 0 60000 19000 60000 42000 150
-De 26 0 900 0 0
-$EndDRAWSEGMENT
-$TEXTPCB
-Te "gnd"
-Po 42500 38000 300 300 75 0
-De 15 1 0 Normal C
-$EndTEXTPCB
-$TEXTPCB
-Te "GND"
-Po 53000 39000 500 500 120 0
-De 15 1 0 Normal C
-$EndTEXTPCB
-$TEXTPCB
-Te "3V"
-Po 57000 39000 500 500 120 0
-De 15 1 0 Normal C
-$EndTEXTPCB
+$MODULE PLCC-4
+Po 55000 35000 0 15 552F2293 552EE448 ~~
+Li PLCC-4
+Sc 552EE448
+AR /550D4361/552EDB58
+Op 0 0 0
+T0 0 -1000 400 300 0 60 N V 21 N "Dp206"
+T1 0 1000 400 500 0 100 N I 21 N "RGB_LED"
+DS 629 -551 629 -527 31 21
+DS 629 527 629 551 31 21
+DS 629 551 -629 551 31 21
+DS -629 -551 -629 -527 31 21
+DS -629 527 -629 551 31 21
+DS 629 -551 -629 -551 31 21
+DS -279 -527 -279 -62 31 21
+DS -901 -527 -901 -62 31 21
+DS -279 -527 -901 -527 31 21
+$PAD
+Sh "1" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 75 "/sub3_LED/R6"
+Po -590 -295
+$EndPAD
+$PAD
+Sh "2" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 77 "/sub3_LED/V_LED"
+Po -590 295
+$EndPAD
+$PAD
+Sh "3" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 53 "/sub3_LED/B6"
+Po 590 295
+$EndPAD
+$PAD
+Sh "4" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 61 "/sub3_LED/G6"
+Po 590 -295
+$EndPAD
+$EndMODULE  PLCC-4
+$MODULE PLCC-4
+Po 55000 25000 0 15 552F2293 552EE446 ~~
+Li PLCC-4
+Sc 552EE446
+AR /550D4361/552EDB59
+Op 0 0 0
+T0 0 -1000 400 300 0 60 N V 21 N "Dp205"
+T1 0 1000 400 500 0 100 N I 21 N "RGB_LED"
+DS 629 -551 629 -527 31 21
+DS 629 527 629 551 31 21
+DS 629 551 -629 551 31 21
+DS -629 -551 -629 -527 31 21
+DS -629 527 -629 551 31 21
+DS 629 -551 -629 -551 31 21
+DS -279 -527 -279 -62 31 21
+DS -901 -527 -901 -62 31 21
+DS -279 -527 -901 -527 31 21
+$PAD
+Sh "1" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 74 "/sub3_LED/R5"
+Po -590 -295
+$EndPAD
+$PAD
+Sh "2" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 77 "/sub3_LED/V_LED"
+Po -590 295
+$EndPAD
+$PAD
+Sh "3" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 52 "/sub3_LED/B5"
+Po 590 295
+$EndPAD
+$PAD
+Sh "4" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 60 "/sub3_LED/G5"
+Po 590 -295
+$EndPAD
+$EndMODULE  PLCC-4
+$MODULE PLCC-4
+Po 65000 25000 0 15 552F2293 552EE444 ~~
+Li PLCC-4
+Sc 552EE444
+AR /550D4361/552EDB5A
+Op 0 0 0
+T0 0 -1000 400 300 0 60 N V 21 N "Dp204"
+T1 0 1000 400 500 0 100 N I 21 N "RGB_LED"
+DS 629 -551 629 -527 31 21
+DS 629 527 629 551 31 21
+DS 629 551 -629 551 31 21
+DS -629 -551 -629 -527 31 21
+DS -629 527 -629 551 31 21
+DS 629 -551 -629 -551 31 21
+DS -279 -527 -279 -62 31 21
+DS -901 -527 -901 -62 31 21
+DS -279 -527 -901 -527 31 21
+$PAD
+Sh "1" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 73 "/sub3_LED/R4"
+Po -590 -295
+$EndPAD
+$PAD
+Sh "2" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 77 "/sub3_LED/V_LED"
+Po -590 295
+$EndPAD
+$PAD
+Sh "3" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 51 "/sub3_LED/B4"
+Po 590 295
+$EndPAD
+$PAD
+Sh "4" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 59 "/sub3_LED/G4"
+Po 590 -295
+$EndPAD
+$EndMODULE  PLCC-4
+$MODULE PLCC-4
+Po 45000 25000 0 15 552F2293 5529E4F5 ~~
+Li PLCC-4
+Sc 5529E4F5
+AR /550D4361/550AB399
+Op 0 0 0
+T0 0 -1000 400 300 0 60 N V 21 N "Dp200"
+T1 0 1000 400 500 0 100 N I 21 N "RGB_LED"
+DS 629 -551 629 -527 31 21
+DS 629 527 629 551 31 21
+DS 629 551 -629 551 31 21
+DS -629 -551 -629 -527 31 21
+DS -629 527 -629 551 31 21
+DS 629 -551 -629 -551 31 21
+DS -279 -527 -279 -62 31 21
+DS -901 -527 -901 -62 31 21
+DS -279 -527 -901 -527 31 21
+$PAD
+Sh "1" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 69 "/sub3_LED/R0"
+Po -590 -295
+$EndPAD
+$PAD
+Sh "2" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 77 "/sub3_LED/V_LED"
+Po -590 295
+$EndPAD
+$PAD
+Sh "3" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 47 "/sub3_LED/B0"
+Po 590 295
+$EndPAD
+$PAD
+Sh "4" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 55 "/sub3_LED/G0"
+Po 590 -295
+$EndPAD
+$EndMODULE  PLCC-4
+$MODULE PLCC-4
+Po 35000 35000 0 15 552F2293 5529E4F3 ~~
+Li PLCC-4
+Sc 5529E4F3
+AR /550D4361/550AB3B5
+Op 0 0 0
+T0 0 -1000 400 300 0 60 N V 21 N "Dp202"
+T1 0 1000 400 500 0 100 N I 21 N "RGB_LED"
+DS 629 -551 629 -527 31 21
+DS 629 527 629 551 31 21
+DS 629 551 -629 551 31 21
+DS -629 -551 -629 -527 31 21
+DS -629 527 -629 551 31 21
+DS 629 -551 -629 -551 31 21
+DS -279 -527 -279 -62 31 21
+DS -901 -527 -901 -62 31 21
+DS -279 -527 -901 -527 31 21
+$PAD
+Sh "1" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 71 "/sub3_LED/R2"
+Po -590 -295
+$EndPAD
+$PAD
+Sh "2" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 77 "/sub3_LED/V_LED"
+Po -590 295
+$EndPAD
+$PAD
+Sh "3" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 49 "/sub3_LED/B2"
+Po 590 295
+$EndPAD
+$PAD
+Sh "4" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 57 "/sub3_LED/G2"
+Po 590 -295
+$EndPAD
+$EndMODULE  PLCC-4
+$MODULE PLCC-4
+Po 45000 35000 0 15 552F2293 5529E4F1 ~~
+Li PLCC-4
+Sc 5529E4F1
+AR /550D4361/550AB3B9
+Op 0 0 0
+T0 0 -1000 400 300 0 60 N V 21 N "Dp203"
+T1 0 1000 400 500 0 100 N I 21 N "RGB_LED"
+DS 629 -551 629 -527 31 21
+DS 629 527 629 551 31 21
+DS 629 551 -629 551 31 21
+DS -629 -551 -629 -527 31 21
+DS -629 527 -629 551 31 21
+DS 629 -551 -629 -551 31 21
+DS -279 -527 -279 -62 31 21
+DS -901 -527 -901 -62 31 21
+DS -279 -527 -901 -527 31 21
+$PAD
+Sh "1" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 72 "/sub3_LED/R3"
+Po -590 -295
+$EndPAD
+$PAD
+Sh "2" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 77 "/sub3_LED/V_LED"
+Po -590 295
+$EndPAD
+$PAD
+Sh "3" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 50 "/sub3_LED/B3"
+Po 590 295
+$EndPAD
+$PAD
+Sh "4" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 58 "/sub3_LED/G3"
+Po 590 -295
+$EndPAD
+$EndMODULE  PLCC-4
+$MODULE PLCC-4
+Po 35000 25000 0 15 552F2293 550ACDA1 ~~
+Li PLCC-4
+Sc 550ACDA1
+AR /550D4361/550AB3AF
+Op 0 0 0
+T0 0 -1000 400 300 0 60 N V 21 N "Dp201"
+T1 0 1000 400 500 0 100 N I 21 N "RGB_LED"
+DS 629 -551 629 -527 31 21
+DS 629 527 629 551 31 21
+DS 629 551 -629 551 31 21
+DS -629 -551 -629 -527 31 21
+DS -629 527 -629 551 31 21
+DS 629 -551 -629 -551 31 21
+DS -279 -527 -279 -62 31 21
+DS -901 -527 -901 -62 31 21
+DS -279 -527 -901 -527 31 21
+$PAD
+Sh "1" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 70 "/sub3_LED/R1"
+Po -590 -295
+$EndPAD
+$PAD
+Sh "2" R 590 433 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 77 "/sub3_LED/V_LED"
+Po -590 295
+$EndPAD
+$PAD
+Sh "3" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 48 "/sub3_LED/B1"
+Po 590 295
+$EndPAD
+$PAD
+Sh "4" R 590 433 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 56 "/sub3_LED/G1"
+Po 590 -295
+$EndPAD
+$EndMODULE  PLCC-4
+$MODULE 10120045-400LF
+Po 30000 25000 2700 15 552F2881 5529E507 ~~
+Li 10120045-400LF
+Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
+Sc 5529E507
+AR /550D4239/552F2774
+Op 0 0 0
+T0 0 -1000 500 400 2700 100 N V 21 N "Pp119"
+T1 0 2500 500 400 2700 100 N V 21 N "CONN_4+"
+DS 1083 -1870 1280 -1870 150 21
+DS -98 -1870 98 -1870 150 21
+DS -1280 -1870 -1083 -1870 150 21
+DS 2165 -1870 2953 -1870 150 21
+DS -2953 -1870 -2165 -1870 150 21
+DS -2953 -1870 -2953 -1476 150 21
+DS 2953 -1870 2953 -1476 150 21
+DS 2953 -197 2953 0 150 21
+DS 2953 0 -2953 0 150 21
+DS -2953 0 -2953 -197 150 21
+T2 0 500 500 400 2700 100 N I 21 N "place outline on board edge"
+T2 0 1500 500 400 2700 100 N I 21 N "RCPT & BLADE 4POS"
+$PAD
+Sh "1" R 629 1574 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1771 -2559
+$EndPAD
+$PAD
+Sh "2" R 629 1574 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 7 "/sub1_power/D_rx"
+Po 590 -2559
+$EndPAD
+$PAD
+Sh "3" R 629 1574 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 11 "/sub1_power/power_rail"
+Po -590 -2559
+$EndPAD
+$PAD
+Sh "4" R 629 1574 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -1771 -2559
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -3346 -846
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 3346 -846
+$EndPAD
+$EndMODULE  10120045-400LF
+$MODULE 10120045-400LF
+Po 70000 35000 900 15 552F2881 5529E505 ~~
+Li 10120045-400LF
+Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
+Sc 5529E505
+AR /550D4239/552F2662
+Op 0 0 0
+T0 0 -1000 500 400 900 100 N V 21 N "Pp117"
+T1 0 2500 500 400 900 100 N V 21 N "CONN_4+"
+DS 1083 -1870 1280 -1870 150 21
+DS -98 -1870 98 -1870 150 21
+DS -1280 -1870 -1083 -1870 150 21
+DS 2165 -1870 2953 -1870 150 21
+DS -2953 -1870 -2165 -1870 150 21
+DS -2953 -1870 -2953 -1476 150 21
+DS 2953 -1870 2953 -1476 150 21
+DS 2953 -197 2953 0 150 21
+DS 2953 0 -2953 0 150 21
+DS -2953 0 -2953 -197 150 21
+T2 0 500 500 400 900 100 N I 21 N "place outline on board edge"
+T2 0 1500 500 400 900 100 N I 21 N "RCPT & BLADE 4POS"
+$PAD
+Sh "1" R 629 1574 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1771 -2559
+$EndPAD
+$PAD
+Sh "2" R 629 1574 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 3 "/sub1_power/B_rx"
+Po 590 -2559
+$EndPAD
+$PAD
+Sh "3" R 629 1574 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 13 "/sub1_power/sw_pwr_B"
+Po -590 -2559
+$EndPAD
+$PAD
+Sh "4" R 629 1574 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -1771 -2559
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -3346 -846
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 3346 -846
+$EndPAD
+$EndMODULE  10120045-400LF
+$MODULE 10120045-400LF
+Po 55000 20000 1800 15 552F2881 5529E503 ~~
+Li 10120045-400LF
+Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
+Sc 5529E503
+AR /550D4239/552F265D
+Op 0 0 0
+T0 0 -1000 500 400 1800 100 N V 21 N "Pp116"
+T1 0 2500 500 400 1800 100 N V 21 N "CONN_4+"
+DS 1083 -1870 1280 -1870 150 21
+DS -98 -1870 98 -1870 150 21
+DS -1280 -1870 -1083 -1870 150 21
+DS 2165 -1870 2953 -1870 150 21
+DS -2953 -1870 -2165 -1870 150 21
+DS -2953 -1870 -2953 -1476 150 21
+DS 2953 -1870 2953 -1476 150 21
+DS 2953 -197 2953 0 150 21
+DS 2953 0 -2953 0 150 21
+DS -2953 0 -2953 -197 150 21
+T2 0 500 500 400 1800 100 N I 21 N "place outline on board edge"
+T2 0 1500 500 400 1800 100 N I 21 N "RCPT & BLADE 4POS"
+$PAD
+Sh "1" R 629 1574 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1771 -2559
+$EndPAD
+$PAD
+Sh "2" R 629 1574 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 1 "/sub1_power/A_rx"
+Po 590 -2559
+$EndPAD
+$PAD
+Sh "3" R 629 1574 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 12 "/sub1_power/sw_pwr_A"
+Po -590 -2559
+$EndPAD
+$PAD
+Sh "4" R 629 1574 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -1771 -2559
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -3346 -846
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 3346 -846
+$EndPAD
+$EndMODULE  10120045-400LF
+$MODULE 10120045-400LF
+Po 45000 40000 0 15 552F2881 5529E501 ~~
+Li 10120045-400LF
+Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
+Sc 5529E501
+AR /550D4239/552F26BA
+Op 0 0 0
+T0 0 -1000 500 400 0 100 N V 21 N "Pp118"
+T1 0 2500 500 400 0 100 N V 21 N "CONN_4+"
+DS 1083 -1870 1280 -1870 150 21
+DS -98 -1870 98 -1870 150 21
+DS -1280 -1870 -1083 -1870 150 21
+DS 2165 -1870 2953 -1870 150 21
+DS -2953 -1870 -2165 -1870 150 21
+DS -2953 -1870 -2953 -1476 150 21
+DS 2953 -1870 2953 -1476 150 21
+DS 2953 -197 2953 0 150 21
+DS 2953 0 -2953 0 150 21
+DS -2953 0 -2953 -197 150 21
+T2 0 500 500 400 0 100 N I 21 N "place outline on board edge"
+T2 0 1500 500 400 0 100 N I 21 N "RCPT & BLADE 4POS"
+$PAD
+Sh "1" R 629 1574 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1771 -2559
+$EndPAD
+$PAD
+Sh "2" R 629 1574 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 5 "/sub1_power/C_rx"
+Po 590 -2559
+$EndPAD
+$PAD
+Sh "3" R 629 1574 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 11 "/sub1_power/power_rail"
+Po -590 -2559
+$EndPAD
+$PAD
+Sh "4" R 629 1574 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -1771 -2559
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 -900
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -3346 -846
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 3346 -846
+$EndPAD
+$EndMODULE  10120045-400LF
+$MODULE 10120045-400LF
+Po 45000 20000 1800 15 552F2881 5529E4FF ~~
+Li 10120045-400LF
+Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
+Sc 5529E4FF
+AR /550D4239/552F260B
+Op 0 0 0
+T0 0 -1000 500 400 1800 100 N V 21 N "Pp111"
+T1 0 2500 500 400 1800 100 N V 21 N "CONN_4+"
+DS 1083 -1870 1280 -1870 150 21
+DS -98 -1870 98 -1870 150 21
+DS -1280 -1870 -1083 -1870 150 21
+DS 2165 -1870 2953 -1870 150 21
+DS -2953 -1870 -2165 -1870 150 21
+DS -2953 -1870 -2953 -1476 150 21
+DS 2953 -1870 2953 -1476 150 21
+DS 2953 -197 2953 0 150 21
+DS 2953 0 -2953 0 150 21
+DS -2953 0 -2953 -197 150 21
+T2 0 500 500 400 1800 100 N I 21 N "place outline on board edge"
+T2 0 1500 500 400 1800 100 N I 21 N "RCPT & BLADE 4POS"
+$PAD
+Sh "1" R 629 1574 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 1771 -2559
+$EndPAD
+$PAD
+Sh "2" R 629 1574 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 12 "/sub1_power/sw_pwr_A"
+Po 590 -2559
+$EndPAD
+$PAD
+Sh "3" R 629 1574 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 2 "/sub1_power/A_tx"
+Po -590 -2559
+$EndPAD
+$PAD
+Sh "4" R 629 1574 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1771 -2559
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -3346 -846
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 3346 -846
+$EndPAD
+$EndMODULE  10120045-400LF
+$MODULE 10120045-400LF
+Po 70000 25000 900 15 552F2881 5529E4FD ~~
+Li 10120045-400LF
+Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
+Sc 5529E4FD
+AR /550D4239/552F2660
+Op 0 0 0
+T0 0 -1000 500 400 900 100 N V 21 N "Pp112"
+T1 0 2500 500 400 900 100 N V 21 N "CONN_4+"
+DS 1083 -1870 1280 -1870 150 21
+DS -98 -1870 98 -1870 150 21
+DS -1280 -1870 -1083 -1870 150 21
+DS 2165 -1870 2953 -1870 150 21
+DS -2953 -1870 -2165 -1870 150 21
+DS -2953 -1870 -2953 -1476 150 21
+DS 2953 -1870 2953 -1476 150 21
+DS 2953 -197 2953 0 150 21
+DS 2953 0 -2953 0 150 21
+DS -2953 0 -2953 -197 150 21
+T2 0 500 500 400 900 100 N I 21 N "place outline on board edge"
+T2 0 1500 500 400 900 100 N I 21 N "RCPT & BLADE 4POS"
+$PAD
+Sh "1" R 629 1574 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 1771 -2559
+$EndPAD
+$PAD
+Sh "2" R 629 1574 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 13 "/sub1_power/sw_pwr_B"
+Po 590 -2559
+$EndPAD
+$PAD
+Sh "3" R 629 1574 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 4 "/sub1_power/B_tx"
+Po -590 -2559
+$EndPAD
+$PAD
+Sh "4" R 629 1574 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1771 -2559
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -3346 -846
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 3346 -846
+$EndPAD
+$EndMODULE  10120045-400LF
+$MODULE 10120045-400LF
+Po 55000 40000 0 15 552F2881 5529E4FB ~~
+Li 10120045-400LF
+Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
+Sc 5529E4FB
+AR /550D4239/552F26B7
+Op 0 0 0
+T0 0 -1000 500 400 0 100 N V 21 N "Pp113"
+T1 0 2500 500 400 0 100 N V 21 N "CONN_4+"
+DS 1083 -1870 1280 -1870 150 21
+DS -98 -1870 98 -1870 150 21
+DS -1280 -1870 -1083 -1870 150 21
+DS 2165 -1870 2953 -1870 150 21
+DS -2953 -1870 -2165 -1870 150 21
+DS -2953 -1870 -2953 -1476 150 21
+DS 2953 -1870 2953 -1476 150 21
+DS 2953 -197 2953 0 150 21
+DS 2953 0 -2953 0 150 21
+DS -2953 0 -2953 -197 150 21
+T2 0 500 500 400 0 100 N I 21 N "place outline on board edge"
+T2 0 1500 500 400 0 100 N I 21 N "RCPT & BLADE 4POS"
+$PAD
+Sh "1" R 629 1574 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 1771 -2559
+$EndPAD
+$PAD
+Sh "2" R 629 1574 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 11 "/sub1_power/power_rail"
+Po 590 -2559
+$EndPAD
+$PAD
+Sh "3" R 629 1574 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 6 "/sub1_power/C_tx"
+Po -590 -2559
+$EndPAD
+$PAD
+Sh "4" R 629 1574 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1771 -2559
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 -900
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -3346 -846
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 3346 -846
+$EndPAD
+$EndMODULE  10120045-400LF
+$MODULE 10120045-400LF
+Po 30000 35000 2700 15 552F2881 5529E4F9 ~~
+Li 10120045-400LF
+Kw edge connector, board-to-board, RCPT & BLADE 4POS 3MM
+Sc 5529E4F9
+AR /550D4239/552F26BC
+Op 0 0 0
+T0 0 -1000 500 400 2700 100 N V 21 N "Pp114"
+T1 0 2500 500 400 2700 100 N V 21 N "CONN_4+"
+DS 1083 -1870 1280 -1870 150 21
+DS -98 -1870 98 -1870 150 21
+DS -1280 -1870 -1083 -1870 150 21
+DS 2165 -1870 2953 -1870 150 21
+DS -2953 -1870 -2165 -1870 150 21
+DS -2953 -1870 -2953 -1476 150 21
+DS 2953 -1870 2953 -1476 150 21
+DS 2953 -197 2953 0 150 21
+DS 2953 0 -2953 0 150 21
+DS -2953 0 -2953 -197 150 21
+T2 0 500 500 400 2700 100 N I 21 N "place outline on board edge"
+T2 0 1500 500 400 2700 100 N I 21 N "RCPT & BLADE 4POS"
+$PAD
+Sh "1" R 629 1574 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 1771 -2559
+$EndPAD
+$PAD
+Sh "2" R 629 1574 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 11 "/sub1_power/power_rail"
+Po 590 -2559
+$EndPAD
+$PAD
+Sh "3" R 629 1574 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 8 "/sub1_power/D_tx"
+Po -590 -2559
+$EndPAD
+$PAD
+Sh "4" R 629 1574 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1771 -2559
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -3346 -846
+$EndPAD
+$PAD
+Sh "0" R 1023 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 3346 -846
+$EndPAD
+$EndMODULE  10120045-400LF
+$MODULE ZX62R-B-5P
+Po 35000 20500 1800 15 4D52A902 552F3697 ~~
+Li ZX62R-B-5P
+Sc 552F3697
+AR /550D4239/550CC6F6
+Op 0 0 0
+T0 0 1500 200 200 1800 45 N V 21 N "Pp101"
+T1 0 -2000 200 200 1800 45 N V 21 N "CONN_5"
+DS -1476 846 -1575 1024 39 21
+DS 1476 846 1575 1024 39 21
+DS 1475 846 -1475 846 39 21
+DS -1475 847 -1475 -1122 39 21
+DS 1475 -1122 -1475 -1122 39 21
+DS 1475 846 1475 -1122 39 21
+$PAD
+Sh "1" R 157 531 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 9 "/sub1_power/USB_Vin"
+Po 511 -1053
+$EndPAD
+$PAD
+Sh "2" R 157 531 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 255 -1053
+$EndPAD
+$PAD
+Sh "3" R 157 531 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -1053
+$EndPAD
+$PAD
+Sh "4" R 157 531 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -255 -1053
+$EndPAD
+$PAD
+Sh "5" R 157 531 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -511 -1053
+$EndPAD
+$PAD
+Sh "5" R 748 629 0 0 900
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -1614 0
+$EndPAD
+$PAD
+Sh "5" R 472 748 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -335 0
+$EndPAD
+$PAD
+Sh "5" R 472 748 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 335 0
+$EndPAD
+$PAD
+Sh "5" R 827 787 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -1220 -925
+$EndPAD
+$PAD
+Sh "5" R 827 787 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 1220 -925
+$EndPAD
+$PAD
+Sh "5" R 335 740 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po -935 201
+$EndPAD
+$PAD
+Sh "5" R 748 629 0 0 2700
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 1614 0
+$EndPAD
+$PAD
+Sh "5" R 335 740 0 0 1800
+Dr 0 0 0
+At SMD N 00888000
+Ne 78 "GND"
+Po 935 201
+$EndPAD
+$EndMODULE  ZX62R-B-5P
+$MODULE PIN_ARRAY_1
+Po 39000 20500 0 15 4E4E744E 552FAE4C ~~
+Li PIN_ARRAY_1
+Cd 1 pin
+Kw CONN DEV
+Sc 552FAE4C
+AR /550D4361/552FADDE
+Op 0 0 0
+T0 0 -750 300 300 0 60 N V 21 N "TPp201"
+T1 0 -750 300 300 0 60 N I 21 N "CONN_1"
+DS 500 500 -500 500 60 21
+DS -500 -500 500 -500 60 21
+DS -500 500 -500 -500 60 21
+DS 500 -500 500 500 60 21
+$PAD
+Sh "1" R 600 600 0 0 0
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 19 "/sub2_control/LED_SPI_CLK"
+Po 0 0
+$EndPAD
+$SHAPE3D
+Na "pin_array\\pin_1.wrl"
+Sc 1.000000 1.000000 1.000000
+Of 0.000000 0.000000 0.000000
+Ro 0.000000 0.000000 0.000000
+$EndSHAPE3D
+$EndMODULE  PIN_ARRAY_1
+$MODULE PIN_ARRAY_1
+Po 40000 20500 0 15 4E4E744E 552FAE4E ~~
+Li PIN_ARRAY_1
+Cd 1 pin
+Kw CONN DEV
+Sc 552FAE4E
+AR /550D4361/552FADE5
+Op 0 0 0
+T0 0 -750 300 300 0 60 N V 21 N "TPp202"
+T1 0 -750 300 300 0 60 N I 21 N "CONN_1"
+DS 500 500 -500 500 60 21
+DS -500 -500 500 -500 60 21
+DS -500 500 -500 -500 60 21
+DS 500 -500 500 500 60 21
+$PAD
+Sh "1" R 600 600 0 0 0
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 20 "/sub2_control/LED_SPI_MOSI"
+Po 0 0
+$EndPAD
+$SHAPE3D
+Na "pin_array\\pin_1.wrl"
+Sc 1.000000 1.000000 1.000000
+Of 0.000000 0.000000 0.000000
+Ro 0.000000 0.000000 0.000000
+$EndSHAPE3D
+$EndMODULE  PIN_ARRAY_1
 $TEXTPCB
 Te "ver: XXXXXXX"
-Po 41000 23500 200 300 50 0
+Po 30000 19500 200 300 50 0
 De 21 1 0 Normal L
 $EndTEXTPCB
 $DRAWSEGMENT
-Po 2 41000 21000 40000 21000 150
+Po 2 31000 21000 30000 21000 150
 De 28 0 900 0 0
 $EndDRAWSEGMENT
 $DRAWSEGMENT
-Po 2 41000 39000 41000 40000 150
+Po 2 31000 39000 31000 40000 150
 De 28 0 900 0 0
 $EndDRAWSEGMENT
 $DRAWSEGMENT
-Po 2 59000 39000 60000 39000 150
+Po 2 69000 39000 70000 39000 150
 De 28 0 900 0 0
 $EndDRAWSEGMENT
 $DRAWSEGMENT
-Po 2 59000 21000 59000 20000 150
+Po 2 69000 21000 69000 20000 150
 De 28 0 900 0 0
 $EndDRAWSEGMENT
 $DRAWSEGMENT
-Po 0 40000 39000 40000 21000 150
+Po 0 30000 39000 30000 21000 150
 De 28 0 900 0 0
 $EndDRAWSEGMENT
 $DRAWSEGMENT
-Po 0 59000 40000 41000 40000 150
+Po 0 69000 40000 31000 40000 150
 De 28 0 900 0 0
 $EndDRAWSEGMENT
 $DRAWSEGMENT
-Po 0 41000 20000 59000 20000 150
+Po 0 31000 20000 69000 20000 150
 De 28 0 900 0 0
 $EndDRAWSEGMENT
 $DRAWSEGMENT
-Po 0 60000 21000 60000 39000 150
+Po 0 70000 21000 70000 39000 150
 De 28 0 900 0 0
 $EndDRAWSEGMENT
 $TEXTPCB
@@ -4298,685 +4548,421 @@ Te " Instructions:"
 nl "  1. Stencil solder onto pads"
 nl "  2. Place all components"
 nl "  3. Heat to  reflow temp."
-Po 40500 21000 240 300 50 0
+Po 30000 17000 240 300 50 0
 De 21 1 0 Normal L
 $EndTEXTPCB
 $TRACK
-Po 0 54000 29000 55000 29000 100 -1
+Po 0 46500 27000 47000 27500 80 -1
+De 0 0 1 0 0
+Po 0 46640 27640 46500 27500 80 -1
+De 15 0 1 0 0
+Po 0 46500 27500 46500 27000 80 -1
+De 15 0 1 0 0
+Po 3 46500 27000 46500 27000 350 -1
+De 15 1 1 0 0
+Po 0 46950 27640 46640 27640 80 -1
+De 15 0 1 0 400000
+Po 0 54410 23590 54410 22559 80 -1
+De 15 0 1 0 800000
+Po 0 54000 24000 54410 23590 80 -1
+De 15 0 1 0 0
+Po 3 54000 24000 54000 24000 350 -1
+De 15 1 1 0 0
+Po 0 50500 27500 54000 24000 80 -1
+De 0 0 1 0 0
+Po 0 47000 27500 50500 27500 80 -1
+De 0 0 1 0 0
+Po 0 47000 27000 47000 25500 80 -1
+De 0 0 2 0 0
+Po 0 47000 25500 45500 24000 80 -1
+De 0 0 2 0 0
+Po 3 45500 24000 45500 24000 350 -1
+De 15 1 2 0 0
+Po 0 45500 24000 45590 23910 80 -1
 De 15 0 2 0 0
-Po 0 53820 28820 54000 29000 100 -1
-De 15 0 2 0 0
-Po 0 55500 27875 56500 27875 100 -1
-De 15 0 2 0 C00000
-Po 0 53050 28820 53820 28820 80 -1
-De 15 0 2 0 400000
-Po 0 55500 28500 55500 27875 100 -1
+Po 0 45590 23910 45590 22559 80 -1
 De 15 0 2 0 800000
-Po 0 55000 29000 55500 28500 100 -1
+Po 0 47640 26950 47050 26950 80 -1
+De 15 0 2 0 400000
+Po 3 47000 27000 47000 27000 350 -1
+De 15 1 2 0 0
+Po 0 47050 26950 47000 27000 80 -1
 De 15 0 2 0 0
-Po 0 45500 29875 44500 29875 100 -1
-De 15 0 3 0 C00000
-Po 0 46950 29810 45565 29810 80 -1
-De 15 0 3 0 400000
-Po 0 45565 29810 45500 29875 100 -1
-De 15 0 3 0 800000
-Po 0 40500 34000 42300 34000 100 -1
-De 15 0 4 0 C00000
-Po 0 40500 37000 42300 37000 100 -1
-De 15 0 5 0 C00000
-Po 0 40500 38000 41500 38000 100 -1
-De 15 0 6 0 400000
-Po 0 40500 39000 42300 39000 100 -1
-De 15 0 6 0 C00000
-Po 0 41500 38000 41500 39000 100 -1
+Po 0 46950 31970 46170 31970 80 -1
+De 15 0 5 0 400000
+Po 0 45590 36010 45590 37441 80 -1
+De 15 0 5 0 800000
+Po 0 45600 36000 45590 36010 80 -1
+De 15 0 5 0 0
+Po 3 45600 36000 45600 36000 350 -1
+De 15 1 5 0 0
+Po 0 45600 32200 45600 36000 80 -1
+De 0 0 5 0 0
+Po 0 46000 31800 45600 32200 80 -1
+De 0 0 5 0 0
+Po 3 46000 31800 46000 31800 350 -1
+De 15 1 5 0 0
+Po 0 46170 31970 46000 31800 80 -1
+De 15 0 5 0 0
+Po 0 54400 36200 54400 37800 80 -1
+De 0 0 6 0 0
+Po 0 46570 31770 46000 31200 80 -1
 De 15 0 6 0 0
-Po 0 41500 39000 42300 39000 100 -1
+Po 3 46000 31200 46000 31200 350 -1
+De 15 1 6 0 0
+Po 0 46950 31770 46570 31770 80 -1
+De 15 0 6 0 400000
+Po 0 54410 36210 54400 36200 80 -1
+De 15 0 6 0 0
+Po 3 54400 36200 54400 36200 350 -1
+De 15 1 6 0 0
+Po 0 54410 36210 54410 37441 80 -1
 De 15 0 6 0 800000
-Po 0 49210 33050 49210 33290 80 -1
-De 15 0 9 0 400000
-Po 0 48500 34000 48000 34000 100 -1
-De 15 0 9 0 0
-Po 0 49210 33290 48500 34000 80 -1
-De 15 0 9 0 0
-Po 0 48000 34000 47500 34500 100 -1
-De 15 0 9 0 0
-Po 0 47500 34500 47500 34625 100 -1
-De 15 0 9 0 800000
-Po 0 47500 35375 47500 36125 100 -1
-De 15 0 10 0 C00000
-Po 0 49410 33050 49410 33590 80 -1
-De 15 0 11 0 400000
-Po 0 49410 33590 48500 34500 100 -1
-De 15 0 11 0 0
-Po 0 48500 34500 48500 34625 100 -1
-De 15 0 11 0 800000
-Po 0 48500 35375 48500 36125 100 -1
-De 15 0 12 0 C00000
-Po 0 49500 34000 49500 34625 100 -1
-De 15 0 13 0 800000
-Po 0 49610 33050 49610 33890 80 -1
-De 15 0 13 0 400000
-Po 0 49610 33890 49500 34000 100 -1
-De 15 0 13 0 0
-Po 0 49500 35375 49500 36125 100 -1
+Po 0 45200 32000 46000 31200 80 -1
+De 0 0 6 0 0
+Po 0 45200 36400 45200 32000 80 -1
+De 0 0 6 0 0
+Po 0 47200 38400 45200 36400 80 -1
+De 0 0 6 0 0
+Po 0 53800 38400 47200 38400 80 -1
+De 0 0 6 0 0
+Po 0 54400 37800 53800 38400 80 -1
+De 0 0 6 0 0
+Po 0 53050 28820 55180 28820 80 -1
+De 15 0 14 0 400000
+Po 0 55180 28820 55500 28500 80 -1
+De 15 0 14 0 0
+Po 0 55500 28500 55500 27875 80 -1
+De 15 0 14 0 800000
+Po 0 55500 27875 56500 27875 100 -1
 De 15 0 14 0 C00000
-Po 0 49810 33050 49810 33310 80 -1
+Po 0 45500 29875 44500 29875 100 -1
+De 15 0 15 0 C00000
+Po 0 46950 29810 45565 29810 80 -1
 De 15 0 15 0 400000
-Po 0 50500 34000 50500 34625 100 -1
+Po 0 45565 29810 45500 29875 100 -1
 De 15 0 15 0 800000
-Po 0 49810 33310 50500 34000 80 -1
-De 15 0 15 0 0
-Po 0 50500 35375 50500 36125 100 -1
-De 15 0 16 0 C00000
-Po 0 58000 29625 58000 29000 100 -1
-De 15 0 17 0 400000
-Po 0 47125 25500 47125 24500 100 -1
-De 15 0 17 0 C00000
-Po 0 46500 24500 47125 24500 100 -1
-De 15 0 17 0 800000
-Po 0 51125 36875 51500 36500 100 -1
-De 15 0 17 0 0
-Po 3 54500 28500 54500 28500 350 -1
-De 15 1 17 0 0
-Po 0 52625 34500 52500 34500 100 -1
-De 15 0 17 0 400000
-Po 0 53000 38000 51500 36500 100 -1
-De 15 0 17 0 0
-Po 3 50500 23500 50500 23500 350 -1
-De 15 1 17 0 0
-Po 0 50590 27590 50590 26950 80 -1
-De 15 0 17 0 800000
-Po 0 48500 36875 49500 36875 100 -1
-De 15 0 17 0 C00000
-Po 0 46500 22500 49500 22500 100 -1
-De 0 0 17 0 0
-Po 0 54000 25000 54000 26000 100 -1
-De 15 0 17 0 0
-Po 0 49500 36875 50500 36875 100 -1
-De 15 0 17 0 C00000
-Po 0 49375 25500 49375 24500 100 -1
-De 15 0 17 0 C00000
-Po 0 43500 32000 43500 33500 100 -1
-De 15 0 17 0 0
-Po 0 45125 31500 44000 31500 100 -1
-De 15 0 17 0 400000
-Po 0 57500 23500 57999 23999 100 -1
-De 15 0 17 0 0
-Po 0 57500 22500 57500 23500 100 -1
-De 15 0 17 0 0
-Po 0 49375 25500 49375 25500 100 -1
-De 15 0 17 0 C00000
-Po 0 52170 33670 52625 34125 100 -1
-De 15 0 17 0 0
-Po 0 43500 33500 44000 34000 100 -1
-De 15 0 17 0 0
-Po 0 54500 39000 53500 38000 100 -1
-De 15 0 17 0 0
-Po 0 52000 28000 51000 28000 100 -1
-De 15 0 17 0 0
-Po 0 48620 26380 49375 25625 100 -1
-De 15 0 17 0 0
-Po 0 49500 22500 50500 23500 100 -1
-De 0 0 17 0 0
-Po 0 42700 39000 51500 39000 100 -1
-De 15 0 17 0 400000
-Po 0 53500 38000 53500 36625 100 -1
-De 15 0 17 0 0
-Po 0 49375 24500 50375 24500 100 -1
-De 15 0 17 0 400000
-Po 0 54500 39500 54500 39000 100 -1
-De 15 0 17 0 400000
-Po 0 51500 39000 52000 39500 100 -1
-De 15 0 17 0 0
-Po 0 45500 23500 45500 24000 100 -1
-De 15 0 17 0 0
-Po 0 51500 24625 52500 24625 100 -1
-De 15 0 17 0 C00000
-Po 0 45500 24000 46000 24000 100 -1
-De 15 0 17 0 0
-Po 0 54000 26000 52000 28000 100 -1
-De 15 0 17 0 0
-Po 0 45500 27000 41000 27000 100 -1
-De 0 0 17 0 0
-Po 0 46500 33625 45875 33000 100 -1
-De 15 0 17 0 800000
-Po 0 53050 27830 54455 27830 80 -1
-De 15 0 17 0 400000
-Po 3 45500 27000 45500 27000 350 -1
-De 15 1 17 0 0
-Po 0 52625 34125 52625 34500 100 -1
-De 15 0 17 0 800000
-Po 0 46500 34000 46500 33625 100 -1
-De 15 0 17 0 0
-Po 0 58500 29000 59000 29000 100 -1
-De 15 0 17 0 0
-Po 0 57500 29000 58000 29000 100 -1
-De 15 0 17 0 0
-Po 0 58000 29000 58500 29000 100 -1
-De 15 0 17 0 0
-Po 0 52000 39500 54500 39500 100 -1
-De 15 0 17 0 800000
-Po 0 46000 24000 46500 24500 100 -1
-De 15 0 17 0 0
-Po 0 47500 36875 48500 36875 100 -1
-De 15 0 17 0 C00000
-Po 0 46875 36875 46500 36500 100 -1
-De 15 0 17 0 0
-Po 0 50500 36875 51125 36875 100 -1
-De 15 0 17 0 400000
-Po 0 53500 38000 53000 38000 100 -1
-De 15 0 17 0 0
-Po 0 50500 24625 50500 23500 100 -1
-De 15 0 17 0 400000
-Po 0 54500 27875 54500 28500 100 -1
-De 15 0 17 0 400000
-Po 0 54500 28500 55000 29000 100 -1
-De 0 0 17 0 0
-Po 0 56000 29000 57500 29000 100 -1
-De 15 0 17 0 0
-Po 0 43000 24000 45500 24000 100 -1
-De 15 0 17 0 0
-Po 0 58001 24999 57500 25500 100 -1
-De 15 0 17 0 0
-Po 0 45500 23500 46500 22500 100 -1
-De 0 0 17 0 0
-Po 0 44000 31500 43500 32000 100 -1
-De 15 0 17 0 0
-Po 0 46950 27840 46340 27840 80 -1
-De 15 0 17 0 400000
-Po 0 46125 27625 45500 27625 100 -1
-De 15 0 17 0 800000
-Po 0 59000 29000 59000 33500 100 -1
-De 15 0 17 0 0
-Po 0 52500 34500 51625 35375 100 -1
-De 15 0 17 0 0
-Po 0 43000 25125 43000 24000 100 -1
-De 15 0 17 0 400000
-Po 3 45500 23500 45500 23500 350 -1
-De 15 1 17 0 0
-Po 0 51500 35375 51500 36500 100 -1
-De 15 0 17 0 400000
-Po 0 47500 36875 46875 36875 100 -1
-De 15 0 17 0 400000
-Po 0 53625 24625 54000 25000 100 -1
-De 15 0 17 0 0
-Po 0 58000 38500 55000 38500 100 -1
-De 15 0 17 0 0
-Po 0 59000 37500 58000 38500 100 -1
-De 15 0 17 0 0
-Po 0 58692 24999 58001 24999 100 -1
-De 15 0 17 0 400000
-Po 0 53500 36625 53375 36500 100 -1
-De 15 0 17 0 800000
-Po 0 48620 26950 48620 26380 80 -1
-De 15 0 17 0 400000
-Po 0 59000 33500 59000 37500 100 -1
-De 15 0 17 0 0
-Po 0 49375 25625 49375 25500 100 -1
-De 15 0 17 0 800000
-Po 0 44000 34000 46500 34000 100 -1
-De 15 0 17 0 0
-Po 0 57999 22001 57500 22500 100 -1
-De 15 0 17 0 0
-Po 0 41000 28500 44000 31500 100 -1
-De 15 0 17 0 0
-Po 0 57999 23999 58692 23999 100 -1
-De 15 0 17 0 800000
-Po 0 58692 23999 58692 24999 100 -1
-De 15 0 17 0 C00000
-Po 0 57500 25500 57500 29000 100 -1
-De 15 0 17 0 0
-Po 0 58692 22001 57999 22001 100 -1
-De 15 0 17 0 400000
-Po 0 51625 35375 51500 35375 100 -1
-De 15 0 17 0 800000
-Po 0 55000 38500 54500 39000 100 -1
-De 15 0 17 0 0
-Po 0 55000 29000 56000 29000 100 -1
-De 0 0 17 0 0
-Po 0 51500 24625 50500 24625 100 -1
-De 15 0 17 0 C00000
-Po 0 52500 24625 53625 24625 100 -1
-De 15 0 17 0 400000
-Po 0 54455 27830 54500 27875 100 -1
-De 15 0 17 0 800000
-Po 0 45500 27000 45500 23500 100 -1
-De 0 0 17 0 0
-Po 3 56000 29000 56000 29000 350 -1
-De 15 1 17 0 0
-Po 0 50500 24625 50375 24500 100 -1
-De 15 0 17 0 400000
-Po 0 46340 27840 46125 27625 100 -1
-De 15 0 17 0 0
-Po 0 58000 33500 59000 33500 100 -1
-De 15 0 17 0 400000
-Po 0 45500 27625 45500 27000 100 -1
-De 15 0 17 0 400000
-Po 3 41000 27000 41000 27000 350 -1
-De 15 1 17 0 0
-Po 0 50375 24500 50500 24625 100 -1
-De 15 0 17 0 800000
-Po 0 51000 28000 50590 27590 100 -1
-De 15 0 17 0 0
-Po 0 46500 36500 46500 34000 100 -1
-De 15 0 17 0 0
-Po 0 41000 27000 41000 28500 100 -1
-De 15 0 17 0 0
-Po 0 52170 33050 52170 33670 80 -1
-De 15 0 17 0 400000
-Po 0 53860 27640 54375 27125 80 -1
-De 15 0 18 0 0
-Po 3 54500 26000 54500 26000 350 -1
-De 15 1 18 0 0
-Po 0 54500 26000 54500 26000 100 -1
-De 15 0 18 0 0
-Po 0 49500 26000 50000 26000 100 -1
-De 15 0 18 0 0
-Po 0 46950 32360 45640 32360 80 -1
-De 15 0 18 0 400000
-Po 0 42700 37000 44000 37000 100 -1
-De 15 0 18 0 400000
-Po 0 54500 26000 54000 26000 100 -1
-De 0 0 18 0 0
-Po 0 59500 38000 58000 39500 100 -1
-De 15 0 18 0 0
-Po 0 50000 23000 50000 22500 100 -1
-De 15 0 18 0 0
-Po 0 54000 26000 53500 25500 100 -1
-De 0 0 18 0 0
-Po 0 49375 23500 49500 23500 100 -1
-De 15 0 18 0 400000
-Po 0 54500 27125 55500 27125 100 -1
-De 15 0 18 0 C00000
-Po 0 59500 27000 59500 38000 100 -1
-De 15 0 18 0 0
-Po 0 50500 25500 50000 26000 100 -1
-De 15 0 18 0 0
-Po 0 58000 39500 55500 39500 100 -1
-De 15 0 18 0 800000
-Po 0 58692 23001 59501 23001 100 -1
-De 15 0 18 0 400000
-Po 0 59501 23001 59500 23000 100 -1
-De 15 0 18 0 0
-Po 0 59500 23000 59500 27000 100 -1
-De 15 0 18 0 0
-Po 0 46950 28030 46470 28030 80 -1
-De 15 0 18 0 400000
-Po 0 53050 27640 53860 27640 80 -1
-De 15 0 18 0 400000
-Po 0 47500 22500 47000 23000 100 -1
-De 15 0 18 0 0
-Po 0 55500 37500 53500 35500 100 -1
-De 15 0 18 0 0
-Po 0 49500 23500 50000 23000 100 -1
-De 15 0 18 0 0
-Po 0 51380 26950 51380 26620 80 -1
-De 15 0 18 0 400000
-Po 0 48625 23500 48625 24500 100 -1
-De 15 0 18 0 C00000
-Po 0 54375 27125 54500 27125 100 -1
-De 15 0 18 0 800000
-Po 0 53500 24000 53500 23000 100 -1
-De 15 0 18 0 0
-Po 0 44000 33000 43000 32000 100 -1
-De 0 0 18 0 0
-Po 0 45640 32360 45125 32875 100 -1
-De 15 0 18 0 0
-Po 0 47000 23000 47000 23375 100 -1
-De 15 0 18 0 0
-Po 0 52000 26000 52500 25500 100 -1
-De 15 0 18 0 0
-Po 0 53375 34375 53000 34000 100 -1
-De 15 0 18 0 0
-Po 0 52500 22500 50000 22500 100 -1
-De 15 0 18 0 0
-Po 0 53000 22500 52500 22500 100 -1
-De 15 0 18 0 0
-Po 0 46125 28375 45500 28375 100 -1
-De 15 0 18 0 800000
-Po 0 48820 26680 49500 26000 80 -1
-De 15 0 18 0 0
-Po 0 55500 38000 55500 37500 100 -1
-De 15 0 18 0 0
-Po 0 52500 25375 53375 25375 100 -1
-De 15 0 18 0 400000
-Po 0 50000 22500 47500 22500 100 -1
-De 15 0 18 0 0
-Po 0 46470 28030 46125 28375 80 -1
-De 15 0 18 0 0
-Po 0 44000 35000 44000 33000 100 -1
-De 0 0 18 0 0
-Po 0 51500 38500 55500 38500 100 -1
-De 0 0 18 0 0
-Po 0 48420 26950 48420 25705 80 -1
-De 15 0 18 0 400000
-Po 0 47000 23375 47125 23500 100 -1
-De 15 0 18 0 800000
-Po 0 52360 33360 53000 34000 80 -1
-De 15 0 18 0 0
-Po 0 55500 38500 55500 38000 100 -1
-De 0 0 18 0 0
-Po 0 47875 23000 49375 23000 100 -1
-De 15 0 18 0 0
-Po 0 47875 23500 47875 23000 100 -1
-De 15 0 18 0 400000
-Po 0 45500 29125 45500 28375 100 -1
-De 15 0 18 0 C00000
-Po 0 51000 26500 51500 26000 100 -1
-De 15 0 18 0 0
-Po 0 45125 32875 45125 33000 100 -1
-De 15 0 18 0 800000
-Po 0 57500 26000 58500 27000 100 -1
-De 0 0 18 0 0
-Po 0 50500 26500 51000 26500 100 -1
-De 15 0 18 0 0
-Po 0 48820 26950 48820 26680 80 -1
-De 15 0 18 0 400000
-Po 0 48230 26950 48230 25855 80 -1
-De 15 0 18 0 400000
-Po 0 50500 25375 50500 25500 100 -1
-De 15 0 18 0 400000
-Po 0 55500 39500 55500 38500 100 -1
-De 0 0 18 0 400000
-Po 0 52360 33050 52360 33360 80 -1
-De 15 0 18 0 400000
-Po 0 50390 26950 50390 26610 80 -1
-De 15 0 18 0 400000
-Po 0 51500 25375 52500 25375 100 -1
-De 15 0 18 0 C00000
-Po 0 51500 26000 51500 25375 100 -1
-De 15 0 18 0 800000
-Po 0 43000 28500 45375 28500 100 -1
-De 15 0 18 0 0
-Po 3 43000 28500 43000 28500 350 -1
-De 15 1 18 0 0
-Po 0 54500 26000 57500 26000 100 -1
-De 0 0 18 0 0
-Po 0 53500 35500 53375 35500 100 -1
-De 15 0 18 0 800000
-Po 0 44000 37000 44000 35000 100 -1
-De 0 0 18 0 0
-Po 3 53500 24000 53500 24000 350 -1
-De 15 1 18 0 0
-Po 3 58500 27000 58500 27000 350 -1
-De 15 1 18 0 0
-Po 0 58500 27000 59500 27000 100 -1
-De 15 0 18 0 0
-Po 0 53500 25500 53500 24000 100 -1
-De 0 0 18 0 0
-Po 0 58500 29000 58500 27000 100 -1
-De 0 0 18 0 0
-Po 0 58000 29800 58000 29500 100 -1
-De 0 0 18 0 400000
-Po 0 45375 28500 45500 28375 100 -1
-De 15 0 18 0 800000
-Po 0 48625 23500 49375 23500 100 -1
-De 15 0 18 0 C00000
-Po 0 58000 29500 58500 29000 100 -1
-De 0 0 18 0 0
-Po 0 45000 38000 45500 38500 100 -1
-De 15 0 18 0 0
-Po 0 45125 33000 44000 33000 100 -1
-De 15 0 18 0 400000
-Po 0 48420 25705 48625 25500 100 -1
-De 15 0 18 0 800000
-Po 0 50390 26610 50500 26500 100 -1
-De 15 0 18 0 0
-Po 0 49375 23000 49375 23500 100 -1
-De 15 0 18 0 800000
-Po 0 44000 37000 45000 38000 100 -1
-De 15 0 18 0 0
-Po 0 45500 38500 51500 38500 100 -1
-De 15 0 18 0 0
-Po 0 43000 32000 43000 28500 100 -1
-De 0 0 18 0 0
-Po 0 53375 25375 53500 25500 100 -1
-De 15 0 18 0 0
-Po 0 47875 23500 47125 23500 100 -1
-De 15 0 18 0 C00000
-Po 3 55500 38000 55500 38000 350 -1
-De 15 1 18 0 0
-Po 0 47875 25500 47875 24500 100 -1
-De 15 0 18 0 C00000
-Po 0 54500 27125 54500 26000 100 -1
-De 15 0 18 0 400000
-Po 0 52500 25500 52500 25375 100 -1
-De 15 0 18 0 800000
-Po 3 44000 33000 44000 33000 350 -1
-De 15 1 18 0 0
-Po 0 48625 24500 48625 25500 100 -1
-De 15 0 18 0 C00000
-Po 3 44000 37000 44000 37000 350 -1
-De 15 1 18 0 0
-Po 3 53500 25500 53500 25500 350 -1
-De 15 1 18 0 0
-Po 0 53500 23000 53000 22500 100 -1
-De 15 0 18 0 0
-Po 0 50500 25375 51500 25375 100 -1
-De 15 0 18 0 C00000
-Po 0 51380 26620 52000 26000 100 -1
-De 15 0 18 0 0
-Po 0 48230 25855 47875 25500 100 -1
-De 15 0 18 0 800000
-Po 0 47875 24500 47875 23500 100 -1
-De 15 0 18 0 C00000
-Po 3 51500 38500 51500 38500 350 -1
-De 15 1 18 0 0
-Po 0 43000 27375 43000 28500 100 -1
-De 15 0 18 0 400000
-Po 0 53375 34500 53375 35500 100 -1
-De 15 0 18 0 C00000
-Po 0 53375 34500 53375 34375 100 -1
-De 15 0 18 0 400000
-Po 0 57000 31000 57000 31500 100 -1
-De 15 0 19 0 0
-Po 3 57000 31500 57000 31500 350 -1
-De 15 1 19 0 0
-Po 0 57000 31500 57000 35000 100 -1
-De 0 0 19 0 0
-Po 3 57000 35000 57000 35000 350 -1
-De 15 1 19 0 0
-Po 0 58000 35500 57500 35500 100 -1
+Po 0 37605 22898 37605 22405 80 -1
 De 15 0 19 0 400000
-Po 0 57500 35500 57000 35000 100 -1
+Po 3 37000 22600 37000 22600 200 -1
+De 15 1 19 0 0
+Po 0 37000 22400 37000 22600 80 -1
 De 15 0 19 0 0
-Po 0 57000 35000 57000 35000 100 -1
+Po 0 37200 22200 37000 22400 80 -1
 De 15 0 19 0 0
-Po 0 53050 29600 55600 29600 100 -1
-De 15 0 19 0 400000
-Po 0 55600 29600 57000 31000 100 -1
+Po 0 37400 22200 37200 22200 80 -1
 De 15 0 19 0 0
-Po 0 51770 32730 52000 32500 100 -1
-De 15 0 20 0 0
-Po 0 52000 32500 52500 32500 100 -1
-De 15 0 20 0 0
-Po 0 56000 33000 57500 34500 100 -1
-De 15 0 20 0 0
-Po 0 53000 33000 56000 33000 100 -1
-De 15 0 20 0 0
-Po 0 51770 33050 51770 32730 80 -1
+Po 0 37605 22405 37400 22200 80 -1
+De 15 0 19 0 0
+Po 0 37349 22898 37102 22898 80 -1
 De 15 0 20 0 400000
-Po 0 52500 32500 53000 33000 100 -1
+Po 3 37000 23000 37000 23000 200 -1
+De 15 1 20 0 0
+Po 0 37102 22898 37000 23000 80 -1
 De 15 0 20 0 0
-Po 0 58000 34500 57500 34500 100 -1
-De 15 0 20 0 400000
-Po 0 58000 32500 53500 32500 100 -1
-De 15 0 21 0 400000
-Po 0 53360 32360 53050 32360 100 -1
-De 15 0 21 0 800000
-Po 0 53500 32500 53360 32360 100 -1
-De 15 0 21 0 0
-Po 0 56500 31500 56500 35000 100 -1
-De 0 0 22 0 0
-Po 0 53050 29800 54800 29800 100 -1
-De 15 0 22 0 400000
-Po 0 54800 29800 56500 31500 100 -1
-De 15 0 22 0 0
-Po 3 56500 31500 56500 31500 350 -1
-De 15 1 22 0 0
-Po 3 56500 35000 56500 35000 350 -1
-De 15 1 22 0 0
-Po 0 57500 36500 56500 35500 100 -1
-De 15 0 22 0 0
-Po 0 58000 36500 57500 36500 100 -1
-De 15 0 22 0 400000
-Po 0 56500 35000 56500 35500 100 -1
-De 15 0 22 0 0
-Po 0 40500 36000 42300 36000 100 -1
-De 15 0 23 0 C00000
-Po 0 40500 35000 42300 35000 100 -1
-De 15 0 24 0 C00000
-Po 0 58000 31500 58000 30375 100 -1
-De 15 0 25 0 C00000
-Po 0 58000 31500 58000 30200 100 -1
-De 0 0 25 0 C00000
-Po 0 46170 32170 45875 31875 80 -1
-De 15 0 26 0 0
-Po 0 45875 31875 45875 31500 100 -1
-De 15 0 26 0 800000
-Po 0 46950 32170 46170 32170 80 -1
-De 15 0 26 0 400000
-Po 0 51970 33530 51500 34000 100 -1
-De 15 0 27 0 0
-Po 0 51970 33050 51970 33530 80 -1
-De 15 0 27 0 400000
-Po 0 51500 34000 51500 34625 100 -1
-De 15 0 27 0 800000
-Po 0 44000 21500 42500 23000 100 -1
-De 15 0 28 0 0
-Po 0 47000 26500 46375 25875 100 -1
-De 15 0 28 0 0
-Po 0 54501 23001 53000 21500 100 -1
-De 15 0 28 0 0
-Po 0 48000 26500 47000 26500 100 -1
-De 15 0 28 0 0
-Po 0 42500 25500 42875 25875 100 -1
-De 15 0 28 0 0
-Po 0 42875 25875 43000 25875 100 -1
-De 15 0 28 0 800000
-Po 0 48030 26530 48000 26500 100 -1
-De 15 0 28 0 0
-Po 0 46375 25875 43000 25875 100 -1
-De 15 0 28 0 800000
-Po 0 48030 26530 48000 26500 100 -1
-De 15 0 28 0 0
-Po 0 48030 26950 48030 26530 80 -1
-De 15 0 28 0 400000
-Po 0 55308 23001 54501 23001 100 -1
-De 15 0 28 0 400000
-Po 0 42500 23000 42500 25500 100 -1
-De 15 0 28 0 0
-Po 0 43000 25875 42775 25875 100 -1
-De 15 0 28 0 400000
-Po 0 53000 21500 44000 21500 100 -1
-De 15 0 28 0 0
-Po 0 56500 27125 56500 25500 100 -1
+Po 0 48620 26950 48620 25620 80 -1
 De 15 0 29 0 400000
-Po 0 55999 24999 55308 24999 100 -1
+Po 0 48500 25500 47875 25500 80 -1
 De 15 0 29 0 800000
-Po 0 56500 25500 55999 24999 100 -1
+Po 0 48620 25620 48500 25500 80 -1
 De 15 0 29 0 0
-Po 0 43000 20500 41500 22000 100 -1
-De 15 0 30 0 0
-Po 0 56500 23500 56500 21000 100 -1
-De 15 0 30 0 0
-Po 0 56500 21000 56000 20500 100 -1
-De 15 0 30 0 0
-Po 0 42125 29125 44500 29125 100 -1
-De 15 0 30 0 800000
-Po 0 56001 23999 56500 23500 100 -1
-De 15 0 30 0 0
-Po 0 56000 20500 43000 20500 100 -1
-De 15 0 30 0 0
-Po 0 41500 28500 42125 29125 100 -1
-De 15 0 30 0 0
-Po 0 55308 23999 56001 23999 100 -1
+Po 0 48620 26950 48620 25505 80 -1
+De 15 0 29 0 400000
+Po 0 47875 25500 47875 24500 80 -1
+De 15 0 29 0 C00000
+Po 0 50590 25785 50875 25500 80 -1
+De 15 0 29 0 800000
+Po 0 53000 27000 53000 25875 80 -1
+De 15 0 29 0 800000
+Po 0 53050 27830 52500 27830 80 -1
+De 15 0 29 0 400000
+Po 0 45500 27625 44625 27625 80 -1
+De 15 0 29 0 400000
+Po 0 52500 27830 52500 27500 80 -1
+De 15 0 29 0 0
+Po 3 44500 27500 44500 27500 350 -1
+De 15 1 29 0 0
+Po 0 45500 26875 45500 27625 80 -1
+De 15 0 29 0 C00000
+Po 0 45715 27840 45500 27625 80 -1
+De 15 0 29 0 800000
+Po 0 48620 25505 48625 25500 80 -1
+De 15 0 29 0 800000
+Po 0 44625 27625 44500 27500 80 -1
+De 15 0 29 0 0
+Po 0 54455 27830 54500 27875 80 -1
+De 15 0 29 0 800000
+Po 0 52500 27500 53000 27000 80 -1
+De 15 0 29 0 0
+Po 0 45500 33375 44500 33375 80 -1
+De 15 0 29 0 C00000
+Po 0 50590 26950 50590 25785 80 -1
+De 15 0 29 0 400000
+Po 0 53050 27830 54455 27830 80 -1
+De 15 0 29 0 400000
+Po 0 46950 27840 45715 27840 80 -1
+De 15 0 29 0 400000
+Po 0 48230 26950 48230 26530 80 -1
 De 15 0 30 0 400000
-Po 0 41500 22000 41500 28500 100 -1
+Po 0 45765 32360 45500 32625 80 -1
+De 15 0 30 0 800000
+Po 3 44500 28000 44500 28000 350 -1
+De 15 1 30 0 0
+Po 0 49375 25625 49375 25500 80 -1
+De 15 0 30 0 800000
+Po 0 47125 25500 47125 24500 80 -1
+De 15 0 30 0 C00000
+Po 0 53875 27125 54500 27125 80 -1
+De 15 0 30 0 800000
+Po 0 47900 26200 45575 26200 80 -1
 De 15 0 30 0 0
-Po 0 52625 35500 52625 36500 100 -1
-De 15 0 31 0 C00000
-Po 0 51180 33580 51300 33700 100 -1
-De 15 0 32 0 0
-Po 0 51180 33580 51180 33050 80 -1
-De 15 0 32 0 800000
-Po 3 51300 33700 51300 33700 350 -1
-De 15 1 32 0 0
-Po 0 46500 38000 51000 38000 100 -1
-De 15 0 32 0 0
-Po 0 51300 37700 51000 38000 100 -1
-De 0 0 32 0 0
-Po 0 44500 36000 46500 38000 100 -1
-De 15 0 32 0 0
-Po 3 51000 38000 51000 38000 350 -1
-De 15 1 32 0 0
-Po 0 51300 33700 51300 37700 100 -1
-De 0 0 32 0 0
-Po 0 42700 36000 44500 36000 100 -1
-De 15 0 32 0 400000
-Po 0 50990 33510 50800 33700 80 -1
-De 15 0 33 0 0
-Po 3 50800 33700 50800 33700 350 -1
-De 15 1 33 0 0
-Po 0 42700 35000 44500 35000 100 -1
-De 15 0 33 0 400000
-Po 0 50800 33700 50800 37200 100 -1
-De 0 0 33 0 0
-Po 3 50500 37500 50500 37500 350 -1
-De 15 1 33 0 0
-Po 0 47000 37500 44500 35000 100 -1
-De 15 0 33 0 0
-Po 0 50990 33510 50990 33050 80 -1
-De 15 0 33 0 800000
-Po 0 50800 37200 50500 37500 100 -1
-De 0 0 33 0 0
-Po 0 50500 37500 47000 37500 100 -1
-De 15 0 33 0 0
-Po 0 42000 28500 42000 30500 100 -1
-De 0 0 34 0 0
-Po 0 43500 21000 42000 22500 100 -1
-De 15 0 34 0 0
-Po 0 42000 30500 43000 31500 100 -1
-De 15 0 34 0 0
-Po 0 53000 21000 43500 21000 100 -1
-De 15 0 34 0 0
-Po 0 43000 31500 43000 34000 100 -1
-De 15 0 34 0 0
-Po 3 42000 30500 42000 30500 350 -1
-De 15 1 34 0 0
-Po 0 42000 22500 42000 26500 100 -1
-De 15 0 34 0 0
-Po 0 44000 26625 46625 26625 100 -1
-De 15 0 34 0 400000
-Po 0 44000 26625 43000 26625 100 -1
-De 15 0 34 0 C00000
-Po 0 46625 26625 47500 27500 100 -1
-De 15 0 34 0 0
-Po 3 42000 28500 42000 28500 350 -1
-De 15 1 34 0 0
-Po 0 49800 27400 49700 27500 100 -1
-De 15 0 34 0 0
-Po 0 54001 22001 53000 21000 100 -1
-De 15 0 34 0 0
-Po 0 42000 26500 42000 28500 100 -1
-De 15 0 34 0 0
-Po 0 43000 34000 42700 34000 100 -1
-De 15 0 34 0 800000
-Po 0 55308 22001 54001 22001 100 -1
-De 15 0 34 0 400000
-Po 0 43000 26625 42125 26625 100 -1
-De 15 0 34 0 400000
-Po 0 49700 27500 47500 27500 100 -1
-De 15 0 34 0 0
-Po 0 49800 26950 49800 27400 80 -1
-De 15 0 34 0 400000
-Po 0 42125 26625 42000 26500 100 -1
-De 15 0 34 0 0
+Po 0 47625 26000 47125 25500 80 -1
+De 15 0 30 0 800000
+Po 0 48420 26950 48420 26420 80 -1
+De 15 0 30 0 400000
+Po 0 52875 25125 53000 25125 80 -1
+De 15 0 30 0 800000
+Po 0 53050 27640 53360 27640 80 -1
+De 15 0 30 0 400000
+Po 0 50390 26950 50390 25765 80 -1
+De 15 0 30 0 400000
+Po 0 46950 28030 45845 28030 80 -1
+De 15 0 30 0 400000
+Po 0 48000 26000 47625 26000 80 -1
+De 15 0 30 0 0
+Po 0 45500 28375 44875 28375 80 -1
+De 15 0 30 0 400000
+Po 0 45500 29125 45500 28375 80 -1
+De 15 0 30 0 C00000
+Po 0 48820 26180 49375 25625 80 -1
+De 15 0 30 0 0
+Po 0 53360 27640 53875 27125 80 -1
+De 15 0 30 0 0
+Po 0 50390 25765 50125 25500 80 -1
+De 15 0 30 0 800000
+Po 0 45575 26200 45500 26125 80 -1
+De 15 0 30 0 800000
+Po 0 44875 28375 44500 28000 80 -1
+De 15 0 30 0 0
+Po 0 49375 25500 50125 25500 80 -1
+De 15 0 30 0 C00000
+Po 0 48820 26950 48820 26180 80 -1
+De 15 0 30 0 400000
+Po 0 51380 26950 51380 26620 80 -1
+De 15 0 30 0 400000
+Po 0 51380 26620 52875 25125 80 -1
+De 15 0 30 0 0
+Po 0 45845 28030 45500 28375 80 -1
+De 15 0 30 0 800000
+Po 0 54500 27125 55500 27125 80 -1
+De 15 0 30 0 C00000
+Po 0 48420 26420 48000 26000 80 -1
+De 15 0 30 0 0
+Po 0 46950 32360 45765 32360 80 -1
+De 15 0 30 0 400000
+Po 0 48230 26530 47900 26200 80 -1
+De 15 0 30 0 0
+Po 0 44500 32625 44500 32500 80 -1
+De 15 0 38 0 400000
+Po 0 44830 32170 46950 32170 80 -1
+De 15 0 38 0 800000
+Po 0 44500 32500 44830 32170 80 -1
+De 15 0 38 0 0
+Po 0 48030 26950 48030 26630 80 -1
+De 15 0 40 0 400000
+Po 3 46500 26500 46500 26500 350 -1
+De 15 1 40 0 0
+Po 0 47900 26500 46500 26500 80 -1
+De 15 0 40 0 0
+Po 0 48030 26630 47900 26500 80 -1
+De 15 0 40 0 0
+Po 0 39651 25102 39898 25102 80 -1
+De 15 0 45 0 400000
+Po 0 40500 24500 40500 24375 80 -1
+De 15 0 45 0 800000
+Po 0 39898 25102 40500 24500 80 -1
+De 15 0 45 0 0
+Po 0 35905 25295 36600 24600 80 -1
+De 15 0 48 0 0
+Po 0 37861 22261 37861 22898 80 -1
+De 15 0 48 0 800000
+Po 0 36600 24600 36600 22400 80 -1
+De 15 0 48 0 0
+Po 0 37600 22000 37861 22261 80 -1
+De 15 0 48 0 0
+Po 0 36600 22400 37000 22000 80 -1
+De 15 0 48 0 0
+Po 0 35590 25295 35905 25295 80 -1
+De 15 0 48 0 400000
+Po 0 37000 22000 37600 22000 80 -1
+De 15 0 48 0 0
+Po 0 38373 25102 38373 25727 80 -1
+De 15 0 49 0 400000
+Po 0 36205 35295 35590 35295 80 -1
+De 15 0 49 0 800000
+Po 0 36500 35000 36205 35295 80 -1
+De 15 0 49 0 0
+Po 0 36500 34500 36500 35000 80 -1
+De 15 0 49 0 0
+Po 0 35200 33200 36500 34500 80 -1
+De 15 0 49 0 0
+Po 0 35200 26900 35200 33200 80 -1
+De 15 0 49 0 0
+Po 0 35700 26400 35200 26900 80 -1
+De 15 0 49 0 0
+Po 0 37700 26400 35700 26400 80 -1
+De 15 0 49 0 0
+Po 0 38373 25727 37700 26400 80 -1
+De 15 0 49 0 0
+Po 0 45590 35295 45905 35295 80 -1
+De 15 0 50 0 400000
+Po 0 39139 25861 39139 25102 80 -1
+De 15 0 50 0 800000
+Po 0 38000 27000 39139 25861 80 -1
+De 15 0 50 0 0
+Po 0 36300 27000 38000 27000 80 -1
+De 15 0 50 0 0
+Po 0 35800 27500 36300 27000 80 -1
+De 15 0 50 0 0
+Po 0 35800 31700 35800 27500 80 -1
+De 15 0 50 0 0
+Po 0 38000 33900 35800 31700 80 -1
+De 15 0 50 0 0
+Po 0 45700 33900 38000 33900 80 -1
+De 15 0 50 0 0
+Po 0 46200 34400 45700 33900 80 -1
+De 15 0 50 0 0
+Po 0 46200 35000 46200 34400 80 -1
+De 15 0 50 0 0
+Po 0 45905 35295 46200 35000 80 -1
+De 15 0 50 0 0
+Po 0 36095 24705 35590 24705 80 -1
+De 15 0 56 0 800000
+Po 0 36200 24600 36095 24705 80 -1
+De 15 0 56 0 0
+Po 0 36200 23000 36200 24600 80 -1
+De 15 0 56 0 0
+Po 0 38117 22898 38117 22117 80 -1
+De 15 0 56 0 400000
+Po 3 36200 23000 36200 23000 200 -1
+De 15 1 56 0 0
+Po 0 38117 22117 38000 22000 80 -1
+De 15 0 56 0 0
+Po 0 37200 22000 36200 23000 80 -1
+De 0 0 56 0 0
+Po 0 38000 22000 37200 22000 80 -1
+De 0 0 56 0 0
+Po 3 38000 22000 38000 22000 200 -1
+De 15 1 56 0 0
+Po 0 38117 25102 38117 25683 80 -1
+De 15 0 57 0 400000
+Po 0 35590 34090 35590 34705 80 -1
+De 15 0 57 0 800000
+Po 0 35000 33500 35590 34090 80 -1
+De 15 0 57 0 0
+Po 0 35000 26700 35000 33500 80 -1
+De 15 0 57 0 0
+Po 0 35500 26200 35000 26700 80 -1
+De 15 0 57 0 0
+Po 0 37600 26200 35500 26200 80 -1
+De 15 0 57 0 0
+Po 0 38117 25683 37600 26200 80 -1
+De 15 0 57 0 0
+Po 0 45590 34705 45590 34590 80 -1
+De 15 0 58 0 C00000
+Po 0 38883 25817 38883 25102 80 -1
+De 15 0 58 0 800000
+Po 0 37900 26800 38883 25817 80 -1
+De 15 0 58 0 0
+Po 0 36100 26800 37900 26800 80 -1
+De 15 0 58 0 0
+Po 0 35600 27300 36100 26800 80 -1
+De 15 0 58 0 0
+Po 0 35600 32100 35600 27300 80 -1
+De 15 0 58 0 0
+Po 0 37700 34200 35600 32100 80 -1
+De 15 0 58 0 0
+Po 0 45200 34200 37700 34200 80 -1
+De 15 0 58 0 0
+Po 0 45590 34590 45200 34200 80 -1
+De 15 0 58 0 0
+Po 0 39651 22898 39651 22724 80 -1
+De 15 0 63 0 400000
+Po 0 39651 22724 40375 22000 80 -1
+De 15 0 63 0 800000
+Po 0 35800 23000 35800 24000 80 -1
+De 15 0 70 0 0
+Po 0 34410 24390 34600 24200 80 -1
+De 15 0 70 0 0
+Po 0 37200 21600 36200 22600 80 -1
+De 0 0 70 0 0
+Po 0 38373 22898 38373 21773 80 -1
+De 15 0 70 0 400000
+Po 3 38200 21600 38200 21600 200 -1
+De 15 1 70 0 0
+Po 0 34410 24705 34410 24390 80 -1
+De 15 0 70 0 400000
+Po 0 36200 22600 35800 23000 80 -1
+De 15 0 70 0 0
+Po 0 38373 21773 38200 21600 80 -1
+De 15 0 70 0 0
+Po 0 35800 24000 35600 24200 80 -1
+De 15 0 70 0 0
+Po 0 38200 21600 37200 21600 80 -1
+De 0 0 70 0 0
+Po 0 34600 24200 35600 24200 80 -1
+De 15 0 70 0 0
+Po 3 36200 22600 36200 22600 200 -1
+De 15 1 70 0 0
+Po 0 34410 34705 34410 33590 80 -1
+De 15 0 71 0 400000
+Po 0 34800 33200 34800 26500 80 -1
+De 15 0 71 0 0
+Po 0 34410 33590 34800 33200 80 -1
+De 15 0 71 0 0
+Po 0 37861 25102 37861 25639 80 -1
+De 15 0 71 0 400000
+Po 0 35300 26000 34800 26500 80 -1
+De 15 0 71 0 0
+Po 0 37500 26000 35300 26000 80 -1
+De 15 0 71 0 0
+Po 0 37861 25639 37500 26000 80 -1
+De 15 0 71 0 0
+Po 0 38627 25102 38627 25773 80 -1
+De 15 0 72 0 400000
+Po 0 44205 34500 44410 34705 80 -1
+De 15 0 72 0 C00000
+Po 0 37500 34500 44205 34500 80 -1
+De 15 0 72 0 800000
+Po 0 35400 32400 37500 34500 80 -1
+De 15 0 72 0 0
+Po 0 35400 27100 35400 32400 80 -1
+De 15 0 72 0 0
+Po 0 35900 26600 35400 27100 80 -1
+De 15 0 72 0 0
+Po 0 37800 26600 35900 26600 80 -1
+De 15 0 72 0 0
+Po 0 38627 25773 37800 26600 80 -1
+De 15 0 72 0 0
+Po 0 39395 22898 39395 23395 80 -1
+De 15 0 78 0 400000
+Po 0 38790 24000 38500 24000 80 -1
+De 15 0 78 0 800000
+Po 0 39395 23395 38790 24000 80 -1
+De 15 0 78 0 0
+Po 0 40500 23625 38875 23625 80 -1
+De 15 0 78 0 400000
+Po 0 38875 23625 38500 24000 80 -1
+De 15 0 78 0 800000
+Po 0 39395 22898 39395 22230 80 -1
+De 15 0 78 0 400000
+Po 0 39395 22230 39625 22000 80 -1
+De 15 0 78 0 800000
 $EndTRACK
 $ZONE
 $EndZONE
 $CZONE_OUTLINE
-ZInfo 53BE6FEC 17 "/sub2_control/MCU_GND_local"
+ZInfo 53BE6FEC 29 "/sub2_control/MCU_GND_local"
 ZLayer 15
 ZAux 4 E
 ZClearance 100 T
@@ -4989,7 +4975,7 @@ ZCorner 30000 20000 0
 ZCorner 30000 40000 1
 $endCZONE_OUTLINE
 $CZONE_OUTLINE
-ZInfo 53BE6FF7 17 "/sub2_control/MCU_GND_local"
+ZInfo 53BE6FF7 29 "/sub2_control/MCU_GND_local"
 ZLayer 0
 ZAux 4 E
 ZClearance 100 T

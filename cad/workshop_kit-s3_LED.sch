@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 15 Apr 2015 02:22:10 PM HST
+EESchema Schematic File Version 2  date Thu 16 Apr 2015 02:42:43 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -45,10 +45,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 8200 3900 0    60   ~ 0
-LED_SPI_CLK_c
-Text Label 8200 3800 0    60   ~ 0
-LED_SPI_DAT_c
+Connection ~ 1300 3200
+Wire Wire Line
+	1600 3200 1000 3200
 Connection ~ 7000 2900
 Wire Wire Line
 	7000 3300 7000 2900
@@ -56,8 +55,6 @@ Wire Wire Line
 	2200 3900 1300 3900
 Wire Wire Line
 	1300 3900 1300 3200
-Wire Wire Line
-	1300 3200 1000 3200
 Connection ~ 1800 5900
 Wire Wire Line
 	1800 4700 1800 5900
@@ -206,14 +203,47 @@ Wire Wire Line
 Wire Wire Line
 	1400 3800 1400 3100
 Wire Wire Line
-	1400 3100 1000 3100
-Wire Wire Line
 	1000 3000 3000 3000
 Wire Wire Line
 	3000 3000 3000 3300
 Wire Wire Line
 	9000 2900 1000 2900
 Connection ~ 5000 2900
+Wire Wire Line
+	1600 3100 1000 3100
+Connection ~ 1400 3100
+$Comp
+L CONN_1 TPp202
+U 1 1 552FADE5
+P 1750 3200
+F 0 "TPp202" H 1830 3200 40  0000 L CNN
+F 1 "CONN_1" H 1750 3255 30  0001 C CNN
+F 2 "PIN_ARRAY_1" H 2350 3200 60  0000 C CNN
+	1    1750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 TPp201
+U 1 1 552FADDE
+P 1750 3100
+F 0 "TPp201" H 1830 3100 40  0000 L CNN
+F 1 "CONN_1" H 1750 3155 30  0001 C CNN
+F 2 "PIN_ARRAY_1" H 2350 3100 60  0000 C CNN
+	1    1750 3100
+	1    0    0    -1  
+$EndComp
+Text Label 5800 4000 2    60   ~ 0
+Iset_2
+Text Label 1800 4000 2    60   ~ 0
+Iset_1
+Text Label 2100 4900 1    60   ~ 0
+3.3_out_1
+Text Label 6100 4900 1    60   ~ 0
+3.3_out_2
+Text Label 8200 3900 0    60   ~ 0
+LED_SPI_CLK_c
+Text Label 8200 3800 0    60   ~ 0
+LED_SPI_DAT_c
 $Comp
 L RGB_LED Dp204
 U 1 1 552EDB5A
@@ -304,29 +334,29 @@ F 3 "DOCUMENTATION" H 6850 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7850 4100 0    60   ~ 0
-B3
+B7
 Text Label 7850 4200 0    60   ~ 0
-G3
+G7
 Text Label 7850 4300 0    60   ~ 0
-R3
+R7
 Text Label 7850 4600 0    60   ~ 0
-R2
+R6
 Text Label 7850 4500 0    60   ~ 0
-G2
+G6
 Text Label 7850 4400 0    60   ~ 0
-B2
+B6
 Text Label 7850 5000 0    60   ~ 0
-B0
+B4
 Text Label 7850 5100 0    60   ~ 0
-G0
+G4
 Text Label 7850 5200 0    60   ~ 0
-R0
+R4
 Text Label 7850 4900 0    60   ~ 0
-R1
+R5
 Text Label 7850 4800 0    60   ~ 0
-G1
+G5
 Text Label 7850 4700 0    60   ~ 0
-B1
+B5
 Text HLabel 1000 3200 0    60   Input ~ 0
 SPI_DAT
 Text HLabel 1000 3100 0    60   Input ~ 0

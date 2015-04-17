@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 15 Apr 2015 02:22:10 PM HST
+EESchema Schematic File Version 2  date Thu 16 Apr 2015 02:42:43 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -117,6 +117,8 @@ F9 "B_rx" O R 3000 2000 60
 F10 "A_rx" O R 3000 1800 60 
 F11 "A_tx" I R 3000 1700 60 
 F12 "GND" O R 3000 3300 60 
+F13 "USB_D-" B R 3000 2900 60 
+F14 "USB_D+" B R 3000 2800 60 
 $EndSheet
 $Sheet
 S 4000 1500 2000 2000
