@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 16 Apr 2015 02:42:43 AM HST
+EESchema Schematic File Version 2  date Fri 17 Apr 2015 11:52:47 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 3 4
 Title ""
-Date "16 apr 2015"
+Date "17 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 4400 5200 2    80   ~ 0
+USB_HS
+Text Notes 4400 3200 2    80   ~ 0
+USB_FS
 Wire Wire Line
 	3200 7600 2100 7600
 Wire Wire Line
@@ -126,7 +130,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 800  3700 650 
 Wire Wire Line
-	4300 3100 4500 3100
+	4300 4500 4500 4500
 Wire Wire Line
 	9300 1500 9300 1600
 Wire Wire Line
@@ -416,7 +420,7 @@ Wire Wire Line
 Wire Wire Line
 	9300 1000 9150 1000
 Wire Wire Line
-	4300 3200 4500 3200
+	4300 4600 4500 4600
 Wire Wire Line
 	5400 600  4500 600 
 Wire Wire Line
@@ -596,9 +600,9 @@ Text Label 9300 1000 0    60   ~ 0
 pwr_ind
 Text Label 1450 1250 0    60   ~ 0
 T_VDD_conn
-Text Label 4300 3200 2    60   ~ 0
+Text Label 4300 4600 2    50   ~ 0
 can1_TX
-Text Label 4300 3100 2    60   ~ 0
+Text Label 4300 4500 2    50   ~ 0
 can1_RX
 Text Notes 3800 4400 2    60   ~ 0
 sensors
