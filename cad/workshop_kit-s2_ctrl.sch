@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 17 Apr 2015 11:52:47 AM HST
+EESchema Schematic File Version 2  date Mon 20 Apr 2015 10:11:57 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 3 4
 Title ""
-Date "17 apr 2015"
+Date "21 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -89,8 +89,6 @@ Wire Wire Line
 	3500 7700 3500 5950
 Connection ~ 5300 900 
 Connection ~ 5400 900 
-Wire Wire Line
-	5300 900  5400 900 
 Connection ~ 1450 1350
 Wire Wire Line
 	1500 1700 1450 1700
@@ -128,7 +126,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 800  5300 800 
 Wire Wire Line
-	3700 800  3700 650 
+	3700 650  3700 800 
 Wire Wire Line
 	4300 4500 4500 4500
 Wire Wire Line
@@ -441,8 +439,6 @@ Wire Wire Line
 	9900 3600 9900 4000
 Wire Wire Line
 	2250 1700 2100 1700
-Wire Wire Line
-	3700 650  4500 650 
 Connection ~ 4500 650 
 Wire Wire Line
 	4300 6100 3200 6100
