@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Mon 20 Apr 2015 10:11:57 PM HST
+EESchema Schematic File Version 2  date Tue 21 Apr 2015 02:29:47 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
-Date "21 apr 2015"
+Date "22 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,245 +45,261 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 1400 2300
+Wire Wire Line
+	1500 2300 1400 2300
+Wire Wire Line
+	3300 2200 3500 2200
+Wire Wire Line
+	1700 900  1200 900 
+Wire Wire Line
+	1500 1000 1500 1350
+Wire Wire Line
+	1200 600  1300 600 
+Wire Wire Line
+	9100 600  9200 600 
+Wire Wire Line
+	9200 600  9200 500 
+Wire Wire Line
+	9200 500  8500 500 
+Connection ~ 8500 600 
+Wire Wire Line
+	8500 500  8500 600 
+Connection ~ 9500 2100
+Wire Wire Line
+	9500 2100 9500 2300
+Wire Wire Line
+	9500 2300 10200 2300
+Wire Wire Line
+	10200 2300 10200 1800
+Wire Wire Line
+	10200 1800 10100 1800
+Connection ~ 7500 3000
+Wire Wire Line
+	7500 3000 7500 2900
+Wire Wire Line
+	7500 2900 8200 2900
+Wire Wire Line
+	8200 2900 8200 3000
+Wire Wire Line
+	8200 3000 8100 3000
+Connection ~ 8500 3700
+Wire Wire Line
+	8500 3700 8500 3900
+Wire Wire Line
+	8500 3900 9200 3900
+Wire Wire Line
+	9200 3900 9200 3400
+Wire Wire Line
+	9200 3400 9100 3400
+Wire Wire Line
+	4900 3400 4700 3400
+Wire Wire Line
+	4700 3400 4700 3600
+Wire Wire Line
+	6700 3400 6800 3400
+Wire Wire Line
+	6800 3400 6800 3200
+Wire Wire Line
+	6800 3200 7550 3200
+Wire Wire Line
+	6700 2600 6800 2600
+Wire Wire Line
+	6800 2600 6800 2400
+Wire Wire Line
+	6800 2400 7550 2400
+Wire Wire Line
+	7700 1900 9550 1900
+Wire Wire Line
+	7700 1000 7800 1000
+Wire Wire Line
+	7800 1000 7800 800 
+Wire Wire Line
+	7800 800  8550 800 
+Connection ~ 7400 3100
+Wire Wire Line
+	7400 3100 7400 3600
+Wire Wire Line
+	7400 3600 8550 3600
+Wire Wire Line
+	8400 3700 8550 3700
+Connection ~ 8400 1500
+Wire Wire Line
+	8400 1500 8400 2000
+Wire Wire Line
+	8400 2000 9550 2000
+Wire Wire Line
+	9400 1300 9550 1300
+Wire Wire Line
+	8550 700  7700 700 
+Wire Wire Line
+	7100 1500 6700 1500
+Wire Wire Line
+	6000 700  6200 700 
+Wire Wire Line
+	5600 700  5400 700 
+Wire Notes Line
+	10000 3500 10000 2500
+Wire Notes Line
+	10000 3500 11000 3500
+Wire Notes Line
+	11000 3500 11000 2500
+Wire Notes Line
+	11000 2500 10000 2500
+Wire Wire Line
+	7550 2200 7400 2200
+Wire Wire Line
+	8550 600  8400 600 
+Connection ~ 5400 2300
+Connection ~ 5400 1500
+Wire Wire Line
+	5400 700  5400 3100
+Wire Wire Line
+	3700 2100 3500 2100
+Wire Wire Line
+	3500 2200 3500 1600
+Connection ~ 3500 2100
+Connection ~ 3500 1800
+Wire Wire Line
+	4900 1800 3500 1800
+Wire Wire Line
+	1400 2400 1400 2250
+Wire Wire Line
+	1400 2250 1150 2250
+Connection ~ 3500 1000
+Wire Wire Line
+	5400 2300 7550 2300
+Connection ~ 2400 1000
+Wire Wire Line
+	2800 1000 2800 1050
+Wire Wire Line
+	2400 1100 2400 1000
+Wire Wire Line
+	1500 1350 1150 1350
+Wire Wire Line
+	1300 600  1300 650 
+Wire Wire Line
+	1150 1550 1400 1550
+Wire Wire Line
+	1400 1550 1400 1700
+Wire Wire Line
+	2400 1700 2400 1500
+Wire Wire Line
+	2800 1550 2800 1700
+Connection ~ 2800 1000
+Wire Wire Line
+	4500 2100 4900 2100
+Wire Wire Line
+	3500 1000 3500 1200
+Wire Wire Line
+	2900 2200 2500 2200
+Wire Wire Line
+	5400 3100 7550 3100
+Wire Wire Line
+	2200 1000 5400 1000
+Connection ~ 5400 1000
+Wire Wire Line
+	8550 1400 8400 1400
+Wire Wire Line
+	7550 3000 7400 3000
+Wire Wire Line
+	5400 1500 5600 1500
+Wire Wire Line
+	6000 1500 6200 1500
+Wire Wire Line
+	6700 700  7100 700 
+Wire Wire Line
+	8550 1500 7700 1500
+Wire Wire Line
+	9400 2100 9550 2100
+Wire Wire Line
+	9550 1200 8400 1200
+Wire Wire Line
+	8400 1200 8400 700 
+Connection ~ 8400 700 
+Wire Wire Line
+	8400 2900 8550 2900
+Wire Wire Line
+	8550 2800 7400 2800
+Wire Wire Line
+	7400 2800 7400 2300
+Connection ~ 7400 2300
+Wire Wire Line
+	7700 1100 9550 1100
+Wire Wire Line
+	7700 1800 7800 1800
+Wire Wire Line
+	7800 1800 7800 1600
+Wire Wire Line
+	7800 1600 8550 1600
+Wire Wire Line
+	6700 2700 8550 2700
+Wire Wire Line
+	6700 3500 8550 3500
+Wire Wire Line
+	8500 2900 8500 3100
+Connection ~ 8500 2900
+Wire Wire Line
+	8500 3100 9200 3100
+Wire Wire Line
+	9200 3100 9200 2600
+Wire Wire Line
+	9200 2600 9100 2600
+Wire Wire Line
+	8100 2200 8200 2200
+Wire Wire Line
+	8200 2200 8200 2100
+Wire Wire Line
+	8200 2100 7500 2100
+Wire Wire Line
+	7500 2100 7500 2200
+Connection ~ 7500 2200
+Wire Wire Line
+	9500 1300 9500 1500
+Connection ~ 9500 1300
+Wire Wire Line
+	9500 1500 10200 1500
+Wire Wire Line
+	10200 1500 10200 1000
+Wire Wire Line
+	10200 1000 10100 1000
+Wire Wire Line
+	8500 1400 8500 1300
+Connection ~ 8500 1400
+Wire Wire Line
+	8500 1300 9200 1300
+Wire Wire Line
+	9200 1300 9200 1400
+Wire Wire Line
+	9200 1400 9100 1400
+Connection ~ 1500 1000
+Wire Wire Line
+	1700 1000 1200 1000
+Wire Wire Line
+	1700 800  1200 800 
+Wire Wire Line
+	1150 2050 1400 2050
+Wire Wire Line
+	1400 2050 1400 2100
+Wire Wire Line
+	1400 2100 1500 2100
+$Sheet
+S 1500 2000 1000 1000
+U 5536265F
+F0 "sub1b_pwr-boost" 60
+F1 "workshop_kit-s1b_pwr-boost.sch" 60
+F2 "Boost_GND" I L 1500 2300 60 
+F3 "~SHDN" I L 1500 2900 60 
+F4 "~LBO" O R 2500 2900 60 
+F5 "Boost_Vout" O R 2500 2200 60 
+F6 "Boost_Vin" I L 1500 2100 60 
+$EndSheet
 Text Label 7800 1500 0    60   ~ 0
 sw_pwr_B
 Text Label 7800 700  0    60   ~ 0
 sw_pwr_A
 Text Label 1300 1000 0    60   ~ 0
 USB_Vin
-Wire Wire Line
-	1700 800  1200 800 
-Wire Wire Line
-	1200 1000 1700 1000
-Connection ~ 1500 1000
-Wire Wire Line
-	9100 1400 9200 1400
-Wire Wire Line
-	9200 1400 9200 1300
-Wire Wire Line
-	9200 1300 8500 1300
-Connection ~ 8500 1400
-Wire Wire Line
-	8500 1300 8500 1400
-Wire Wire Line
-	10100 1000 10200 1000
-Wire Wire Line
-	10200 1000 10200 1500
-Wire Wire Line
-	10200 1500 9500 1500
-Connection ~ 9500 1300
-Wire Wire Line
-	9500 1500 9500 1300
-Connection ~ 7500 2200
-Wire Wire Line
-	7500 2200 7500 2100
-Wire Wire Line
-	7500 2100 8200 2100
-Wire Wire Line
-	8200 2100 8200 2200
-Wire Wire Line
-	8200 2200 8100 2200
-Wire Wire Line
-	9100 2600 9200 2600
-Wire Wire Line
-	9200 2600 9200 3100
-Wire Wire Line
-	9200 3100 8500 3100
-Connection ~ 8500 2900
-Wire Wire Line
-	8500 3100 8500 2900
-Wire Wire Line
-	6700 3500 8550 3500
-Wire Wire Line
-	6700 2700 8550 2700
-Wire Wire Line
-	8550 1600 7800 1600
-Wire Wire Line
-	7800 1600 7800 1800
-Wire Wire Line
-	7800 1800 7700 1800
-Wire Wire Line
-	7700 1100 9550 1100
-Connection ~ 7400 2300
-Wire Wire Line
-	7400 2300 7400 2800
-Wire Wire Line
-	7400 2800 8550 2800
-Wire Wire Line
-	8550 2900 8400 2900
-Connection ~ 8400 700 
-Wire Wire Line
-	8400 700  8400 1200
-Wire Wire Line
-	8400 1200 9550 1200
-Wire Wire Line
-	9550 2100 9400 2100
-Wire Wire Line
-	7700 1500 8550 1500
-Wire Wire Line
-	6700 700  7100 700 
-Wire Wire Line
-	6000 1500 6200 1500
-Wire Wire Line
-	5400 1500 5600 1500
-Wire Wire Line
-	7400 3000 7550 3000
-Wire Wire Line
-	8400 1400 8550 1400
-Connection ~ 5400 1000
-Wire Wire Line
-	5400 1000 2200 1000
-Wire Wire Line
-	7550 3100 5400 3100
-Wire Wire Line
-	2900 2100 2500 2100
-Wire Wire Line
-	3500 1200 3500 1000
-Wire Wire Line
-	4500 2100 4900 2100
-Wire Wire Line
-	1700 2100 1600 2100
-Wire Wire Line
-	1600 2100 1600 2050
-Wire Wire Line
-	1600 2050 1150 2050
-Connection ~ 2800 1000
-Wire Wire Line
-	2800 1550 2800 1700
-Wire Wire Line
-	2400 1700 2400 1500
-Wire Wire Line
-	1400 1700 1400 1550
-Wire Wire Line
-	1400 1550 1150 1550
-Wire Wire Line
-	1300 650  1300 600 
-Wire Wire Line
-	1150 1350 1500 1350
-Wire Wire Line
-	2400 1000 2400 1100
-Wire Wire Line
-	2800 1000 2800 1050
-Connection ~ 2400 1000
-Wire Wire Line
-	7550 2300 5400 2300
-Connection ~ 3500 1000
-Wire Wire Line
-	1150 2250 1400 2250
-Wire Wire Line
-	1400 2250 1400 2400
-Wire Wire Line
-	4900 1800 3500 1800
-Connection ~ 3500 1800
-Connection ~ 3500 2100
-Wire Wire Line
-	3500 1600 3500 2100
-Wire Wire Line
-	3300 2100 3700 2100
-Wire Wire Line
-	5400 3100 5400 700 
-Connection ~ 5400 1500
-Connection ~ 5400 2300
-Wire Wire Line
-	8400 600  8550 600 
-Wire Wire Line
-	7400 2200 7550 2200
-Wire Notes Line
-	11000 2500 10000 2500
-Wire Notes Line
-	11000 2500 11000 3500
-Wire Notes Line
-	11000 3500 10000 3500
-Wire Notes Line
-	10000 3500 10000 2500
-Wire Wire Line
-	5400 700  5600 700 
-Wire Wire Line
-	6000 700  6200 700 
-Wire Wire Line
-	7100 1500 6700 1500
-Wire Wire Line
-	7700 700  8550 700 
-Wire Wire Line
-	9550 1300 9400 1300
-Wire Wire Line
-	9550 2000 8400 2000
-Wire Wire Line
-	8400 2000 8400 1500
-Connection ~ 8400 1500
-Wire Wire Line
-	8550 3700 8400 3700
-Wire Wire Line
-	8550 3600 7400 3600
-Wire Wire Line
-	7400 3600 7400 3100
-Connection ~ 7400 3100
-Wire Wire Line
-	8550 800  7800 800 
-Wire Wire Line
-	7800 800  7800 1000
-Wire Wire Line
-	7800 1000 7700 1000
-Wire Wire Line
-	7700 1900 9550 1900
-Wire Wire Line
-	7550 2400 6800 2400
-Wire Wire Line
-	6800 2400 6800 2600
-Wire Wire Line
-	6800 2600 6700 2600
-Wire Wire Line
-	7550 3200 6800 3200
-Wire Wire Line
-	6800 3200 6800 3400
-Wire Wire Line
-	6800 3400 6700 3400
-Wire Wire Line
-	4700 3600 4700 3400
-Wire Wire Line
-	4700 3400 4900 3400
-Wire Wire Line
-	9100 3400 9200 3400
-Wire Wire Line
-	9200 3400 9200 3900
-Wire Wire Line
-	9200 3900 8500 3900
-Wire Wire Line
-	8500 3900 8500 3700
-Connection ~ 8500 3700
-Wire Wire Line
-	8100 3000 8200 3000
-Wire Wire Line
-	8200 3000 8200 2900
-Wire Wire Line
-	8200 2900 7500 2900
-Wire Wire Line
-	7500 2900 7500 3000
-Connection ~ 7500 3000
-Wire Wire Line
-	10100 1800 10200 1800
-Wire Wire Line
-	10200 1800 10200 2300
-Wire Wire Line
-	10200 2300 9500 2300
-Wire Wire Line
-	9500 2300 9500 2100
-Connection ~ 9500 2100
-Wire Wire Line
-	8500 600  8500 500 
-Connection ~ 8500 600 
-Wire Wire Line
-	8500 500  9200 500 
-Wire Wire Line
-	9200 500  9200 600 
-Wire Wire Line
-	9200 600  9100 600 
-Wire Wire Line
-	1300 600  1200 600 
-Wire Wire Line
-	1500 1350 1500 1000
-Wire Wire Line
-	1700 900  1200 900 
 Text HLabel 1700 900  2    60   BiDi ~ 0
 USB_D-
 Text HLabel 1700 800  2    60   BiDi ~ 0
@@ -559,10 +575,10 @@ trip current?\nlimit to 0.5A? \n        0.9A?
 $Comp
 L MOSFET_P Qp103
 U 1 1 550CECB1
-P 3100 2200
-F 0 "Qp103" H 3100 2390 60  0000 R CNN
-F 1 "MOSFET_P" H 3100 2020 60  0000 R CNN
-	1    3100 2200
+P 3100 2300
+F 0 "Qp103" H 3100 2490 60  0000 R CNN
+F 1 "MOSFET_P" H 3100 2120 60  0000 R CNN
+	1    3100 2300
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -574,7 +590,7 @@ F 1 "DIODE" H 3500 1300 40  0000 C CNN
 	1    3500 1400
 	0    1    1    0   
 $EndComp
-Text Notes 1700 3000 0    60   ~ 0
+Text Notes 2600 3200 0    60   ~ 0
 Turn off battery (and cut w/ switch) when \npowered by edge connectors or ext_pwr
 $Comp
 L MOSFET_P Qp101
@@ -593,7 +609,7 @@ Text Notes 600  1000 1    60   ~ 0
 USB CONN
 Text Notes 3900 2700 0    60   ~ 0
 LDO 3.3V powering:\n* MCU, \n* LED driver logic,\n* sensors
-Text Notes 1800 2700 0    60   ~ 0
+Text Notes 2900 2750 0    60   ~ 0
 MAX1674, boost\n3.5V & 200-300 mA\n
 Text Label 4600 2100 0    60   ~ 0
 Vmcu
@@ -606,16 +622,6 @@ P 1400 2400
 F 0 "#PWR09" H 1400 2400 30  0001 C CNN
 F 1 "GND" H 1400 2330 30  0001 C CNN
 	1    1400 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L LM317 Ux1
-U 1 1 550CC941
-P 2100 2250
-F 0 "Ux1" H 2100 2550 60  0000 C CNN
-F 1 "LM317" H 2150 2000 60  0000 L CNN
-F 2 "sot23" H 2100 2250 60  0001 C CNN
-	1    2100 2250
 	1    0    0    -1  
 $EndComp
 $Comp

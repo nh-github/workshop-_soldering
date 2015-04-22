@@ -1,0 +1,302 @@
+EESchema Schematic File Version 2  date Tue 21 Apr 2015 02:29:47 PM HST
+LIBS:local_parts
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:workshop_kit-cache
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 3 5
+Title ""
+Date "22 apr 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 6100 4100 0    60   ~ 0
+boost_fb
+Wire Wire Line
+	6000 4800 6000 4900
+Connection ~ 6900 4100
+Connection ~ 6000 4100
+Wire Wire Line
+	6000 4100 6900 4100
+Connection ~ 6900 3400
+Wire Wire Line
+	6900 3400 6900 3550
+Connection ~ 6900 4900
+Wire Wire Line
+	6900 4900 6900 4750
+Connection ~ 6100 3200
+Wire Wire Line
+	6300 3200 5900 3200
+Wire Wire Line
+	4000 5000 5500 5000
+Wire Wire Line
+	6200 3600 6200 4000
+Wire Wire Line
+	6400 4000 6400 3950
+Wire Wire Line
+	6200 3600 5900 3600
+Connection ~ 4100 2300
+Wire Wire Line
+	4000 2300 6100 2300
+Connection ~ 7400 4900
+Wire Wire Line
+	7900 4000 7900 4900
+Connection ~ 7400 3400
+Wire Wire Line
+	7900 3400 7900 3600
+Wire Wire Line
+	5000 3900 5000 3800
+Wire Wire Line
+	5000 3800 5100 3800
+Wire Wire Line
+	4100 2300 4100 3000
+Wire Wire Line
+	4600 2500 4600 2300
+Connection ~ 4100 3600
+Wire Wire Line
+	5100 3600 4100 3600
+Wire Wire Line
+	5900 3800 6000 3800
+Wire Wire Line
+	5500 5000 5500 4000
+Wire Wire Line
+	4100 3700 4100 3500
+Wire Wire Line
+	6100 3000 6100 3200
+Wire Wire Line
+	6100 2300 6100 2400
+Connection ~ 4600 2300
+Wire Wire Line
+	5000 4900 5000 4300
+Connection ~ 5500 4900
+Wire Wire Line
+	7400 3400 7400 3600
+Wire Wire Line
+	7400 4000 7400 4900
+Wire Wire Line
+	4100 4200 4100 5200
+Wire Wire Line
+	4100 5200 8400 5200
+Wire Wire Line
+	8400 5200 8400 3400
+Connection ~ 7900 3400
+Connection ~ 6000 4900
+Wire Wire Line
+	6400 3450 6400 3400
+Connection ~ 6400 3400
+Wire Wire Line
+	5900 3400 8500 3400
+Connection ~ 8400 3400
+Wire Wire Line
+	4600 2900 4600 4900
+Wire Wire Line
+	4600 4900 7900 4900
+Connection ~ 5000 4900
+Wire Wire Line
+	5100 3200 4400 3200
+Wire Wire Line
+	4400 3200 4400 2400
+Wire Wire Line
+	4400 2400 4000 2400
+Wire Wire Line
+	6700 3200 6800 3200
+Wire Wire Line
+	6800 3200 6800 3400
+Connection ~ 6800 3400
+Wire Wire Line
+	6900 4250 6900 4050
+Wire Wire Line
+	6200 4000 6500 4000
+Connection ~ 6400 4000
+Wire Wire Line
+	6000 3800 6000 4200
+$Comp
+L JUMPER JPp301
+U 1 1 5536EA18
+P 6000 4500
+F 0 "JPp301" H 6000 4650 60  0000 C CNN
+F 1 "JUMPER" H 6000 4420 40  0000 C CNN
+F 2 "solder_bridge" H 6000 4800 60  0000 C CNN
+	1    6000 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L R Rp306
+U 1 1 5536E91E
+P 6900 4500
+F 0 "Rp306" V 6980 4500 50  0000 C CNN
+F 1 "10k" V 6900 4500 50  0000 C CNN
+F 2 "SM0805" V 7050 4500 60  0000 C CNN
+	1    6900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R Rp305
+U 1 1 5536E91C
+P 6900 3800
+F 0 "Rp305" V 6980 3800 50  0000 C CNN
+F 1 "10k" V 6900 3800 50  0000 C CNN
+F 2 "SM0805" V 7050 3800 60  0000 C CNN
+	1    6900 3800
+	1    0    0    -1  
+$EndComp
+Text Label 6100 3100 2    60   ~ 0
+LX
+$Comp
+L DIODESCH Dp301
+U 1 1 5536BFD6
+P 6500 3200
+F 0 "Dp301" H 6500 3300 40  0000 C CNN
+F 1 " MBR0520L" H 6500 3100 40  0000 C CNN
+F 2 "SOD123" H 6500 3050 60  0000 C CNN
+F 4 "MBR0520LCT-ND" H 6500 3200 60  0001 C CNN "digikey"
+	1    6500 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 4000 2400 0    60   Input ~ 0
+~SHDN
+Text HLabel 6500 4000 2    60   Output ~ 0
+~LBO
+Text HLabel 8500 3400 2    60   Output ~ 0
+Boost_Vout
+Text HLabel 4000 2300 0    60   Input ~ 0
+Boost_Vin
+Text HLabel 4000 5000 0    60   Input ~ 0
+Boost_GND
+$Comp
+L R Rp302
+U 1 1 5536316A
+P 6400 3700
+F 0 "Rp302" V 6480 3700 50  0000 C CNN
+F 1 "100k" V 6400 3700 50  0000 C CNN
+F 2 "SM0805" V 6550 3700 60  0000 C CNN
+	1    6400 3700
+	1    0    0    -1  
+$EndComp
+Text Label 4500 3600 2    60   ~ 0
+Vbat_sen
+Text Label 5000 3800 2    60   ~ 0
+Vref
+$Comp
+L C Cp304
+U 1 1 55362F89
+P 7400 3800
+F 0 "Cp304" H 7450 3900 50  0000 L CNN
+F 1 "0.1uF" H 7450 3700 50  0000 L CNN
+F 2 "SM0805" H 7650 3600 60  0000 C CNN
+	1    7400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C Cp302
+U 1 1 55362E9C
+P 7900 3800
+F 0 "Cp302" H 7950 3900 50  0000 L CNN
+F 1 "47uF" H 7950 3700 50  0000 L CNN
+F 2 "SM1206" H 8100 3600 60  0000 C CNN
+F 3 "TPSA476M006R0800" H 8400 3500 60  0000 C CNN
+F 4 "478-9046-1-ND" H 7900 3800 60  0001 C CNN "digikey#"
+	1    7900 3800
+	1    0    0    -1  
+$EndComp
+Text Notes 2000 3300 0    60   ~ 0
+Low Battery resistor value combination\n(for Vbat < Vref (1.3V))\nR3 = R4(VREF - VTRIP) / (VOUT - VREF)\nR4=10k\nVREF=1.3\nVOUT=5\nVTRIP=1\n-> R3=811 Ohm
+$Comp
+L C Cp301
+U 1 1 553629B8
+P 4600 2700
+F 0 "Cp301" H 4650 2800 50  0000 L CNN
+F 1 "47uF" H 4650 2600 50  0000 L CNN
+F 2 "SM1206" H 4800 2500 60  0000 C CNN
+F 3 "TPSA476M006R0800" H 5100 2400 60  0000 C CNN
+F 4 "478-9046-1-ND" H 4600 2700 60  0001 C CNN "digikey#"
+	1    4600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R Rp304
+U 1 1 553629AC
+P 4100 3950
+F 0 "Rp304" V 4180 3950 50  0000 C CNN
+F 1 "820" V 4100 3950 50  0000 C CNN
+F 2 "SM0805" V 4250 3950 60  0000 C CNN
+	1    4100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R Rp303
+U 1 1 553629A8
+P 4100 3250
+F 0 "Rp303" V 4180 3250 50  0000 C CNN
+F 1 "10k" V 4100 3250 50  0000 C CNN
+F 2 "SM0805" V 4250 3250 60  0000 C CNN
+	1    4100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C Cp303
+U 1 1 55362944
+P 5000 4100
+F 0 "Cp303" H 5050 4200 50  0000 L CNN
+F 1 "0.1uF" H 5050 4000 50  0000 L CNN
+F 2 "SM0805" H 5250 3900 60  0000 C CNN
+	1    5000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR Lp301
+U 1 1 5536293E
+P 6100 2700
+F 0 "Lp301" V 6050 2700 40  0000 C CNN
+F 1 "15uH" V 6200 2700 40  0000 C CNN
+F 2 "DO1608C" H 6350 2400 60  0000 C CNN
+F 3 "DO1608C-153" V 6300 2800 60  0000 C CNN
+	1    6100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX1674/1675 Up301
+U 1 1 55362922
+P 5500 3500
+F 0 "Up301" H 5500 3700 60  0000 C CNN
+F 1 "MAX1674/1675" H 5500 3500 60  0000 C CNN
+F 2 "uMAX8" H 5700 3000 60  0000 C CNN
+	1    5500 3500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
