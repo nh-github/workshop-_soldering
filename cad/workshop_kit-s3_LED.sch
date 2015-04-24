@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 22 Apr 2015 01:54:24 PM HST
+EESchema Schematic File Version 2  date Thu 23 Apr 2015 02:14:07 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 5 5
 Title ""
-Date "22 apr 2015"
+Date "24 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -290,6 +290,7 @@ U 1 1 552EDB54
 P 7900 3550
 F 0 "Pp203" H 7980 3550 40  0000 L CNN
 F 1 "CONN_1" H 7900 3605 30  0001 C CNN
+F 2 "PIN_ARRAY_1" H 8000 3650 60  0000 C CNN
 	1    7900 3550
 	0    -1   -1   0   
 $EndComp
@@ -299,6 +300,7 @@ U 1 1 552EDB53
 P 8000 3550
 F 0 "Pp204" H 8080 3550 40  0000 L CNN
 F 1 "CONN_1" H 8000 3605 30  0001 C CNN
+F 2 "PIN_ARRAY_1" H 8100 3450 60  0000 C CNN
 	1    8000 3550
 	0    -1   -1   0   
 $EndComp

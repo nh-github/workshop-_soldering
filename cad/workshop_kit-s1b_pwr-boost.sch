@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 22 Apr 2015 01:54:24 PM HST
+EESchema Schematic File Version 2  date Thu 23 Apr 2015 02:14:07 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 3 5
 Title ""
-Date "22 apr 2015"
+Date "24 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 7000 3000 0    60   ~ 0
+Adjusting Vout:\nR5 = R6 [(VOUT / VREF ) - 1]\nR6 should be <260k
 Text Label 6100 4100 0    60   ~ 0
 boost_fb
 Wire Wire Line
@@ -170,7 +172,7 @@ L R Rp305
 U 1 1 5536E91C
 P 6900 3800
 F 0 "Rp305" V 6980 3800 50  0000 C CNN
-F 1 "10k" V 6900 3800 50  0000 C CNN
+F 1 "18k" V 6900 3800 50  0000 C CNN
 F 2 "SM0805" V 7050 3800 60  0000 C CNN
 	1    6900 3800
 	1    0    0    -1  
