@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 23 Apr 2015 02:14:07 PM HST
+EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:06:54 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 5
 Title ""
-Date "24 apr 2015"
+Date "26 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	3000 2900 4000 2900
 Wire Wire Line
 	3000 2400 4000 2400
 Wire Wire Line
@@ -99,8 +101,8 @@ Wire Wire Line
 	3000 2100 4000 2100
 Wire Wire Line
 	3000 2300 4000 2300
-Text Notes 3250 1050 0    60   ~ 0
-port map:\nA .. 2\nB .. 4\nC .. 3\nD .. 1\nIR .. 6
+Wire Wire Line
+	3000 2800 4000 2800
 $Sheet
 S 2000 1500 1000 2000
 U 550D4239
@@ -120,6 +122,8 @@ F12 "GND" O R 3000 3300 60
 F13 "USB_D-" B R 3000 2900 60 
 F14 "USB_D+" B R 3000 2800 60 
 $EndSheet
+Text Notes 3250 1050 0    60   ~ 0
+port map:\nA .. 2\nB .. 4\nC .. 3\nD .. 1\nIR .. 6
 $Sheet
 S 4000 1500 2000 2000
 U 550D42BE
@@ -140,6 +144,8 @@ F13 "uart2_TX" O L 4000 1700 60
 F14 "uart2_RX" I L 4000 1800 60 
 F15 "uart1_RX" I L 4000 2400 60 
 F16 "uart1_TX" O L 4000 2300 60 
+F17 "USB_D-" I L 4000 2900 60 
+F18 "USB_D+" B L 4000 2800 60 
 $EndSheet
 Text Notes 7000 6500 0    60   ~ 0
 Refdes pattern:\n<part type><subcircuit type><subcircuit number><2 digit number>\nexamples:\n* Uc101 <- IC, control/logic, subckt#1, part #2\n* Rp101 <- Resistor, power, subckt#1, part#1
@@ -151,8 +157,8 @@ F1 "workshop_kit-s3_LED.sch" 60
 F2 "SPI_DAT" I L 4000 4700 60 
 F3 "SPI_CLK" I L 4000 4600 60 
 F4 "gnd" I L 4000 5400 60 
-F5 "Vdd" I L 4000 5300 60 
-F6 "V_LED" I L 4000 5200 60 
+F5 "Vdd" I L 4000 5200 60 
+F6 "V_LED" I L 4000 5300 60 
 $EndSheet
 $Comp
 L LOGO fid3

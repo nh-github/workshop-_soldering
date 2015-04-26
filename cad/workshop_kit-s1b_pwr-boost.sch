@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 23 Apr 2015 02:14:07 PM HST
+EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:06:54 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 3 5
 Title ""
-Date "24 apr 2015"
+Date "26 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""

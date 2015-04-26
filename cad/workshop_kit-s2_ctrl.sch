@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 23 Apr 2015 02:14:07 PM HST
+EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:06:54 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 3 5
+Sheet 4 5
 Title ""
-Date "24 apr 2015"
+Date "26 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 800  2800 0    60   ~ 0
+subsheet w/ USB IO setup\n* CDSOD323-T05CCT-ND (D+/- to GND)\n  Bourns CDSOD323-T05C\nfootprint: SOD-323
+Text HLabel 1000 2600 0    60   Input ~ 0
+USB_D-
+Text HLabel 1000 2500 0    60   BiDi ~ 0
+USB_D+
 Text Notes 4400 5200 2    80   ~ 0
 USB_HS
 Text Notes 4400 3200 2    80   ~ 0
@@ -471,6 +477,7 @@ P 1600 7400
 F 0 "SWc101" H 1600 7850 60  0000 C CNN
 F 1 "DIP_SWITCH_4" H 1600 7000 60  0000 C CNN
 F 2 "219-4MST" H 1600 6900 60  0000 C CNN
+F 4 "CT2194MST-ND" H 1600 7400 60  0001 C CNN "digikey"
 	1    1600 7400
 	1    0    0    -1  
 $EndComp
