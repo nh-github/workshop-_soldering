@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:09:10 AM HST
+EESchema Schematic File Version 2  date Sun 26 Apr 2015 06:06:26 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -46,6 +46,8 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
+	4500 3800 3900 3800
+Wire Wire Line
 	1200 2100 1000 2100
 Wire Wire Line
 	3200 7600 2100 7600
@@ -60,8 +62,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 7500 2100 7600
 Connection ~ 2800 7350
-Wire Wire Line
-	2800 3800 2800 7500
 Wire Wire Line
 	1200 5300 3500 5300
 Wire Wire Line
@@ -163,10 +163,10 @@ Connection ~ 2250 1050
 Wire Wire Line
 	2050 1350 2250 1350
 Wire Wire Line
-	1350 1050 2350 1050
+	2350 1050 1350 1050
 Connection ~ 4200 5900
 Wire Wire Line
-	4100 5900 4500 5900
+	4500 5900 4100 5900
 Wire Wire Line
 	3500 5300 3500 5450
 Connection ~ 2000 5300
@@ -180,14 +180,14 @@ Wire Wire Line
 Wire Wire Line
 	2600 6100 2600 4200
 Wire Wire Line
-	2000 5200 2000 5450
+	2000 5450 2000 5200
 Wire Wire Line
 	7100 4900 9800 4900
 Wire Wire Line
 	7100 5100 9000 5100
 Connection ~ 9400 6700
 Wire Wire Line
-	9800 6600 9800 6900
+	9800 6900 9800 6600
 Wire Wire Line
 	9400 5350 9400 5000
 Wire Wire Line
@@ -209,7 +209,7 @@ Wire Wire Line
 	4000 7400 6000 7400
 Connection ~ 6000 7400
 Wire Wire Line
-	6000 7600 6000 7200
+	6000 7200 6000 7600
 Wire Wire Line
 	4300 6800 4300 6600
 Wire Wire Line
@@ -226,12 +226,12 @@ Wire Wire Line
 Wire Wire Line
 	4500 1000 4100 1000
 Wire Wire Line
-	4600 800  4400 800 
+	4400 800  4600 800 
 Connection ~ 4700 1600
 Wire Wire Line
 	4400 1600 4400 1500
 Wire Wire Line
-	5000 1500 5000 1800
+	5000 1800 5000 1500
 Wire Wire Line
 	4400 1100 4400 1000
 Wire Wire Line
@@ -244,12 +244,12 @@ Connection ~ 7700 1600
 Wire Wire Line
 	8000 1600 8000 1500
 Wire Wire Line
-	6800 900  6800 1100
+	6800 1100 6800 900 
 Connection ~ 7100 1600
 Wire Wire Line
 	7400 1600 7400 1500
 Wire Wire Line
-	6800 1500 6800 1800
+	6800 1800 6800 1500
 Connection ~ 7100 1000
 Wire Wire Line
 	7400 1000 7400 1100
@@ -355,9 +355,9 @@ Wire Wire Line
 Wire Wire Line
 	9400 5000 7100 5000
 Wire Wire Line
-	2000 5950 2000 6250
+	2000 6250 2000 5950
 Wire Wire Line
-	2400 5950 2400 6250
+	2400 6250 2400 5950
 Wire Wire Line
 	2600 6100 2400 6100
 Connection ~ 2400 6100
@@ -386,11 +386,9 @@ Wire Wire Line
 Wire Wire Line
 	2700 750  1350 750 
 Wire Wire Line
-	2800 3800 4000 3800
+	2800 2000 2800 7500
 Wire Wire Line
-	4000 3800 4000 2000
-Wire Wire Line
-	4000 2000 4500 2000
+	2800 2000 4500 2000
 Wire Wire Line
 	4300 4800 4500 4800
 Wire Wire Line
@@ -458,6 +456,12 @@ Wire Wire Line
 	2250 1350 2250 1050
 Wire Wire Line
 	1000 2000 1200 2000
+Wire Wire Line
+	3900 3700 4500 3700
+Text HLabel 3900 3800 0    60   Output ~ 0
+tile_pwr_B
+Text HLabel 3900 3700 0    60   Output ~ 0
+tile_pwr_A
 Text Label 1200 2100 0    60   ~ 0
 MCU_GND_local
 Text Label 1200 2000 0    60   ~ 0
@@ -1028,10 +1032,10 @@ $EndComp
 Text Label 6000 7600 2    60   ~ 0
 MCU_GND_local
 $Comp
-L STM32F407--QFP100 U301
+L STM32F407--QFP100 Uc101
 U 1 1 55193888
 P 5800 4500
-F 0 "U301" H 5800 4400 50  0000 C CNN
+F 0 "Uc101" H 5800 4400 50  0000 C CNN
 F 1 "STM32F407--QFP100" H 5800 4600 50  0000 C CNN
 F 2 "TQFP_100" H 5800 4500 50  0000 C CNN
 F 3 "DOCUMENTATION" H 5800 4500 50  0001 C CNN

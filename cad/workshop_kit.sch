@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:09:10 AM HST
+EESchema Schematic File Version 2  date Sun 26 Apr 2015 06:06:26 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -45,13 +45,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 6300 1600 0    60   ~ 0
-COMMS/SENSORS subsheet!\n
+Wire Wire Line
+	4000 2900 3000 2900
 Connection ~ 3400 3100
 Wire Wire Line
-	4000 3100 3000 3100
+	3000 3100 4000 3100
 Wire Wire Line
-	3000 2900 4000 2900
+	3000 2700 4000 2700
 Wire Wire Line
 	3000 2400 4000 2400
 Wire Wire Line
@@ -103,10 +103,14 @@ Wire Wire Line
 Wire Wire Line
 	3000 2300 4000 2300
 Wire Wire Line
-	3000 2800 4000 2800
+	3000 2600 4000 2600
 Wire Wire Line
-	4000 3300 3000 3300
+	3000 3300 4000 3300
 Connection ~ 3200 3300
+Wire Wire Line
+	4000 3000 3000 3000
+Text Notes 6300 1600 0    60   ~ 0
+COMMS/SENSORS subsheet!\n
 $Sheet
 S 2000 1500 1000 2000
 U 550D4239
@@ -123,8 +127,10 @@ F9 "B_rx" O R 3000 2000 60
 F10 "A_rx" O R 3000 1800 60 
 F11 "A_tx" I R 3000 1700 60 
 F12 "GND" O R 3000 3300 60 
-F13 "USB_D-" B R 3000 2900 60 
-F14 "USB_D+" B R 3000 2800 60 
+F13 "USB_D-" B R 3000 2700 60 
+F14 "USB_D+" B R 3000 2600 60 
+F15 "pwr_en_B" I R 3000 3000 60 
+F16 "pwr_en_A" I R 3000 2900 60 
 $EndSheet
 Text Notes 3250 1050 0    60   ~ 0
 port map:\nA .. 2\nB .. 4\nC .. 3\nD .. 1\nIR .. 6
@@ -148,10 +154,12 @@ F13 "uart2_TX" O L 4000 1700 60
 F14 "uart2_RX" I L 4000 1800 60 
 F15 "uart1_RX" I L 4000 2400 60 
 F16 "uart1_TX" O L 4000 2300 60 
-F17 "USB_D-" I L 4000 2900 60 
-F18 "USB_D+" B L 4000 2800 60 
+F17 "USB_D-" I L 4000 2700 60 
+F18 "USB_D+" B L 4000 2600 60 
 F19 "MCU_GND" I L 4000 3300 60 
 F20 "MCU_VDD" I L 4000 3100 60 
+F21 "tile_pwr_B" O L 4000 3000 60 
+F22 "tile_pwr_A" O L 4000 2900 60 
 $EndSheet
 Text Notes 7000 6500 0    60   ~ 0
 Refdes pattern:\n<part type><subcircuit type><subcircuit number><2 digit number>\nexamples:\n* Uc101 <- IC, control/logic, subckt#1, part #2\n* Rp101 <- Resistor, power, subckt#1, part#1

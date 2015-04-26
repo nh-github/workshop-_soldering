@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:09:10 AM HST
+EESchema Schematic File Version 2  date Sun 26 Apr 2015 06:06:26 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -45,28 +45,20 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MOSFET_P_123 Qp103
-U 1 1 553CC437
-P 3100 2300
-F 0 "Qp103" H 3100 2490 60  0000 R CNN
-F 1 "MOSFET_P_123" H 3100 2120 60  0000 R CNN
-F 2 "SOT23" H 3000 2000 60  0000 C CNN
-F 4 "SSM3J328RLFCT-ND" H 2700 1900 60  0000 C CNN "digikey"
-	1    3100 2300
-	0    -1   -1   0   
-$EndComp
-$Sheet
-S 1500 2000 1000 1000
-U 5536265F
-F0 "sub1b_pwr-boost" 60
-F1 "workshop_kit-s1b_pwr-boost.sch" 60
-F2 "Boost_GND" I L 1500 2300 60 
-F3 "~SHDN" I L 1500 2900 60 
-F4 "~LBO" O R 2500 2900 60 
-F5 "Boost_Vout" O R 2500 2200 60 
-F6 "Boost_Vin" I L 1500 2100 60 
-$EndSheet
+Wire Wire Line
+	5800 1000 5800 1100
+Wire Wire Line
+	5800 1100 5700 1100
+Connection ~ 5500 1500
+Wire Wire Line
+	5500 1500 5500 2000
+Wire Wire Line
+	5500 2000 6300 2000
+Connection ~ 5500 700 
+Wire Wire Line
+	5500 700  5500 1200
+Wire Wire Line
+	5500 1200 6300 1200
 Wire Wire Line
 	2600 4200 2600 4100
 Wire Wire Line
@@ -327,6 +319,88 @@ Wire Wire Line
 	1400 4000 1400 2900
 Wire Wire Line
 	1400 2900 1500 2900
+Wire Wire Line
+	6900 1200 7000 1200
+Wire Wire Line
+	7000 1200 7000 700 
+Connection ~ 7000 700 
+Wire Wire Line
+	6900 2000 7000 2000
+Wire Wire Line
+	7000 2000 7000 1500
+Connection ~ 7000 1500
+Wire Wire Line
+	5700 1900 5800 1900
+Wire Wire Line
+	5800 1900 5800 1800
+Text HLabel 5700 1900 0    60   Input ~ 0
+pwr_en_B
+Text HLabel 5700 1100 0    60   Input ~ 0
+pwr_en_A
+$Comp
+L JUMPER JPp102
+U 1 1 553D0AF5
+P 6600 2000
+F 0 "JPp102" H 6600 2150 60  0000 C CNN
+F 1 "JUMPER" H 6600 1920 40  0000 C CNN
+F 2 "solder_bridge" H 6600 1800 60  0000 C CNN
+	1    6600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER JPp101
+U 1 1 553D0AF2
+P 6600 1200
+F 0 "JPp101" H 6600 1350 60  0000 C CNN
+F 1 "JUMPER" H 6600 1120 40  0000 C CNN
+F 2 "solder_bridge" H 6600 1000 60  0000 C CNN
+	1    6600 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_P_123 Qp102
+U 1 1 553D0AAC
+P 5800 1600
+F 0 "Qp102" H 5800 1790 60  0000 R CNN
+F 1 "MOSFET_P_123" H 5800 1420 60  0000 R CNN
+F 2 "SOT23" H 5700 1300 60  0000 C CNN
+F 4 "SSM3J328RLFCT-ND" H 5400 1200 60  0000 C CNN "digikey"
+	1    5800 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MOSFET_P_123 Qp101
+U 1 1 553D0A9A
+P 5800 800
+F 0 "Qp101" H 5800 990 60  0000 R CNN
+F 1 "MOSFET_P_123" H 5800 620 60  0000 R CNN
+F 2 "SOT23" H 5700 500 60  0000 C CNN
+F 4 "SSM3J328RLFCT-ND" H 5400 400 60  0000 C CNN "digikey"
+	1    5800 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MOSFET_P_123 Qp103
+U 1 1 553CC437
+P 3100 2300
+F 0 "Qp103" H 3100 2490 60  0000 R CNN
+F 1 "MOSFET_P_123" H 3100 2120 60  0000 R CNN
+F 2 "SOT23" H 3000 2000 60  0000 C CNN
+F 4 "SSM3J328RLFCT-ND" H 2700 1900 60  0000 C CNN "digikey"
+	1    3100 2300
+	0    -1   -1   0   
+$EndComp
+$Sheet
+S 1500 2000 1000 1000
+U 5536265F
+F0 "sub1b_pwr-boost" 60
+F1 "workshop_kit-s1b_pwr-boost.sch" 60
+F2 "Boost_GND" I L 1500 2300 60 
+F3 "~SHDN" I L 1500 2900 60 
+F4 "~LBO" O R 2500 2900 60 
+F5 "Boost_Vout" O R 2500 2200 60 
+F6 "Boost_Vin" I L 1500 2100 60 
+$EndSheet
 $Comp
 L GND #PWR01
 U 1 1 553CBDEE
@@ -555,26 +629,26 @@ F 1 "R" V 6450 1500 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L JUMPER JP102
+L JUMPER JPp104
 U 1 1 5510F253
 P 7400 1500
-F 0 "JP102" H 7400 1650 60  0000 C CNN
+F 0 "JPp104" H 7400 1650 60  0000 C CNN
 F 1 "JUMPER" H 7400 1420 40  0000 C CNN
-F 2 "solder_bridge" H 7400 1300 60  0000 C CNN
+F 2 "PIN_ARRAY_2X1" H 7400 1300 60  0000 C CNN
 	1    7400 1500
 	1    0    0    -1  
 $EndComp
 $Comp
-L JUMPER JPp101
+L JUMPER JPp103
 U 1 1 5510F20F
 P 7400 700
-F 0 "JPp101" H 7400 850 60  0000 C CNN
+F 0 "JPp103" H 7400 850 60  0000 C CNN
 F 1 "JUMPER" H 7400 620 40  0000 C CNN
-F 2 "solder_bridge" H 7400 500 60  0000 C CNN
+F 2 "PIN_ARRAY_2X1" H 7400 500 60  0000 C CNN
 	1    7400 700 
 	1    0    0    -1  
 $EndComp
-Text Notes 6200 1300 0    60   ~ 0
+Text Notes 6200 550  0    60   ~ 0
 Current sense for \npower output?
 Text Notes 10500 2450 0    60   ~ 0
 sw
@@ -619,15 +693,6 @@ F 1 "GND" H 8400 1330 30  0001 C CNN
 	1    8400 1400
 	0    1    1    0   
 $EndComp
-$Comp
-L MOSFET_P Qp102
-U 1 1 5510ED86
-P 5800 1600
-F 0 "Qp102" H 5800 1790 60  0000 R CNN
-F 1 "MOSFET_P" H 5800 1420 60  0000 R CNN
-	1    5800 1600
-	0    -1   -1   0   
-$EndComp
 Text Notes 1800 1300 0    40   ~ 0
 trip current?\nlimit to 0.5A? \n        0.9A?
 $Comp
@@ -642,15 +707,6 @@ F 2 "DO214" H 3500 1600 60  0000 C CNN
 $EndComp
 Text Notes 2600 3200 0    60   ~ 0
 Turn off battery (and cut w/ switch) when \npowered by edge connectors or ext_pwr
-$Comp
-L MOSFET_P Qp101
-U 1 1 550CD57B
-P 5800 800
-F 0 "Qp101" H 5800 990 60  0000 R CNN
-F 1 "MOSFET_P" H 5800 620 60  0000 R CNN
-	1    5800 800 
-	0    -1   -1   0   
-$EndComp
 Text Notes 600  2300 1    60   ~ 0
 BATT
 Text Notes 600  1600 1    60   ~ 0
