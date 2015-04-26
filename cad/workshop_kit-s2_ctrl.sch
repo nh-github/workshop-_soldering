@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:06:54 AM HST
+EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:09:10 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -45,16 +45,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 800  2800 0    60   ~ 0
-subsheet w/ USB IO setup\n* CDSOD323-T05CCT-ND (D+/- to GND)\n  Bourns CDSOD323-T05C\nfootprint: SOD-323
-Text HLabel 1000 2600 0    60   Input ~ 0
-USB_D-
-Text HLabel 1000 2500 0    60   BiDi ~ 0
-USB_D+
-Text Notes 4400 5200 2    80   ~ 0
-USB_HS
-Text Notes 4400 3200 2    80   ~ 0
-USB_FS
+Wire Wire Line
+	1200 2100 1000 2100
 Wire Wire Line
 	3200 7600 2100 7600
 Wire Wire Line
@@ -464,6 +456,26 @@ Wire Wire Line
 	2000 7300 1900 7300
 Wire Wire Line
 	2250 1350 2250 1050
+Wire Wire Line
+	1000 2000 1200 2000
+Text Label 1200 2100 0    60   ~ 0
+MCU_GND_local
+Text Label 1200 2000 0    60   ~ 0
+MCU_VDD_local
+Text HLabel 1000 2100 0    60   Input ~ 0
+MCU_GND
+Text HLabel 1000 2000 0    60   Input ~ 0
+MCU_VDD
+Text Notes 800  2800 0    60   ~ 0
+subsheet w/ USB IO setup\n* CDSOD323-T05CCT-ND (D+/- to GND)\n  Bourns CDSOD323-T05C\nfootprint: SOD-323
+Text HLabel 1000 2600 0    60   Input ~ 0
+USB_D-
+Text HLabel 1000 2500 0    60   BiDi ~ 0
+USB_D+
+Text Notes 4400 5200 2    80   ~ 0
+USB_HS
+Text Notes 4400 3200 2    80   ~ 0
+USB_FS
 Text Label 2250 1900 2    60   ~ 0
 MCU_VDD_local
 Text Label 3000 7600 1    60   ~ 0

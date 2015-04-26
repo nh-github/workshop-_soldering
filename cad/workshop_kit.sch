@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:06:54 AM HST
+EESchema Schematic File Version 2  date Sun 26 Apr 2015 02:09:10 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -45,6 +45,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 6300 1600 0    60   ~ 0
+COMMS/SENSORS subsheet!\n
+Connection ~ 3400 3100
+Wire Wire Line
+	4000 3100 3000 3100
 Wire Wire Line
 	3000 2900 4000 2900
 Wire Wire Line
@@ -60,13 +65,9 @@ Wire Wire Line
 Wire Wire Line
 	3400 5200 3400 3100
 Wire Wire Line
-	3400 3100 3000 3100
-Wire Wire Line
 	4000 5400 3200 5400
 Wire Wire Line
 	3200 5400 3200 3300
-Wire Wire Line
-	3200 3300 3000 3300
 Wire Wire Line
 	6000 3200 6300 3200
 Wire Wire Line
@@ -103,6 +104,9 @@ Wire Wire Line
 	3000 2300 4000 2300
 Wire Wire Line
 	3000 2800 4000 2800
+Wire Wire Line
+	4000 3300 3000 3300
+Connection ~ 3200 3300
 $Sheet
 S 2000 1500 1000 2000
 U 550D4239
@@ -146,6 +150,8 @@ F15 "uart1_RX" I L 4000 2400 60
 F16 "uart1_TX" O L 4000 2300 60 
 F17 "USB_D-" I L 4000 2900 60 
 F18 "USB_D+" B L 4000 2800 60 
+F19 "MCU_GND" I L 4000 3300 60 
+F20 "MCU_VDD" I L 4000 3100 60 
 $EndSheet
 Text Notes 7000 6500 0    60   ~ 0
 Refdes pattern:\n<part type><subcircuit type><subcircuit number><2 digit number>\nexamples:\n* Uc101 <- IC, control/logic, subckt#1, part #2\n* Rp101 <- Resistor, power, subckt#1, part#1
