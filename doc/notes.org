@@ -1,0 +1,42 @@
+* Solder workshop kit:
+* 2015-01-04:
+** update design with some HTDC blinky badge bits
+** Logo work:
+  - start with dark fg, light bg (1000 px)
+  - KiCad bitmap converter (save as *.emp)
+  - swap layer to soldermask (23)
+  - scale (2.8 factor)
+  - import, add keywords: logo, HICapacity
+  - save in lib
+** fab test run at oshpark
+  - HICapacity Solder Kit
+  - 396b634 2015-01-04
+** fab options
+  - oshpark
+  - pcbunlimited
+  - hackvana
+** consider programmed LED control
+* gerber checking:
+gerbv cad/fab/2015-04-23a*/*{drl,Edg*,Sil*F*,Mas*F*,-Fr*,*ground.gbr,*power.gbr,kS_B*,sk_B*,-Ba*}
+* addl parts list
+  USB connector
+  5.1V zener
+  poly fuse 0.5A, 1A (USB?)
+  shottkey (1A? ?V)
+  P-FET / load switch (1A? 5A?)
+  -* SSM3J328RLFCT-ND
+  -* FDS6675? (SOIC, big, unwieldy)
+  Load switches 
+  -* FPF2104 (0.4A limit)
+  -* MIC2007YM6 (2A limit, adjustable?)
+  on/off switch (battery)
+
+  battery
+  feet (stick on?)
+
+  sensors/comms
+  IRDA
+  IR LED/transistor
+  APDS966... Prox/Color
+  MIC
+  Speaker

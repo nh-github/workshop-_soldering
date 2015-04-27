@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 26 Apr 2015 10:18:53 AM HST
+EESchema Schematic File Version 2  date Sun 26 Apr 2015 07:05:41 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 5 5
 Title ""
-Date "26 apr 2015"
+Date "27 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -213,10 +213,10 @@ Wire Wire Line
 	7000 3000 7000 3300
 Connection ~ 3000 3000
 $Comp
-L PWR_FLAG #FLG016
+L PWR_FLAG #FLG017
 U 1 1 553D0CD4
 P 6750 5900
-F 0 "#FLG016" H 6750 5995 30  0001 C CNN
+F 0 "#FLG017" H 6750 5995 30  0001 C CNN
 F 1 "PWR_FLAG" H 6750 6080 30  0000 C CNN
 	1    6750 5900
 	1    0    0    -1  
