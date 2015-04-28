@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 26 Apr 2015 07:05:41 PM HST
+EESchema Schematic File Version 2  date Tue 28 Apr 2015 01:39:57 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 4 5
 Title ""
-Date "27 apr 2015"
+Date "28 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	4500 3800 3900 3800
+	7700 3400 7100 3400
 Wire Wire Line
 	1200 2100 1000 2100
 Wire Wire Line
@@ -457,10 +457,10 @@ Wire Wire Line
 Wire Wire Line
 	1000 2000 1200 2000
 Wire Wire Line
-	3900 3700 4500 3700
-Text HLabel 3900 3800 0    60   Output ~ 0
+	7100 3300 7700 3300
+Text HLabel 7700 3300 2    60   Output ~ 0
 tile_pwr_B
-Text HLabel 3900 3700 0    60   Output ~ 0
+Text HLabel 7700 3400 2    60   Output ~ 0
 tile_pwr_A
 Text Label 1200 2100 0    60   ~ 0
 MCU_GND_local
@@ -1037,7 +1037,7 @@ U 1 1 55193888
 P 5800 4500
 F 0 "Uc101" H 5800 4400 50  0000 C CNN
 F 1 "STM32F407--QFP100" H 5800 4600 50  0000 C CNN
-F 2 "TQFP_100" H 5800 4500 50  0000 C CNN
+F 2 "QFP100" H 5800 4500 50  0000 C CNN
 F 3 "DOCUMENTATION" H 5800 4500 50  0001 C CNN
 	1    5800 4500
 	1    0    0    -1  
@@ -1098,7 +1098,7 @@ U 1 1 550F56B5
 P 10000 1100
 F 0 "TPc102" H 10080 1100 40  0000 L CNN
 F 1 "CONN_1" H 10000 1155 30  0001 C CNN
-F 2 "PIN_ARRAY_1" H 10000 1200 60  0000 C CNN
+F 2 "SM0805" H 10000 1200 60  0000 C CNN
 	1    10000 1100
 	-1   0    0    1   
 $EndComp
@@ -1108,7 +1108,7 @@ U 1 1 550F56AC
 P 10000 1000
 F 0 "TPc101" H 10080 1000 40  0000 L CNN
 F 1 "CONN_1" H 10000 1055 30  0001 C CNN
-F 2 "PIN_ARRAY_1" H 10000 900 60  0000 C CNN
+F 2 "SM0805" H 10000 900 60  0000 C CNN
 	1    10000 1000
 	-1   0    0    1   
 $EndComp

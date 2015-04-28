@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sun 26 Apr 2015 07:05:41 PM HST
+EESchema Schematic File Version 2  date Tue 28 Apr 2015 01:39:57 AM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 5 5
 Title ""
-Date "27 apr 2015"
+Date "28 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,30 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L CONN_1 TPp201
+U 1 1 550AB581
+P 3900 3550
+F 0 "TPp201" H 3980 3550 40  0000 L CNN
+F 1 "CONN_1" H 3900 3605 30  0001 C CNN
+F 2 "SM0805" H 3900 3650 60  0000 C CNN
+	1    3900 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_1 TPp202
+U 1 1 550AB58F
+P 4000 3550
+F 0 "TPp202" H 4080 3550 40  0000 L CNN
+F 1 "CONN_1" H 4000 3605 30  0001 C CNN
+F 2 "SM0805" H 4000 3450 60  0000 C CNN
+	1    4000 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 3700 3900 3800
+Wire Wire Line
+	4000 3700 4000 3900
 Wire Wire Line
 	3000 5700 3000 5900
 Connection ~ 1300 3200
@@ -73,8 +97,6 @@ Connection ~ 3000 5800
 Wire Wire Line
 	2900 5800 2900 5700
 Connection ~ 4000 3900
-Wire Wire Line
-	4000 3700 4000 3900
 Connection ~ 5000 4200
 Wire Wire Line
 	4700 4200 5000 4200
@@ -124,8 +146,6 @@ Wire Wire Line
 Connection ~ 5000 4500
 Wire Wire Line
 	3800 3900 6200 3900
-Wire Wire Line
-	3900 3700 3900 3800
 Connection ~ 3900 3800
 Connection ~ 7900 3800
 Wire Wire Line
@@ -213,29 +233,29 @@ Wire Wire Line
 	7000 3000 7000 3300
 Connection ~ 3000 3000
 $Comp
-L PWR_FLAG #FLG017
+L PWR_FLAG #FLG018
 U 1 1 553D0CD4
 P 6750 5900
-F 0 "#FLG017" H 6750 5995 30  0001 C CNN
+F 0 "#FLG018" H 6750 5995 30  0001 C CNN
 F 1 "PWR_FLAG" H 6750 6080 30  0000 C CNN
 	1    6750 5900
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_1 TPp202
+L CONN_1 Pp202
 U 1 1 552FADE5
 P 1750 3200
-F 0 "TPp202" H 1830 3200 40  0000 L CNN
+F 0 "Pp202" H 1830 3200 40  0000 L CNN
 F 1 "CONN_1" H 1750 3255 30  0001 C CNN
 F 2 "PIN_ARRAY_1" H 2350 3200 60  0000 C CNN
 	1    1750 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_1 TPp201
+L CONN_1 Pp201
 U 1 1 552FADDE
 P 1750 3100
-F 0 "TPp201" H 1830 3100 40  0000 L CNN
+F 0 "Pp201" H 1830 3100 40  0000 L CNN
 F 1 "CONN_1" H 1750 3155 30  0001 C CNN
 F 2 "PIN_ARRAY_1" H 2350 3100 60  0000 C CNN
 	1    1750 3100
@@ -441,24 +461,6 @@ Text Label 2100 3800 2    60   ~ 0
 LED_SPI_DAT
 Text Label 2100 3900 2    60   ~ 0
 LED_SPI_CLK
-$Comp
-L CONN_1 Pp202
-U 1 1 550AB58F
-P 4000 3550
-F 0 "Pp202" H 4080 3550 40  0000 L CNN
-F 1 "CONN_1" H 4000 3605 30  0001 C CNN
-	1    4000 3550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_1 Pp201
-U 1 1 550AB581
-P 3900 3550
-F 0 "Pp201" H 3980 3550 40  0000 L CNN
-F 1 "CONN_1" H 3900 3605 30  0001 C CNN
-	1    3900 3550
-	0    -1   -1   0   
-$EndComp
 $Comp
 L RGB_LED Dp203
 U 1 1 550AB3B9
