@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 28 Apr 2015 03:12:33 AM HST
+EESchema Schematic File Version 2  date Tue 28 Apr 2015 05:47:12 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 2 5
 Title ""
-Date "28 apr 2015"
+Date "29 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,7 +46,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Connection ~ 2400 1300
-Connection ~ 4550 1400
 Connection ~ 4500 3800
 Text Label 2700 2200 0    60   ~ 0
 Vboosted
@@ -906,7 +905,7 @@ U 1 1 550CC6F6
 P 800 800
 F 0 "Pp101" V 750 800 50  0000 C CNN
 F 1 "CONN_5" V 850 800 50  0000 C CNN
-F 2 "ZX62R-B-5P" H 800 800 60  0001 C CNN
+F 2 "ZX62R-B-5P" H 800 1100 60  0000 C CNN
 F 4 "digikey:H11574CT-ND" V 800 800 60  0001 C CNN "vend"
 	1    800  800 
 	-1   0    0    1   

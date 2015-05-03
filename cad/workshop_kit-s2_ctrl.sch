@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 28 Apr 2015 03:12:33 AM HST
+EESchema Schematic File Version 2  date Tue 28 Apr 2015 05:47:12 PM HST
 LIBS:local_parts
 LIBS:power
 LIBS:device
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 4 5
 Title ""
-Date "28 apr 2015"
+Date "29 apr 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -1109,6 +1109,7 @@ P 10000 1000
 F 0 "TPc101" H 10080 1000 40  0000 L CNN
 F 1 "CONN_1" H 10000 1055 30  0001 C CNN
 F 2 "SM0805" H 10000 900 60  0000 C CNN
+F 4 "digikey:A106144CT-ND" H 10000 1000 60  0001 C CNN "Field4"
 	1    10000 1000
 	-1   0    0    1   
 $EndComp
